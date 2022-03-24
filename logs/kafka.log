@@ -1,0 +1,12 @@
+/usr/lib/python2.7/dist-packages/supervisor/options.py:296: UserWarning: Supervisord is running as root and it is searching for its configuration file in default locations (including its current working directory); you probably want to specify a "-c" argument specifying an absolute path to a configuration file for improved security.
+  'Supervisord is running as root and it is searching '
+2022-03-24 07:14:56,583 CRIT Supervisor running as root (no user in config file)
+2022-03-24 07:14:56,583 WARN Included extra file "/etc/supervisor/conf.d/zookeeper.conf" during parsing
+2022-03-24 07:14:56,583 WARN Included extra file "/etc/supervisor/conf.d/kafka.conf" during parsing
+2022-03-24 07:14:56,774 INFO RPC interface 'supervisor' initialized
+2022-03-24 07:14:56,774 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2022-03-24 07:14:56,774 INFO supervisord started with pid 1
+2022-03-24 07:14:57,780 INFO spawned: 'zookeeper' with pid 9
+2022-03-24 07:14:57,810 INFO spawned: 'kafka' with pid 10
+2022-03-24 07:14:59,257 INFO success: zookeeper entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2022-03-24 07:14:59,257 INFO success: kafka entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
