@@ -1,13 +1,10 @@
-[2022-03-24 15:14:54 +0800] [1] [INFO] Starting gunicorn 20.0.4
-[2022-03-24 15:14:54 +0800] [1] [INFO] Listening at: http://0.0.0.0:17001 (1)
-[2022-03-24 15:14:54 +0800] [1] [INFO] Using worker: sync
-[2022-03-24 15:14:54 +0800] [8] [INFO] Booting worker with pid: 8
-[2022-03-24 15:14:54 +0800] [9] [INFO] Booting worker with pid: 9
-[2022-03-24 15:14:54 +0800] [10] [INFO] Booting worker with pid: 10
-[2022-03-24 15:14:54 +0800] [11] [INFO] Booting worker with pid: 11
-[2022-03-24 15:15:24 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:8)
-[2022-03-24 15:15:24 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:9)
-[2022-03-24 15:15:24 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:10)
-[2022-03-24 15:15:25 +0800] [32] [INFO] Booting worker with pid: 32
-[2022-03-24 15:15:25 +0800] [34] [INFO] Booting worker with pid: 34
-[2022-03-24 15:15:25 +0800] [33] [INFO] Booting worker with pid: 33
+[2022-03-28 16:30:59 +0800] [1] [INFO] Starting gunicorn 20.0.4
+[2022-03-28 16:30:59 +0800] [1] [INFO] Listening at: http://0.0.0.0:17001 (1)
+[2022-03-28 16:30:59 +0800] [1] [INFO] Using worker: sync
+[2022-03-28 16:30:59 +0800] [7] [INFO] Booting worker with pid: 7
+[2022-03-28 16:30:59 +0800] [8] [INFO] Booting worker with pid: 8
+[2022-03-28 16:31:00 +0800] [10] [INFO] Booting worker with pid: 10
+[2022-03-28 16:31:00 +0800] [9] [INFO] Booting worker with pid: 9
+[2022-03-28 16:31:30 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:7)
+[2022-03-28 16:31:30 +0800] [7] [INFO] Worker exiting (pid: 7)
+[2022-03-28 16:31:31 +0800] [31] [INFO] Booting worker with pid: 31
