@@ -1,0 +1,828 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.22.RELEASE)
+
+2022-03-30 17:17:17.749  INFO 1 --- [           main] config.ConfigApplication                 : Starting ConfigApplication v1.0 on ts-config-service-57c76df64c-2bxrw with PID 1 (/app/ts-config-service-1.0.jar started by root in /)
+2022-03-30 17:17:18.309  INFO 1 --- [           main] config.ConfigApplication                 : No active profile set, falling back to default profiles: default
+2022-03-30 17:17:25.253  INFO 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4e515669: startup date [Wed Mar 30 17:17:24 CST 2022]; root of context hierarchy
+2022-03-30 17:19:16.306  INFO 1 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2022-03-30 17:19:45.358  INFO 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2022-03-30 17:19:45.838  INFO 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2022-03-30 17:19:59.823  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$2969d19a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-30 17:20:00.768  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-30 17:20:00.941  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@41d477ed' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-30 17:20:01.873  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$4e3e744c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-30 17:20:02.472  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-30 17:20:07.646  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-30 17:20:07.866  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-30 17:20:46.266  INFO 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 15679 (http)
+2022-03-30 17:20:48.298  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-30 17:20:48.344  INFO 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.43
+2022-03-30 17:20:57.329  INFO 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-30 17:20:57.355  INFO 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 212530 ms
+2022-03-30 17:21:36.489  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2022-03-30 17:21:36.526  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2022-03-30 17:21:36.574  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2022-03-30 17:21:36.605  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2022-03-30 17:21:36.625  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2022-03-30 17:21:36.770  INFO 1 --- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2022-03-30 17:21:36.797  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2022-03-30 17:21:36.809  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2022-03-30 17:21:36.822  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2022-03-30 17:22:33.498  INFO 1 --- [           main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[ts-config-mongo:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-03-30 17:22:33.534  INFO 1 --- [           main] org.mongodb.driver.cluster               : Adding discovered server ts-config-mongo:27017 to client view of cluster
+2022-03-30 17:23:05.269  INFO 1 --- [fig-mongo:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:1}] to ts-config-mongo:27017
+2022-03-30 17:23:05.428  INFO 1 --- [fig-mongo:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ts-config-mongo:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 6]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, roundTripTimeNanos=116322200}
+2022-03-30 17:23:05.646  INFO 1 --- [fig-mongo:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2022-03-30 17:25:11.733  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/configservice/configs/{configName}],methods=[GET]}" onto public org.springframework.http.HttpEntity config.controller.ConfigController.retrieve(java.lang.String,org.springframework.http.HttpHeaders)
+2022-03-30 17:25:12.075  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/configservice/configs],methods=[GET]}" onto public org.springframework.http.HttpEntity config.controller.ConfigController.queryAll(org.springframework.http.HttpHeaders)
+2022-03-30 17:25:12.149  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/configservice/configs],methods=[POST]}" onto public org.springframework.http.HttpEntity<?> config.controller.ConfigController.createConfig(config.entity.Config,org.springframework.http.HttpHeaders)
+2022-03-30 17:25:12.244  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/configservice/configs],methods=[PUT]}" onto public org.springframework.http.HttpEntity config.controller.ConfigController.updateConfig(config.entity.Config,org.springframework.http.HttpHeaders)
+2022-03-30 17:25:12.246  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/configservice/configs/{configName}],methods=[DELETE]}" onto public org.springframework.http.HttpEntity config.controller.ConfigController.deleteConfig(java.lang.String,org.springframework.http.HttpHeaders)
+2022-03-30 17:25:12.328  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/configservice/welcome],methods=[GET]}" onto public java.lang.String config.controller.ConfigController.home(org.springframework.http.HttpHeaders)
+2022-03-30 17:25:12.367  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2022-03-30 17:25:12.564  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2022-03-30 17:25:12.692  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2022-03-30 17:25:12.881  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2022-03-30 17:25:13.195  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2022-03-30 17:25:13.199  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2022-03-30 17:25:42.836  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2022-03-30 17:25:42.911  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2022-03-30 17:25:42.927  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2022-03-30 17:25:42.973  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2022-03-30 17:25:42.983  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2022-03-30 17:25:43.020  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2022-03-30 17:25:43.039  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2022-03-30 17:25:43.060  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2022-03-30 17:25:43.082  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2022-03-30 17:25:43.189  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2022-03-30 17:25:43.292  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2022-03-30 17:25:43.324  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2022-03-30 17:25:43.458  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2022-03-30 17:25:43.468  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2022-03-30 17:25:43.536  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2022-03-30 17:25:43.571  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2022-03-30 17:25:43.644  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2022-03-30 17:26:00.231  INFO 1 --- [           main] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: 9580b7b4-31a2-4723-a465-81835f6c1a4b
+
+2022-03-30 17:26:09.638  INFO 1 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4b213651, org.springframework.security.web.context.SecurityContextPersistenceFilter@341814d3, org.springframework.security.web.header.HeaderWriterFilter@609db546, org.springframework.security.web.authentication.logout.LogoutFilter@5454d35e, edu.fudan.common.security.jwt.JWTFilter@4241e0f4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@59cba5a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@119cbf96, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4ebff610, org.springframework.security.web.session.SessionManagementFilter@56c4278e, org.springframework.security.web.access.ExceptionTranslationFilter@436c81a3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@73302995]
+2022-03-30 17:26:12.602  INFO 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-03-30 17:26:12.602  INFO 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-03-30 17:26:15.243  INFO 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-03-30 17:26:15.974  INFO 1 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration$LazyEndpointPathRequestMatcher@be68757, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d446ed1, org.springframework.security.web.context.SecurityContextPersistenceFilter@7922d892, org.springframework.security.web.header.HeaderWriterFilter@3688eb5b, org.springframework.web.filter.CorsFilter@12d2ce03, org.springframework.security.web.authentication.logout.LogoutFilter@50de186c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@42530531, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@457c9034, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@345f69f3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e5c856f, org.springframework.security.web.session.SessionManagementFilter@69f1a286, org.springframework.security.web.access.ExceptionTranslationFilter@600b9d27, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@432038ec]
+2022-03-30 17:26:43.220  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4e515669: startup date [Wed Mar 30 17:17:24 CST 2022]; root of context hierarchy
+2022-03-30 17:28:16.761  INFO 1 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2022-03-30 17:28:39.848  INFO 1 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2022-03-30 17:28:43.744  INFO 1 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2022-03-30 17:28:47.361  INFO 1 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2022-03-30 17:28:47.362  INFO 1 --- [           main] o.s.i.channel.PublishSubscribeChannel    : Channel 'ts-config-service:15679.errorChannel' has 1 subscriber(s).
+2022-03-30 17:28:47.485  INFO 1 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2022-03-30 17:28:48.089  INFO 1 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-03-30 17:28:51.831  INFO 1 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-03-30 17:28:53.334  INFO 1 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-03-30 17:29:04.660  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findByPrincipalAndAfterAndTypeUsingGET_1
+2022-03-30 17:29:39.173  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_1
+2022-03-30 17:29:39.387  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_2
+2022-03-30 17:29:39.578  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_3
+2022-03-30 17:29:40.713  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_4
+2022-03-30 17:29:40.851  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_5
+2022-03-30 17:29:41.252  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_6
+2022-03-30 17:29:41.502  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_7
+2022-03-30 17:29:41.833  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_8
+2022-03-30 17:29:41.958  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_9
+2022-03-30 17:29:42.538  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_10
+2022-03-30 17:29:42.748  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_11
+2022-03-30 17:29:43.028  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_12
+2022-03-30 17:29:43.164  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_13
+2022-03-30 17:29:43.474  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_14
+2022-03-30 17:29:43.766  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_15
+2022-03-30 17:29:48.654  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_16
+2022-03-30 17:29:49.689  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_17
+2022-03-30 17:29:50.440  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_18
+2022-03-30 17:29:50.663  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_19
+2022-03-30 17:29:51.146  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_20
+2022-03-30 17:29:51.158  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_21
+2022-03-30 17:29:51.423  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_22
+2022-03-30 17:29:51.456  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_23
+2022-03-30 17:29:51.547  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: valueUsingGET_1
+2022-03-30 17:29:54.378  INFO 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 15679 (http)
+2022-03-30 17:29:58.652  INFO 1 --- [           main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:2}] to ts-config-mongo:27017
+2022-03-30 17:30:05.509  INFO 1 --- [           main] config.service.ConfigServiceImpl         : Config: (Config(name=DirectTicketAllocationProportion, value=0.5, description=Allocation Proportion Of The Direct Ticket - From Start To End)) create success
+2022-03-30 17:30:05.646  INFO 1 --- [           main] config.ConfigApplication                 : Started ConfigApplication in 810.47 seconds (JVM running for 835.872)
+2022-03-30 17:56:44.742  INFO 1 --- [io-15679-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2022-03-30 17:56:44.745  INFO 1 --- [io-15679-exec-6] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2022-03-30 17:56:45.938  INFO 1 --- [io-15679-exec-6] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 1193 ms
+2022-03-30 17:56:50.036  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 17:56:50.037  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 17:56:50.137  INFO 1 --- [io-15679-exec-2] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 17:56:50.341  INFO 1 --- [io-15679-exec-6] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:4}] to ts-config-mongo:27017
+2022-03-30 17:56:50.345  INFO 1 --- [io-15679-exec-2] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:3}] to ts-config-mongo:27017
+2022-03-30 17:56:50.739  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 17:56:50.739  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 17:56:50.739  INFO 1 --- [io-15679-exec-2] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 17:56:54.790  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 17:56:54.795  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 17:56:55.073  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 17:56:55.082  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 17:56:55.966  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 17:56:56.035  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 17:58:49.015  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 17:58:49.062  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 17:58:49.615  INFO 1 --- [o-15679-exec-10] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 17:58:49.708  INFO 1 --- [o-15679-exec-10] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 17:58:53.736  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 17:58:53.824  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 17:58:56.791  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 17:58:56.971  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 17:59:29.211  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 17:59:29.387  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 17:59:32.674  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 17:59:32.783  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 17:59:48.641  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 17:59:48.742  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 17:59:50.942  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 17:59:50.961  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:00:09.043  INFO 1 --- [io-15679-exec-2] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:00:09.163  INFO 1 --- [io-15679-exec-2] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:00:11.017  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:00:11.033  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:00:21.830  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:00:21.835  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:00:22.431  INFO 1 --- [o-15679-exec-10] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:00:22.437  INFO 1 --- [o-15679-exec-10] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:00:36.437  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:00:36.441  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:00:37.626  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:00:37.636  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:00:47.885  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:00:47.888  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:00:48.492  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:00:48.501  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:00:53.929  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:00:53.933  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:00:54.787  INFO 1 --- [o-15679-exec-10] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:00:54.792  INFO 1 --- [o-15679-exec-10] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:00:58.365  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:00:58.379  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:00:58.966  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:00:58.973  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:01:00.693  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:01:00.700  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:01:01.199  INFO 1 --- [io-15679-exec-2] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:01:01.203  INFO 1 --- [io-15679-exec-2] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:01:08.978  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:01:08.981  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:01:09.319  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:01:09.325  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:01:19.070  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:01:19.074  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:01:19.277  INFO 1 --- [o-15679-exec-10] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:01:19.281  INFO 1 --- [o-15679-exec-10] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:01:20.965  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:01:20.968  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:01:21.370  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:01:21.377  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:01:27.661  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:01:27.669  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:01:28.456  INFO 1 --- [io-15679-exec-2] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:01:28.463  INFO 1 --- [io-15679-exec-2] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:01:34.198  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:01:34.202  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:01:34.577  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:01:34.581  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:01:49.939  INFO 1 --- [o-15679-exec-10] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:01:49.943  INFO 1 --- [o-15679-exec-10] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:01:50.306  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:01:50.314  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:01:58.163  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:01:58.167  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:01:58.399  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:01:58.405  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:02:02.287  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:02:02.291  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:02:02.530  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:02:02.533  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:02:12.214  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:02:12.222  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:02:12.709  INFO 1 --- [o-15679-exec-10] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:02:12.715  INFO 1 --- [o-15679-exec-10] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:02:13.891  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:02:13.897  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:02:15.430  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:02:15.440  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:03:05.023  INFO 1 --- [fig-mongo:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:5, serverValue:5}] to ts-config-mongo:27017
+2022-03-30 18:03:14.525  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:03:14.529  INFO 1 --- [io-15679-exec-8] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:4, serverValue:3}] to ts-config-mongo:27017 because there was a socket exception raised on another connection from this pool.
+2022-03-30 18:03:14.531  INFO 1 --- [io-15679-exec-8] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:3, serverValue:4}] to ts-config-mongo:27017 because there was a socket exception raised on another connection from this pool.
+2022-03-30 18:03:14.589  INFO 1 --- [io-15679-exec-8] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:2}] to ts-config-mongo:27017 because there was a socket exception raised on another connection from this pool.
+2022-03-30 18:03:14.642  INFO 1 --- [io-15679-exec-8] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:6, serverValue:6}] to ts-config-mongo:27017
+2022-03-30 18:03:14.648  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:03:16.209  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:03:16.242  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:03:32.434  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:03:32.472  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:03:33.594  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:03:33.694  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:03:38.710  INFO 1 --- [io-15679-exec-2] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:03:38.745  INFO 1 --- [io-15679-exec-2] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:03:40.903  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:03:40.912  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:04:15.251  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:04:15.274  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:04:16.252  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:04:16.260  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:04:20.256  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:04:20.264  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:04:21.148  INFO 1 --- [io-15679-exec-2] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:04:21.155  INFO 1 --- [io-15679-exec-2] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:04:30.482  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:04:30.518  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:04:31.249  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:04:31.257  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:04:32.077  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:04:32.083  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:04:32.651  INFO 1 --- [o-15679-exec-10] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:04:32.658  INFO 1 --- [o-15679-exec-10] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:04:40.233  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:04:40.239  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:04:40.720  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:04:40.734  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:04:47.316  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:04:47.324  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:04:47.592  INFO 1 --- [io-15679-exec-2] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:04:47.599  INFO 1 --- [io-15679-exec-2] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:04:57.637  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:04:57.649  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:04:58.297  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:04:58.301  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:05:00.869  INFO 1 --- [o-15679-exec-10] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:05:00.876  INFO 1 --- [o-15679-exec-10] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:05:01.384  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:05:01.394  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:05:07.064  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:05:07.070  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:05:07.293  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:05:07.298  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:05:10.987  INFO 1 --- [io-15679-exec-2] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:05:10.994  INFO 1 --- [io-15679-exec-2] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:05:12.392  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:05:12.397  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:05:17.098  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:05:17.107  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:05:17.893  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:05:17.903  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:05:21.674  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:05:21.681  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:05:22.568  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:05:22.574  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:05:25.762  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:05:25.768  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:05:26.659  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:05:26.665  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:05:29.857  INFO 1 --- [io-15679-exec-2] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:05:29.863  INFO 1 --- [io-15679-exec-2] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:05:30.589  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:05:30.594  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:05:37.591  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:05:37.610  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:05:38.200  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:05:38.221  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:05:48.339  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:05:48.354  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:05:48.874  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:05:48.884  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:05:49.340  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:05:49.346  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:05:49.848  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:05:49.860  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:05:57.884  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:05:57.893  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:05:58.225  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:05:58.233  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:05:58.521  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:05:58.528  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:05:59.039  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:05:59.054  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:06:09.829  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:06:10.173  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:06:10.825  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:06:10.879  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:06:11.514  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:06:11.521  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:06:11.937  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:06:11.943  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:06:18.929  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:06:18.937  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:06:20.708  INFO 1 --- [o-15679-exec-10] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:06:20.721  INFO 1 --- [o-15679-exec-10] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:06:22.554  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:06:22.571  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:06:23.395  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:06:23.408  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:06:26.702  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:06:26.712  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:06:27.035  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:06:27.045  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:06:33.060  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:06:33.242  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:06:34.262  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:06:34.273  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:06:35.310  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:06:35.325  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:06:35.887  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:06:35.895  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:06:43.680  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:06:43.743  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:06:44.963  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:06:44.971  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:06:45.363  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:06:45.377  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:06:46.173  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:06:46.178  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:06:52.579  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:06:52.586  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:06:52.911  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:06:52.925  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:06:58.753  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:06:58.760  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:06:59.297  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:06:59.301  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:07:06.624  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:07:06.638  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:07:07.044  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:07:07.062  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:07:08.189  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:07:08.198  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:07:08.592  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:07:08.598  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:07:14.976  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:07:14.982  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:07:15.527  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:07:15.537  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:07:25.961  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:07:25.970  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:07:26.447  INFO 1 --- [o-15679-exec-10] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:07:26.452  INFO 1 --- [o-15679-exec-10] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:07:34.395  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:07:34.402  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:07:34.757  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:07:34.762  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:07:38.537  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:07:38.607  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:07:39.232  INFO 1 --- [io-15679-exec-2] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:07:39.239  INFO 1 --- [io-15679-exec-2] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:07:47.606  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:07:47.673  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:07:48.303  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:07:48.372  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:07:50.197  INFO 1 --- [o-15679-exec-10] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:07:50.275  INFO 1 --- [o-15679-exec-10] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:07:50.926  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:07:50.973  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:07:53.897  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:07:53.903  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:07:54.121  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:07:54.126  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:08:01.631  INFO 1 --- [io-15679-exec-2] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:08:01.653  INFO 1 --- [io-15679-exec-2] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:08:02.215  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:08:02.223  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:08:03.295  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:08:03.303  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:08:03.903  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:08:03.909  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:08:08.950  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:08:08.955  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:08:09.281  INFO 1 --- [o-15679-exec-10] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:08:09.288  INFO 1 --- [o-15679-exec-10] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:08:12.191  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:08:12.200  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:08:12.454  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:08:12.459  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:08:20.679  INFO 1 --- [io-15679-exec-2] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:08:20.688  INFO 1 --- [io-15679-exec-2] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:08:21.174  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:08:21.179  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:08:27.602  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:08:27.608  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:08:27.816  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:08:27.821  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:08:40.280  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:08:40.301  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:08:40.781  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:08:40.788  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:08:48.383  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:08:48.388  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:08:49.050  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:08:49.065  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:08:50.958  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:08:50.963  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:08:51.202  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:08:51.211  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:08:54.061  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:08:54.067  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:08:54.249  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:08:54.253  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:08:58.064  INFO 1 --- [o-15679-exec-10] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:08:58.281  INFO 1 --- [o-15679-exec-10] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:08:58.772  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:08:58.779  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:09:00.865  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:09:00.874  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:09:01.166  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:09:01.172  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:09:19.330  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:09:19.348  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:09:20.400  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:09:20.407  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:09:20.581  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:09:20.666  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:09:21.089  INFO 1 --- [o-15679-exec-10] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:09:21.106  INFO 1 --- [o-15679-exec-10] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:09:40.852  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:09:40.877  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:09:42.187  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:09:42.202  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:09:54.360  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:09:54.375  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:09:56.393  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:09:56.407  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:10:13.782  INFO 1 --- [o-15679-exec-10] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:10:13.791  INFO 1 --- [o-15679-exec-10] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:10:14.485  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:10:14.498  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:10:18.537  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:10:18.661  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:10:20.366  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:10:20.408  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:10:33.638  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:10:33.658  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:10:34.237  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:10:34.246  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:10:39.189  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:10:39.200  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:10:39.587  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:10:39.596  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:10:45.052  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:10:45.059  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:10:45.550  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:10:45.792  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:10:54.566  INFO 1 --- [io-15679-exec-2] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:10:54.572  INFO 1 --- [io-15679-exec-2] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:10:54.800  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:10:54.813  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:10:55.823  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:10:55.834  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:10:56.110  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:10:56.118  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:11:11.052  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:11:11.057  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:11:11.296  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:11:11.300  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:11:13.259  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:11:13.264  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:11:13.500  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:11:13.506  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:11:20.504  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:11:20.510  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:11:20.727  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:11:20.732  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:11:28.237  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:11:28.242  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:11:28.880  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:11:28.889  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:11:29.071  INFO 1 --- [o-15679-exec-10] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:11:29.081  INFO 1 --- [o-15679-exec-10] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:11:29.480  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:11:29.490  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:11:34.767  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:11:34.773  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:11:35.547  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:11:35.559  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:11:36.649  INFO 1 --- [io-15679-exec-2] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:11:36.662  INFO 1 --- [io-15679-exec-2] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:11:39.435  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:11:39.532  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:11:57.217  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:11:57.222  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:11:57.910  INFO 1 --- [o-15679-exec-10] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:11:57.913  INFO 1 --- [o-15679-exec-10] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:11:58.616  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:11:58.624  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:11:59.122  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:11:59.125  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:12:05.710  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:12:05.715  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:12:06.515  INFO 1 --- [io-15679-exec-2] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:12:06.546  INFO 1 --- [io-15679-exec-2] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:12:13.392  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:12:13.401  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:12:14.032  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:12:14.044  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:12:26.078  INFO 1 --- [o-15679-exec-10] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:12:26.084  INFO 1 --- [o-15679-exec-10] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:12:26.408  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:12:26.426  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:12:26.949  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:12:26.979  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:12:27.341  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:12:27.352  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:12:36.738  INFO 1 --- [io-15679-exec-2] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:12:36.745  INFO 1 --- [io-15679-exec-2] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:12:37.326  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:12:37.341  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:12:41.387  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:12:41.394  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:12:41.901  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:12:41.913  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:12:43.833  INFO 1 --- [o-15679-exec-10] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:12:43.839  INFO 1 --- [o-15679-exec-10] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:12:44.511  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:12:44.522  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:12:50.125  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:12:50.133  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:12:50.325  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:12:50.331  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:12:52.359  INFO 1 --- [io-15679-exec-2] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:12:52.364  INFO 1 --- [io-15679-exec-2] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:12:52.522  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:12:52.531  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:12:55.661  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:12:55.667  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:12:56.067  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:12:56.071  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:12:59.349  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:12:59.356  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:13:00.051  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:13:00.056  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:13:15.984  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:13:15.997  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:13:16.292  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:13:16.299  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:13:23.126  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:13:23.137  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:13:23.509  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:13:23.521  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:13:27.825  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:13:27.828  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:13:27.996  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:13:28.015  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:13:38.574  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:13:38.578  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:13:38.791  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:13:38.797  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:13:43.585  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:13:43.589  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:13:43.885  INFO 1 --- [io-15679-exec-2] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:13:43.888  INFO 1 --- [io-15679-exec-2] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:13:48.065  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:13:48.070  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:13:48.485  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:13:48.489  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:13:49.023  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:13:49.028  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:13:49.151  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:13:49.157  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:13:57.231  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:13:57.236  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:13:57.989  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:13:57.995  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:14:07.534  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:14:07.564  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:14:07.990  INFO 1 --- [io-15679-exec-2] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:14:07.999  INFO 1 --- [io-15679-exec-2] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:14:16.360  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:14:16.365  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:14:16.562  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:14:16.569  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:14:29.259  INFO 1 --- [o-15679-exec-10] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:14:29.263  INFO 1 --- [o-15679-exec-10] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:14:29.633  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:14:29.638  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:15:28.429  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:15:28.829  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:15:43.986  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:15:44.198  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:15:56.179  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:15:56.196  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:15:56.795  INFO 1 --- [io-15679-exec-2] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:15:56.802  INFO 1 --- [io-15679-exec-2] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:15:57.793  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:15:57.797  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:15:58.278  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:15:58.282  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:16:09.798  INFO 1 --- [o-15679-exec-10] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:16:09.834  INFO 1 --- [o-15679-exec-10] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:16:11.649  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:16:11.698  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:16:16.814  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:16:16.840  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:16:17.449  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:16:17.453  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:16:22.309  INFO 1 --- [io-15679-exec-2] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:16:22.348  INFO 1 --- [io-15679-exec-2] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:16:23.087  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:16:23.105  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:16:36.831  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:16:36.852  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:16:37.405  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:16:37.422  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:16:43.823  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:16:43.832  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:16:47.888  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:16:47.907  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:17:47.431  INFO 1 --- [o-15679-exec-10] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:17:47.445  INFO 1 --- [o-15679-exec-10] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:17:47.991  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:17:47.997  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:17:48.116  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:17:48.127  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:17:48.581  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:17:48.598  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:18:00.883  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:18:00.903  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:18:01.510  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:18:01.515  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:18:08.289  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:18:08.299  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:18:09.136  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:18:09.144  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:18:12.085  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:18:12.113  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:18:12.768  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:18:12.773  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:18:17.717  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:18:17.725  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:18:17.993  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:18:18.025  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:18:39.970  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:18:39.979  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:18:40.917  INFO 1 --- [o-15679-exec-10] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:18:40.923  INFO 1 --- [o-15679-exec-10] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:18:52.448  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:18:52.485  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:18:53.285  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:18:53.303  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:18:53.714  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:18:53.726  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:18:54.122  INFO 1 --- [io-15679-exec-2] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:18:54.160  INFO 1 --- [io-15679-exec-2] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:19:02.032  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:19:02.049  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:19:02.754  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:19:02.767  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:19:10.889  INFO 1 --- [o-15679-exec-10] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:19:10.897  INFO 1 --- [o-15679-exec-10] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:19:12.192  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:19:12.208  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:19:19.380  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:19:19.384  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:19:19.789  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:19:19.795  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:19:20.181  INFO 1 --- [io-15679-exec-2] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:19:20.188  INFO 1 --- [io-15679-exec-2] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:19:20.787  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:19:20.806  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:19:35.726  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:19:35.746  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:19:37.555  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:19:37.595  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:19:46.855  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:19:46.865  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:19:47.238  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:19:47.244  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:19:53.580  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:19:53.586  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:19:54.719  INFO 1 --- [io-15679-exec-2] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:19:54.729  INFO 1 --- [io-15679-exec-2] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:19:55.326  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:19:55.334  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:19:55.634  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:19:55.643  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:20:02.254  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:20:02.259  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:20:02.541  INFO 1 --- [o-15679-exec-10] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:20:02.549  INFO 1 --- [o-15679-exec-10] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:20:08.157  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:20:08.169  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:20:08.890  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:20:09.067  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:20:19.145  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:20:19.289  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:20:20.779  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:20:20.791  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:20:58.870  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:20:58.887  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:21:00.048  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:21:00.058  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:21:16.483  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:21:16.508  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:21:17.482  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:21:17.561  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:21:22.341  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:21:22.363  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:21:23.020  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:21:23.027  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:21:30.935  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:21:30.942  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:21:31.437  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:21:31.451  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:21:33.284  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:21:33.290  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:21:33.492  INFO 1 --- [io-15679-exec-2] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:21:33.496  INFO 1 --- [io-15679-exec-2] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:21:45.977  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:21:45.984  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:21:46.240  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:21:46.248  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:21:55.420  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:21:55.429  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:21:55.743  INFO 1 --- [o-15679-exec-10] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:21:55.753  INFO 1 --- [o-15679-exec-10] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:22:00.246  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:22:00.250  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:22:00.906  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:22:00.911  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:22:02.023  INFO 1 --- [io-15679-exec-2] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:22:02.031  INFO 1 --- [io-15679-exec-2] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:22:02.286  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:22:02.291  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:22:06.125  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:22:06.134  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:22:06.359  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:22:06.363  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:22:15.360  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:22:15.368  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:22:15.613  INFO 1 --- [o-15679-exec-10] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:22:15.619  INFO 1 --- [o-15679-exec-10] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:22:31.026  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:22:31.041  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:22:31.563  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:22:31.571  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:22:33.040  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:22:33.044  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:22:33.474  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:22:33.482  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:22:38.976  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:22:38.985  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:22:39.206  INFO 1 --- [o-15679-exec-10] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:22:39.214  INFO 1 --- [o-15679-exec-10] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:22:41.482  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:22:41.488  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:22:41.881  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:22:41.887  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:22:44.453  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:22:44.459  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:22:44.848  INFO 1 --- [io-15679-exec-2] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:22:44.854  INFO 1 --- [io-15679-exec-2] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:22:53.220  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:22:53.247  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:22:54.377  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:22:54.384  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:23:03.406  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:23:03.423  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:23:06.132  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:23:06.173  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:23:17.428  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:23:17.433  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:23:17.679  INFO 1 --- [io-15679-exec-2] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:23:17.686  INFO 1 --- [io-15679-exec-2] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:23:31.227  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:23:31.237  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:23:32.853  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:23:32.881  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:23:34.746  INFO 1 --- [io-15679-exec-9] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:23:34.797  INFO 1 --- [io-15679-exec-9] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:23:36.206  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:23:36.277  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:23:44.944  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:23:44.954  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:23:45.191  INFO 1 --- [io-15679-exec-2] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:23:45.195  INFO 1 --- [io-15679-exec-2] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:23:54.105  INFO 1 --- [io-15679-exec-4] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:23:54.110  INFO 1 --- [io-15679-exec-4] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:23:54.420  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:23:54.423  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:24:00.317  INFO 1 --- [o-15679-exec-10] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:24:00.321  INFO 1 --- [o-15679-exec-10] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:24:00.486  INFO 1 --- [io-15679-exec-1] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:24:00.489  INFO 1 --- [io-15679-exec-1] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:24:00.578  INFO 1 --- [io-15679-exec-3] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:24:00.583  INFO 1 --- [io-15679-exec-3] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:24:01.167  INFO 1 --- [io-15679-exec-5] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:24:01.174  INFO 1 --- [io-15679-exec-5] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:24:08.161  INFO 1 --- [io-15679-exec-2] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:24:08.167  INFO 1 --- [io-15679-exec-2] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:24:08.497  INFO 1 --- [io-15679-exec-6] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:24:08.503  INFO 1 --- [io-15679-exec-6] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:24:12.081  INFO 1 --- [io-15679-exec-7] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:24:12.087  INFO 1 --- [io-15679-exec-7] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success
+2022-03-30 18:24:12.361  INFO 1 --- [io-15679-exec-8] config.controller.ConfigController       : Retrieve config: DirectTicketAllocationProportion
+2022-03-30 18:24:12.365  INFO 1 --- [io-15679-exec-8] config.service.ConfigServiceImpl         : Query config DirectTicketAllocationProportion success

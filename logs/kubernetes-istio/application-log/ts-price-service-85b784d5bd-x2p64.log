@@ -1,0 +1,657 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.22.RELEASE)
+
+2022-03-30 17:17:36.001  INFO 1 --- [           main] price.PriceApplication                   : Starting PriceApplication v1.0 on ts-price-service-85b784d5bd-x2p64 with PID 1 (/app/ts-price-service-1.0.jar started by root in /)
+2022-03-30 17:17:36.617  INFO 1 --- [           main] price.PriceApplication                   : No active profile set, falling back to default profiles: default
+2022-03-30 17:17:42.352  INFO 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4dcbadb4: startup date [Wed Mar 30 17:17:42 CST 2022]; root of context hierarchy
+2022-03-30 17:19:32.743  INFO 1 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2022-03-30 17:20:03.800  INFO 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2022-03-30 17:20:04.385  INFO 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2022-03-30 17:20:19.460  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$8eef4cb9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-30 17:20:19.898  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-30 17:20:19.973  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@618b19ad' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-30 17:20:20.804  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$b3c3ef6b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-30 17:20:22.429  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-30 17:20:28.670  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-30 17:20:28.801  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-30 17:21:08.517  INFO 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 16579 (http)
+2022-03-30 17:21:11.155  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-30 17:21:11.161  INFO 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.43
+2022-03-30 17:21:20.669  INFO 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-30 17:21:20.697  INFO 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 218418 ms
+2022-03-30 17:22:06.858  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2022-03-30 17:22:07.106  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2022-03-30 17:22:07.160  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2022-03-30 17:22:07.160  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2022-03-30 17:22:07.306  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2022-03-30 17:22:07.417  INFO 1 --- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2022-03-30 17:22:07.417  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2022-03-30 17:22:07.456  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2022-03-30 17:22:07.464  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2022-03-30 17:24:00.511  INFO 1 --- [           main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[ts-price-mongo:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2022-03-30 17:24:00.517  INFO 1 --- [           main] org.mongodb.driver.cluster               : Adding discovered server ts-price-mongo:27017 to client view of cluster
+2022-03-30 17:24:15.037  INFO 1 --- [ice-mongo:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:1}] to ts-price-mongo:27017
+2022-03-30 17:24:18.656  INFO 1 --- [ice-mongo:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=ts-price-mongo:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[5, 0, 6]}, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, roundTripTimeNanos=3256307000}
+2022-03-30 17:24:19.110  INFO 1 --- [ice-mongo:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2022-03-30 17:25:33.005  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/priceservice/prices/welcome],methods=[GET]}" onto public java.lang.String price.controller.PriceController.home()
+2022-03-30 17:25:33.576  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/priceservice/prices],methods=[GET]}" onto public org.springframework.http.HttpEntity price.controller.PriceController.queryAll(org.springframework.http.HttpHeaders)
+2022-03-30 17:25:33.633  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/priceservice/prices],methods=[PUT]}" onto public org.springframework.http.HttpEntity price.controller.PriceController.update(price.entity.PriceConfig,org.springframework.http.HttpHeaders)
+2022-03-30 17:25:33.634  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/priceservice/prices],methods=[DELETE]}" onto public org.springframework.http.HttpEntity price.controller.PriceController.delete(price.entity.PriceConfig,org.springframework.http.HttpHeaders)
+2022-03-30 17:25:33.657  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/priceservice/prices],methods=[POST]}" onto public org.springframework.http.HttpEntity<?> price.controller.PriceController.create(price.entity.PriceConfig,org.springframework.http.HttpHeaders)
+2022-03-30 17:25:33.658  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/priceservice/prices/{routeId}/{trainType}],methods=[GET]}" onto public org.springframework.http.HttpEntity price.controller.PriceController.query(java.lang.String,java.lang.String,org.springframework.http.HttpHeaders)
+2022-03-30 17:25:33.704  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2022-03-30 17:25:33.763  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2022-03-30 17:25:33.831  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2022-03-30 17:25:33.854  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2022-03-30 17:25:34.050  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2022-03-30 17:25:34.054  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2022-03-30 17:26:00.954  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2022-03-30 17:26:00.986  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2022-03-30 17:26:01.027  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2022-03-30 17:26:01.056  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2022-03-30 17:26:01.095  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2022-03-30 17:26:01.305  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2022-03-30 17:26:01.339  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2022-03-30 17:26:01.349  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2022-03-30 17:26:01.388  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2022-03-30 17:26:01.433  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2022-03-30 17:26:01.456  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2022-03-30 17:26:01.484  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2022-03-30 17:26:01.556  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2022-03-30 17:26:01.583  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2022-03-30 17:26:01.697  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2022-03-30 17:26:01.740  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2022-03-30 17:26:01.741  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2022-03-30 17:26:16.413  INFO 1 --- [           main] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default security password: afd5fe5a-da04-47f6-a395-4e3cfe5ddaf9
+
+2022-03-30 17:26:31.465  INFO 1 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@66c61024, org.springframework.security.web.context.SecurityContextPersistenceFilter@4716be8b, org.springframework.security.web.header.HeaderWriterFilter@5f354bcf, org.springframework.security.web.authentication.logout.LogoutFilter@ca30bc1, edu.fudan.common.security.jwt.JWTFilter@61fe30, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2f67b837, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6cce16f4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@c9d0d6, org.springframework.security.web.session.SessionManagementFilter@78641d23, org.springframework.security.web.access.ExceptionTranslationFilter@558bdf1f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@60856961]
+2022-03-30 17:26:35.751  INFO 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-03-30 17:26:35.757  INFO 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-03-30 17:26:38.513  INFO 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-03-30 17:26:39.939  INFO 1 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration$LazyEndpointPathRequestMatcher@602e0143, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c07545f, org.springframework.security.web.context.SecurityContextPersistenceFilter@5ba88be8, org.springframework.security.web.header.HeaderWriterFilter@5d066c7d, org.springframework.web.filter.CorsFilter@e57b96d, org.springframework.security.web.authentication.logout.LogoutFilter@1603cd68, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@13ad5cd3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@56928307, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3899782c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32c726ee, org.springframework.security.web.session.SessionManagementFilter@1e461e41, org.springframework.security.web.access.ExceptionTranslationFilter@3b96c42e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4f0100a7]
+2022-03-30 17:28:21.076  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4dcbadb4: startup date [Wed Mar 30 17:17:42 CST 2022]; root of context hierarchy
+2022-03-30 17:28:49.056  INFO 1 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2022-03-30 17:29:52.906  INFO 1 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2022-03-30 17:29:54.171  INFO 1 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2022-03-30 17:29:58.908  INFO 1 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2022-03-30 17:29:58.952  INFO 1 --- [           main] o.s.i.channel.PublishSubscribeChannel    : Channel 'ts-price-service:16579.errorChannel' has 1 subscriber(s).
+2022-03-30 17:29:58.953  INFO 1 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2022-03-30 17:30:00.180  INFO 1 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-03-30 17:30:04.328  INFO 1 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-03-30 17:30:05.081  INFO 1 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-03-30 17:30:10.915  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findByPrincipalAndAfterAndTypeUsingGET_1
+2022-03-30 17:30:21.811  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_1
+2022-03-30 17:30:21.965  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_2
+2022-03-30 17:30:22.058  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_3
+2022-03-30 17:30:22.174  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_4
+2022-03-30 17:30:22.260  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_5
+2022-03-30 17:30:22.374  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_6
+2022-03-30 17:30:22.493  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_7
+2022-03-30 17:30:22.569  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_8
+2022-03-30 17:30:22.668  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_9
+2022-03-30 17:30:22.767  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_10
+2022-03-30 17:30:22.871  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_11
+2022-03-30 17:30:22.984  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_12
+2022-03-30 17:30:23.089  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_13
+2022-03-30 17:30:23.318  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_14
+2022-03-30 17:30:23.381  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_15
+2022-03-30 17:30:23.695  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_16
+2022-03-30 17:30:23.784  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_17
+2022-03-30 17:30:23.825  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_18
+2022-03-30 17:30:23.835  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_19
+2022-03-30 17:30:24.081  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_20
+2022-03-30 17:30:24.132  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_21
+2022-03-30 17:30:24.373  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_22
+2022-03-30 17:30:24.475  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_23
+2022-03-30 17:30:24.613  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: valueUsingGET_1
+2022-03-30 17:30:29.620  INFO 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 16579 (http)
+2022-03-30 17:30:29.779  INFO 1 --- [           main] price.service.PriceServiceImpl           : [Create New Price Config]
+2022-03-30 17:30:37.573  INFO 1 --- [           main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:2}] to ts-price-mongo:27017
+2022-03-30 17:30:41.391  INFO 1 --- [           main] price.service.PriceServiceImpl           : [Create New Price Config]
+2022-03-30 17:30:41.533  INFO 1 --- [           main] price.service.PriceServiceImpl           : [Create New Price Config]
+2022-03-30 17:30:41.628  INFO 1 --- [           main] price.service.PriceServiceImpl           : [Create New Price Config]
+2022-03-30 17:30:41.752  INFO 1 --- [           main] price.service.PriceServiceImpl           : [Create New Price Config]
+2022-03-30 17:30:41.850  INFO 1 --- [           main] price.service.PriceServiceImpl           : [Create New Price Config]
+2022-03-30 17:30:41.946  INFO 1 --- [           main] price.service.PriceServiceImpl           : [Create New Price Config]
+2022-03-30 17:30:42.055  INFO 1 --- [           main] price.service.PriceServiceImpl           : [Create New Price Config]
+2022-03-30 17:30:42.213  INFO 1 --- [           main] price.service.PriceServiceImpl           : [Create New Price Config]
+2022-03-30 17:30:42.305  INFO 1 --- [           main] price.service.PriceServiceImpl           : [Create New Price Config]
+2022-03-30 17:30:42.436  INFO 1 --- [           main] price.PriceApplication                   : Started PriceApplication in 820.427 seconds (JVM running for 857.988)
+2022-03-30 17:56:08.428  INFO 1 --- [io-16579-exec-7] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2022-03-30 17:56:08.503  INFO 1 --- [io-16579-exec-7] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2022-03-30 17:56:09.608  INFO 1 --- [io-16579-exec-7] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 1105 ms
+2022-03-30 17:56:15.567  INFO 1 --- [io-16579-exec-7] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 17:56:15.567  INFO 1 --- [io-16579-exec-3] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 17:56:15.568  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 17:56:15.568  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 17:56:15.670  INFO 1 --- [io-16579-exec-6] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 17:56:15.766  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 17:56:16.266  INFO 1 --- [io-16579-exec-3] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:3}] to ts-price-mongo:27017
+2022-03-30 17:56:16.272  INFO 1 --- [io-16579-exec-6] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:4}] to ts-price-mongo:27017
+2022-03-30 17:56:17.172  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 17:56:17.172  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 17:56:17.173  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 17:58:43.010  INFO 1 --- [io-16579-exec-1] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 17:58:43.032  INFO 1 --- [io-16579-exec-1] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 17:58:43.182  INFO 1 --- [io-16579-exec-1] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 17:58:43.618  INFO 1 --- [io-16579-exec-4] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 17:58:43.619  INFO 1 --- [io-16579-exec-4] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 17:58:43.909  INFO 1 --- [io-16579-exec-4] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 17:59:20.916  INFO 1 --- [io-16579-exec-7] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 17:59:20.917  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 17:59:21.075  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 17:59:44.941  INFO 1 --- [io-16579-exec-1] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 17:59:44.942  INFO 1 --- [io-16579-exec-1] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 17:59:45.142  INFO 1 --- [io-16579-exec-1] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:00:07.045  INFO 1 --- [io-16579-exec-9] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:00:07.046  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:00:07.146  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:00:20.637  INFO 1 --- [io-16579-exec-3] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:00:20.638  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:00:20.646  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:00:35.406  INFO 1 --- [io-16579-exec-8] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:00:35.413  INFO 1 --- [io-16579-exec-8] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:00:35.428  INFO 1 --- [io-16579-exec-8] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:00:47.401  INFO 1 --- [io-16579-exec-1] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:00:47.466  INFO 1 --- [io-16579-exec-1] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:00:47.475  INFO 1 --- [io-16579-exec-1] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:00:52.868  INFO 1 --- [io-16579-exec-5] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:00:52.868  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:00:52.880  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:00:57.889  INFO 1 --- [io-16579-exec-9] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:00:57.889  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:00:57.895  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:01:00.268  INFO 1 --- [o-16579-exec-10] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:01:00.268  INFO 1 --- [o-16579-exec-10] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:01:00.276  INFO 1 --- [o-16579-exec-10] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:01:08.495  INFO 1 --- [io-16579-exec-3] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:01:08.496  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:01:08.502  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:01:17.044  INFO 1 --- [io-16579-exec-8] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:01:17.044  INFO 1 --- [io-16579-exec-8] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:01:17.049  INFO 1 --- [io-16579-exec-8] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:01:20.131  INFO 1 --- [io-16579-exec-2] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:01:20.133  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:01:20.150  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:01:26.623  INFO 1 --- [io-16579-exec-4] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:01:26.624  INFO 1 --- [io-16579-exec-4] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:01:26.732  INFO 1 --- [io-16579-exec-4] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:01:33.752  INFO 1 --- [io-16579-exec-9] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:01:33.754  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:01:33.833  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:01:49.324  INFO 1 --- [io-16579-exec-7] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:01:49.324  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:01:49.330  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:01:57.754  INFO 1 --- [io-16579-exec-6] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:01:57.754  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:01:57.766  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:02:01.935  INFO 1 --- [io-16579-exec-2] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:02:01.935  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:02:01.999  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:02:11.307  INFO 1 --- [io-16579-exec-4] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:02:11.308  INFO 1 --- [io-16579-exec-4] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:02:11.362  INFO 1 --- [io-16579-exec-4] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:02:12.475  INFO 1 --- [io-16579-exec-5] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:02:12.477  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:02:12.561  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:03:10.699  INFO 1 --- [io-16579-exec-2] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:03:10.699  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:03:10.809  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:03:31.460  INFO 1 --- [io-16579-exec-5] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:03:31.461  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:03:31.495  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:03:37.620  INFO 1 --- [io-16579-exec-9] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:03:37.621  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:03:37.696  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:04:13.256  INFO 1 --- [io-16579-exec-8] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:04:13.257  INFO 1 --- [io-16579-exec-8] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:04:13.263  INFO 1 --- [io-16579-exec-8] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:04:19.262  INFO 1 --- [io-16579-exec-2] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:04:19.264  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:04:19.272  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:04:29.940  INFO 1 --- [io-16579-exec-4] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:04:29.940  INFO 1 --- [io-16579-exec-4] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:04:29.949  INFO 1 --- [io-16579-exec-4] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:04:31.152  INFO 1 --- [io-16579-exec-9] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:04:31.152  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:04:31.158  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:04:39.226  INFO 1 --- [o-16579-exec-10] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:04:39.227  INFO 1 --- [o-16579-exec-10] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:04:39.237  INFO 1 --- [o-16579-exec-10] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:04:46.615  INFO 1 --- [io-16579-exec-3] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:04:46.615  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:04:46.697  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:04:56.804  INFO 1 --- [io-16579-exec-8] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:04:56.804  INFO 1 --- [io-16579-exec-8] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:04:56.886  INFO 1 --- [io-16579-exec-8] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:05:00.563  INFO 1 --- [io-16579-exec-1] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:05:00.564  INFO 1 --- [io-16579-exec-1] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:05:00.593  INFO 1 --- [io-16579-exec-1] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:05:06.697  INFO 1 --- [io-16579-exec-4] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:05:06.698  INFO 1 --- [io-16579-exec-4] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:05:06.706  INFO 1 --- [io-16579-exec-4] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:05:09.907  INFO 1 --- [io-16579-exec-5] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:05:09.907  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:05:09.915  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:05:13.570  INFO 1 --- [o-16579-exec-10] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:05:13.570  INFO 1 --- [o-16579-exec-10] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:05:13.649  INFO 1 --- [o-16579-exec-10] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:05:20.550  INFO 1 --- [io-16579-exec-3] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:05:20.551  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:05:20.563  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:05:24.544  INFO 1 --- [io-16579-exec-6] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:05:24.544  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:05:24.550  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:05:28.535  INFO 1 --- [io-16579-exec-8] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:05:28.536  INFO 1 --- [io-16579-exec-8] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:05:28.613  INFO 1 --- [io-16579-exec-8] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:05:36.403  INFO 1 --- [io-16579-exec-1] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:05:36.416  INFO 1 --- [io-16579-exec-1] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:05:36.458  INFO 1 --- [io-16579-exec-1] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:05:47.692  INFO 1 --- [io-16579-exec-9] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:05:47.692  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:05:47.702  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:05:48.722  INFO 1 --- [o-16579-exec-10] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:05:48.722  INFO 1 --- [o-16579-exec-10] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:05:48.738  INFO 1 --- [o-16579-exec-10] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:05:57.154  INFO 1 --- [io-16579-exec-3] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:05:57.154  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:05:57.162  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:05:57.598  INFO 1 --- [io-16579-exec-6] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:05:57.600  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:05:57.612  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:06:08.470  INFO 1 --- [io-16579-exec-2] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:06:08.471  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:06:08.488  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:06:10.732  INFO 1 --- [io-16579-exec-4] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:06:10.732  INFO 1 --- [io-16579-exec-4] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:06:10.742  INFO 1 --- [io-16579-exec-4] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:06:18.218  INFO 1 --- [io-16579-exec-5] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:06:18.219  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:06:18.226  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:06:20.928  INFO 1 --- [o-16579-exec-10] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:06:20.933  INFO 1 --- [o-16579-exec-10] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:06:21.094  INFO 1 --- [o-16579-exec-10] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:06:25.896  INFO 1 --- [io-16579-exec-7] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:06:25.896  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:06:25.993  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:06:32.115  INFO 1 --- [io-16579-exec-6] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:06:32.179  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:06:32.195  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:06:34.664  INFO 1 --- [io-16579-exec-8] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:06:34.665  INFO 1 --- [io-16579-exec-8] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:06:34.677  INFO 1 --- [io-16579-exec-8] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:06:42.743  INFO 1 --- [io-16579-exec-1] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:06:42.755  INFO 1 --- [io-16579-exec-1] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:06:42.776  INFO 1 --- [io-16579-exec-1] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:06:44.394  INFO 1 --- [io-16579-exec-4] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:06:44.394  INFO 1 --- [io-16579-exec-4] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:06:44.402  INFO 1 --- [io-16579-exec-4] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:06:52.252  INFO 1 --- [io-16579-exec-9] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:06:52.252  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:06:52.261  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:06:58.302  INFO 1 --- [o-16579-exec-10] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:06:58.303  INFO 1 --- [o-16579-exec-10] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:06:58.350  INFO 1 --- [o-16579-exec-10] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:07:05.917  INFO 1 --- [io-16579-exec-3] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:07:05.917  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:07:05.942  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:07:07.580  INFO 1 --- [io-16579-exec-6] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:07:07.581  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:07:07.594  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:07:14.487  INFO 1 --- [io-16579-exec-2] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:07:14.487  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:07:14.507  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:07:25.318  INFO 1 --- [io-16579-exec-4] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:07:25.318  INFO 1 --- [io-16579-exec-4] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:07:25.323  INFO 1 --- [io-16579-exec-4] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:07:33.268  INFO 1 --- [io-16579-exec-9] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:07:33.270  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:07:33.284  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:07:37.350  INFO 1 --- [o-16579-exec-10] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:07:37.358  INFO 1 --- [o-16579-exec-10] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:07:37.385  INFO 1 --- [o-16579-exec-10] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:07:46.318  INFO 1 --- [io-16579-exec-3] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:07:46.319  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:07:46.349  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:07:49.112  INFO 1 --- [io-16579-exec-6] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:07:49.112  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:07:49.180  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:07:53.567  INFO 1 --- [io-16579-exec-1] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:07:53.567  INFO 1 --- [io-16579-exec-1] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:07:53.576  INFO 1 --- [io-16579-exec-1] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:08:00.446  INFO 1 --- [io-16579-exec-5] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:08:00.447  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:08:00.471  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:08:02.721  INFO 1 --- [io-16579-exec-9] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:08:02.723  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:08:02.735  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:08:08.686  INFO 1 --- [o-16579-exec-10] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:08:08.686  INFO 1 --- [o-16579-exec-10] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:08:08.691  INFO 1 --- [o-16579-exec-10] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:08:11.653  INFO 1 --- [io-16579-exec-3] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:08:11.654  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:08:11.662  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:08:20.064  INFO 1 --- [io-16579-exec-6] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:08:20.066  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:08:20.072  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:08:27.058  INFO 1 --- [io-16579-exec-2] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:08:27.058  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:08:27.066  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:08:39.378  INFO 1 --- [io-16579-exec-4] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:08:39.379  INFO 1 --- [io-16579-exec-4] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:08:39.441  INFO 1 --- [io-16579-exec-4] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:08:48.133  INFO 1 --- [io-16579-exec-9] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:08:48.133  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:08:48.139  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:08:50.620  INFO 1 --- [io-16579-exec-7] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:08:50.620  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:08:50.628  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:08:53.823  INFO 1 --- [io-16579-exec-3] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:08:53.824  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:08:53.835  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:08:57.260  INFO 1 --- [io-16579-exec-6] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:08:57.260  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:08:57.266  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:09:00.375  INFO 1 --- [io-16579-exec-2] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:09:00.376  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:09:00.423  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:09:17.842  INFO 1 --- [io-16579-exec-4] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:09:17.842  INFO 1 --- [io-16579-exec-4] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:09:17.848  INFO 1 --- [io-16579-exec-4] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:09:18.315  INFO 1 --- [io-16579-exec-5] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:09:18.315  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:09:18.389  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:09:39.240  INFO 1 --- [io-16579-exec-7] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:09:39.246  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:09:39.289  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:09:51.104  INFO 1 --- [io-16579-exec-8] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:09:51.104  INFO 1 --- [io-16579-exec-8] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:09:51.184  INFO 1 --- [io-16579-exec-8] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:10:12.924  INFO 1 --- [io-16579-exec-5] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:10:12.924  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:10:13.018  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:10:15.237  INFO 1 --- [io-16579-exec-9] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:10:15.238  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:10:15.406  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:10:32.153  INFO 1 --- [io-16579-exec-3] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:10:32.153  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:10:32.158  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:10:38.663  INFO 1 --- [io-16579-exec-6] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:10:38.697  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:10:38.799  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:10:44.584  INFO 1 --- [io-16579-exec-2] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:10:44.584  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:10:44.595  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:10:54.266  INFO 1 --- [io-16579-exec-4] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:10:54.267  INFO 1 --- [io-16579-exec-4] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:10:54.272  INFO 1 --- [io-16579-exec-4] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:10:55.301  INFO 1 --- [io-16579-exec-5] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:10:55.301  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:10:55.362  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:11:10.774  INFO 1 --- [io-16579-exec-7] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:11:10.775  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:11:10.779  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:11:12.893  INFO 1 --- [io-16579-exec-3] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:11:12.897  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:11:12.906  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:11:20.260  INFO 1 --- [io-16579-exec-8] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:11:20.260  INFO 1 --- [io-16579-exec-8] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:11:20.267  INFO 1 --- [io-16579-exec-8] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:11:27.708  INFO 1 --- [io-16579-exec-2] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:11:27.708  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:11:27.715  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:11:28.235  INFO 1 --- [io-16579-exec-1] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:11:28.237  INFO 1 --- [io-16579-exec-1] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:11:28.244  INFO 1 --- [io-16579-exec-1] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:11:33.764  INFO 1 --- [io-16579-exec-5] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:11:33.764  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:11:33.771  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:11:35.539  INFO 1 --- [io-16579-exec-9] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:11:35.539  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:11:35.548  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:11:56.566  INFO 1 --- [io-16579-exec-3] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:11:56.566  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:11:56.575  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:11:57.751  INFO 1 --- [io-16579-exec-6] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:11:57.752  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:11:57.759  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:12:04.511  INFO 1 --- [io-16579-exec-2] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:12:04.511  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:12:04.518  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:12:12.657  INFO 1 --- [io-16579-exec-4] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:12:12.657  INFO 1 --- [io-16579-exec-4] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:12:12.668  INFO 1 --- [io-16579-exec-4] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:12:25.198  INFO 1 --- [o-16579-exec-10] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:12:25.198  INFO 1 --- [o-16579-exec-10] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:12:25.211  INFO 1 --- [o-16579-exec-10] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:12:26.030  INFO 1 --- [io-16579-exec-7] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:12:26.031  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:12:26.040  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:12:35.900  INFO 1 --- [io-16579-exec-6] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:12:35.900  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:12:35.971  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:12:40.833  INFO 1 --- [io-16579-exec-2] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:12:40.833  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:12:40.846  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:12:43.254  INFO 1 --- [io-16579-exec-1] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:12:43.254  INFO 1 --- [io-16579-exec-1] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:12:43.266  INFO 1 --- [io-16579-exec-1] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:12:49.870  INFO 1 --- [io-16579-exec-5] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:12:49.871  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:12:49.879  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:12:52.092  INFO 1 --- [io-16579-exec-9] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:12:52.093  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:12:52.105  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:12:54.441  INFO 1 --- [o-16579-exec-10] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:12:54.442  INFO 1 --- [o-16579-exec-10] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:12:54.453  INFO 1 --- [o-16579-exec-10] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:12:58.605  INFO 1 --- [io-16579-exec-7] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:12:58.606  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:12:58.612  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:13:15.508  INFO 1 --- [io-16579-exec-8] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:13:15.508  INFO 1 --- [io-16579-exec-8] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:13:15.588  INFO 1 --- [io-16579-exec-8] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:13:22.695  INFO 1 --- [io-16579-exec-1] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:13:22.695  INFO 1 --- [io-16579-exec-1] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:13:22.716  INFO 1 --- [io-16579-exec-1] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:13:27.626  INFO 1 --- [io-16579-exec-4] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:13:27.626  INFO 1 --- [io-16579-exec-4] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:13:27.630  INFO 1 --- [io-16579-exec-4] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:13:38.400  INFO 1 --- [io-16579-exec-9] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:13:38.400  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:13:38.406  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:13:43.066  INFO 1 --- [io-16579-exec-7] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:13:43.066  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:13:43.073  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:13:47.688  INFO 1 --- [io-16579-exec-3] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:13:47.688  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:13:47.694  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:13:48.712  INFO 1 --- [io-16579-exec-6] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:13:48.712  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:13:48.719  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:13:56.679  INFO 1 --- [io-16579-exec-2] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:13:56.679  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:13:56.688  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:14:06.990  INFO 1 --- [io-16579-exec-4] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:14:06.990  INFO 1 --- [io-16579-exec-4] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:14:06.995  INFO 1 --- [io-16579-exec-4] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:14:16.107  INFO 1 --- [io-16579-exec-9] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:14:16.107  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:14:16.111  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:14:28.916  INFO 1 --- [io-16579-exec-7] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:14:28.916  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:14:28.927  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:15:24.485  INFO 1 --- [io-16579-exec-9] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:15:24.486  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:15:25.002  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:15:55.376  INFO 1 --- [io-16579-exec-8] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:15:55.376  INFO 1 --- [io-16579-exec-8] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:15:55.389  INFO 1 --- [io-16579-exec-8] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:15:56.931  INFO 1 --- [io-16579-exec-2] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:15:56.931  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:15:56.939  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:16:05.704  INFO 1 --- [io-16579-exec-4] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:16:05.705  INFO 1 --- [io-16579-exec-4] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:16:05.720  INFO 1 --- [io-16579-exec-4] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:16:15.494  INFO 1 --- [io-16579-exec-9] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:16:15.494  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:16:15.517  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:16:19.807  INFO 1 --- [io-16579-exec-7] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:16:19.809  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:16:19.875  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:16:35.620  INFO 1 --- [io-16579-exec-6] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:16:35.620  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:16:35.776  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:16:42.955  INFO 1 --- [io-16579-exec-2] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:16:42.955  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:16:43.044  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:17:46.814  INFO 1 --- [io-16579-exec-8] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:17:46.815  INFO 1 --- [io-16579-exec-8] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:17:46.872  INFO 1 --- [io-16579-exec-8] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:17:47.286  INFO 1 --- [io-16579-exec-2] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:17:47.286  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:17:47.370  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:17:59.719  INFO 1 --- [io-16579-exec-5] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:17:59.719  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:17:59.780  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:18:07.402  INFO 1 --- [io-16579-exec-9] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:18:07.402  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:18:07.418  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:18:10.413  INFO 1 --- [io-16579-exec-7] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:18:10.414  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:18:10.431  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:18:17.277  INFO 1 --- [io-16579-exec-3] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:18:17.279  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:18:17.287  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:18:37.623  INFO 1 --- [io-16579-exec-2] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:18:37.635  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:18:37.651  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:18:50.160  INFO 1 --- [io-16579-exec-5] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:18:50.160  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:18:50.173  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:18:52.700  INFO 1 --- [io-16579-exec-9] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:18:52.700  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:18:52.720  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:19:00.934  INFO 1 --- [io-16579-exec-7] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:19:00.934  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:19:00.999  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:19:09.896  INFO 1 --- [io-16579-exec-6] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:19:09.896  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:19:09.909  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:19:18.690  INFO 1 --- [io-16579-exec-8] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:19:18.691  INFO 1 --- [io-16579-exec-8] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:19:18.705  INFO 1 --- [io-16579-exec-8] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:19:19.287  INFO 1 --- [io-16579-exec-2] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:19:19.288  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:19:19.376  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:19:34.574  INFO 1 --- [io-16579-exec-5] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:19:34.575  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:19:34.662  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:19:46.358  INFO 1 --- [o-16579-exec-10] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:19:46.360  INFO 1 --- [o-16579-exec-10] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:19:46.372  INFO 1 --- [o-16579-exec-10] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:19:52.988  INFO 1 --- [io-16579-exec-3] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:19:52.988  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:19:53.020  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:19:54.649  INFO 1 --- [io-16579-exec-6] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:19:54.649  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:19:54.657  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:20:01.944  INFO 1 --- [io-16579-exec-1] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:20:01.944  INFO 1 --- [io-16579-exec-1] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:20:02.036  INFO 1 --- [io-16579-exec-1] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:20:07.620  INFO 1 --- [io-16579-exec-2] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:20:07.621  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:20:07.633  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:20:16.799  INFO 1 --- [io-16579-exec-5] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:20:16.800  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:20:16.822  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:20:57.644  INFO 1 --- [io-16579-exec-6] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:20:57.644  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:20:57.713  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:21:15.325  INFO 1 --- [io-16579-exec-2] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:21:15.325  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:21:15.336  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:21:20.834  INFO 1 --- [io-16579-exec-9] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:21:20.834  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:21:20.860  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:21:30.506  INFO 1 --- [io-16579-exec-7] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:21:30.506  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:21:30.520  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:21:32.563  INFO 1 --- [io-16579-exec-3] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:21:32.563  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:21:32.573  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:21:45.221  INFO 1 --- [io-16579-exec-8] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:21:45.221  INFO 1 --- [io-16579-exec-8] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:21:45.286  INFO 1 --- [io-16579-exec-8] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:21:54.891  INFO 1 --- [io-16579-exec-2] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:21:54.892  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:21:54.907  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:21:59.829  INFO 1 --- [io-16579-exec-5] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:21:59.829  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:21:59.841  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:22:01.503  INFO 1 --- [io-16579-exec-9] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:22:01.504  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:22:01.513  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:22:05.699  INFO 1 --- [o-16579-exec-10] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:22:05.699  INFO 1 --- [o-16579-exec-10] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:22:05.713  INFO 1 --- [o-16579-exec-10] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:22:14.635  INFO 1 --- [io-16579-exec-3] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:22:14.635  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:22:14.653  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:22:29.657  INFO 1 --- [io-16579-exec-1] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:22:29.657  INFO 1 --- [io-16579-exec-1] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:22:30.111  INFO 1 --- [io-16579-exec-1] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:22:32.658  INFO 1 --- [io-16579-exec-2] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:22:32.658  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:22:32.667  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:22:38.575  INFO 1 --- [io-16579-exec-4] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:22:38.582  INFO 1 --- [io-16579-exec-4] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:22:38.594  INFO 1 --- [io-16579-exec-4] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:22:40.974  INFO 1 --- [io-16579-exec-9] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:22:40.974  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:22:40.985  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:22:44.181  INFO 1 --- [io-16579-exec-7] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:22:44.181  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:22:44.190  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:22:52.395  INFO 1 --- [io-16579-exec-6] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:22:52.404  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:22:52.443  INFO 1 --- [io-16579-exec-6] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:23:02.434  INFO 1 --- [io-16579-exec-2] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:23:02.435  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:23:02.470  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:23:16.907  INFO 1 --- [io-16579-exec-5] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:23:16.907  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:23:16.918  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:23:29.043  INFO 1 --- [o-16579-exec-10] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:23:29.064  INFO 1 --- [o-16579-exec-10] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:23:29.128  INFO 1 --- [o-16579-exec-10] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:23:33.345  INFO 1 --- [io-16579-exec-3] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:23:33.346  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:23:33.351  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:23:44.604  INFO 1 --- [io-16579-exec-8] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:23:44.605  INFO 1 --- [io-16579-exec-8] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:23:44.610  INFO 1 --- [io-16579-exec-8] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:23:53.569  INFO 1 --- [io-16579-exec-2] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:23:53.570  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:23:53.578  INFO 1 --- [io-16579-exec-2] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:23:59.986  INFO 1 --- [io-16579-exec-5] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:23:59.986  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:24:00.026  INFO 1 --- [io-16579-exec-5] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:24:00.305  INFO 1 --- [io-16579-exec-9] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:24:00.305  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:24:00.311  INFO 1 --- [io-16579-exec-9] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:24:07.489  INFO 1 --- [io-16579-exec-7] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:24:07.490  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:24:07.496  INFO 1 --- [io-16579-exec-7] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
+2022-03-30 18:24:11.608  INFO 1 --- [io-16579-exec-3] price.controller.PriceController         : Query price, RouteId: f3d4d4ef-693b-4456-8eed-59c0d717dd08, TrainType: DongCheOne
+2022-03-30 18:24:11.609  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route And Train Type] Rote: f3d4d4ef-693b-4456-8eed-59c0d717dd08   Train Type: DongCheOne
+2022-03-30 18:24:11.628  INFO 1 --- [io-16579-exec-3] price.service.PriceServiceImpl           : [Find By Route Id And Train Type]
