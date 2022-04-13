@@ -7,376 +7,116 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::       (v1.5.22.RELEASE)
 
-2022-04-11 16:50:15.609  INFO 1 --- [           main] travelplan.TravelPlanApplication         : Starting TravelPlanApplication v1.0 on ts-travel-plan-service-5bb854f799-945vd with PID 1 (/app/ts-travel-plan-service-1.0.jar started by root in /)
-2022-04-11 16:50:15.683  INFO 1 --- [           main] travelplan.TravelPlanApplication         : No active profile set, falling back to default profiles: default
-2022-04-11 16:50:21.726  INFO 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28ba21f3: startup date [Mon Apr 11 16:50:21 CST 2022]; root of context hierarchy
-2022-04-11 16:52:12.278  INFO 1 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
-2022-04-11 16:52:33.818  INFO 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
-2022-04-11 16:52:34.409  INFO 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
-2022-04-11 16:53:07.848  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$3125418d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-04-11 16:53:09.421  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-04-11 16:53:10.687  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4567f35d' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-04-11 16:53:18.623  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$55f9e43f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-04-11 16:53:22.828  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-04-11 16:53:30.161  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-04-11 16:53:30.333  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-04-11 16:54:39.802  INFO 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 14322 (http)
-2022-04-11 16:54:42.727  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-04-11 16:54:42.788  INFO 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.43
-2022-04-11 16:54:49.397  INFO 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-04-11 16:54:49.445  INFO 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 267815 ms
-2022-04-11 16:56:59.636  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
-2022-04-11 16:56:59.684  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2022-04-11 16:56:59.716  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2022-04-11 16:56:59.716  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2022-04-11 16:56:59.739  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2022-04-11 16:56:59.861  INFO 1 --- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
-2022-04-11 16:56:59.908  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
-2022-04-11 16:56:59.909  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
-2022-04-11 16:56:59.979  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
-2022-04-11 16:58:29.464  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/travelplanservice/travelPlan/transferResult],methods=[POST]}" onto public org.springframework.http.HttpEntity travelplan.controller.TravelPlanController.getTransferResult(travelplan.entity.TransferTravelInfo,org.springframework.http.HttpHeaders)
-2022-04-11 16:58:29.502  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/travelplanservice/travelPlan/cheapest],methods=[POST]}" onto public org.springframework.http.HttpEntity travelplan.controller.TravelPlanController.getByCheapest(travelplan.entity.TripInfo,org.springframework.http.HttpHeaders)
-2022-04-11 16:58:29.543  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/travelplanservice/travelPlan/quickest],methods=[POST]}" onto public org.springframework.http.HttpEntity travelplan.controller.TravelPlanController.getByQuickest(travelplan.entity.TripInfo,org.springframework.http.HttpHeaders)
-2022-04-11 16:58:29.769  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/travelplanservice/travelPlan/minStation],methods=[POST]}" onto public org.springframework.http.HttpEntity travelplan.controller.TravelPlanController.getByMinStation(travelplan.entity.TripInfo,org.springframework.http.HttpHeaders)
-2022-04-11 16:58:29.769  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/travelplanservice/welcome],methods=[GET]}" onto public java.lang.String travelplan.controller.TravelPlanController.home()
-2022-04-11 16:58:29.771  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
-2022-04-11 16:58:29.825  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
-2022-04-11 16:58:29.828  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
-2022-04-11 16:58:29.897  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
-2022-04-11 16:58:30.146  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2022-04-11 16:58:30.172  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2022-04-11 16:58:54.877  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2022-04-11 16:58:55.623  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
-2022-04-11 16:58:55.655  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2022-04-11 16:58:55.791  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2022-04-11 16:58:55.971  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
-2022-04-11 16:58:55.998  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
-2022-04-11 16:58:56.099  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2022-04-11 16:58:56.116  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2022-04-11 16:58:56.201  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
-2022-04-11 16:58:56.301  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
-2022-04-11 16:58:56.411  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2022-04-11 16:58:56.489  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
-2022-04-11 16:58:56.558  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2022-04-11 16:58:56.576  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2022-04-11 16:58:56.604  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
-2022-04-11 16:58:56.669  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2022-04-11 16:58:56.725  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
-2022-04-11 16:59:32.205  INFO 1 --- [           main] b.a.s.AuthenticationManagerConfiguration : 
+2022-04-12 18:21:18.485  INFO 1 --- [           main] travelplan.TravelPlanApplication         : Starting TravelPlanApplication v1.0 on ts-travel-plan-service-5bb854f799-c22db with PID 1 (/app/ts-travel-plan-service-1.0.jar started by root in /)
+2022-04-12 18:21:18.730  INFO 1 --- [           main] travelplan.TravelPlanApplication         : No active profile set, falling back to default profiles: default
+2022-04-12 18:21:25.358  INFO 1 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@deb6432: startup date [Tue Apr 12 18:21:25 CST 2022]; root of context hierarchy
+2022-04-12 18:22:49.176  INFO 1 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2022-04-12 18:23:05.243  INFO 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2022-04-12 18:23:05.461  INFO 1 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2022-04-12 18:23:14.948  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$a67f192b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 18:23:15.669  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 18:23:15.714  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2e005c4b' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 18:23:16.459  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$cb53bbdd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 18:23:17.421  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 18:23:32.941  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 18:23:32.969  INFO 1 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-12 18:24:17.120  INFO 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 14322 (http)
+2022-04-12 18:24:19.535  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-12 18:24:19.555  INFO 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.43
+2022-04-12 18:24:28.439  INFO 1 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-12 18:24:28.440  INFO 1 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 183175 ms
+2022-04-12 18:24:45.468  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2022-04-12 18:24:45.517  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2022-04-12 18:24:45.518  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2022-04-12 18:24:45.518  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2022-04-12 18:24:45.519  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2022-04-12 18:24:45.520  INFO 1 --- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2022-04-12 18:24:45.521  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2022-04-12 18:24:45.521  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2022-04-12 18:24:45.648  INFO 1 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2022-04-12 18:26:20.086  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/travelplanservice/travelPlan/cheapest],methods=[POST]}" onto public org.springframework.http.HttpEntity travelplan.controller.TravelPlanController.getByCheapest(travelplan.entity.TripInfo,org.springframework.http.HttpHeaders)
+2022-04-12 18:26:20.088  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/travelplanservice/travelPlan/quickest],methods=[POST]}" onto public org.springframework.http.HttpEntity travelplan.controller.TravelPlanController.getByQuickest(travelplan.entity.TripInfo,org.springframework.http.HttpHeaders)
+2022-04-12 18:26:20.272  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/travelplanservice/travelPlan/minStation],methods=[POST]}" onto public org.springframework.http.HttpEntity travelplan.controller.TravelPlanController.getByMinStation(travelplan.entity.TripInfo,org.springframework.http.HttpHeaders)
+2022-04-12 18:26:20.273  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/travelplanservice/travelPlan/transferResult],methods=[POST]}" onto public org.springframework.http.HttpEntity travelplan.controller.TravelPlanController.getTransferResult(travelplan.entity.TransferTravelInfo,org.springframework.http.HttpHeaders)
+2022-04-12 18:26:20.273  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/travelplanservice/welcome],methods=[GET]}" onto public java.lang.String travelplan.controller.TravelPlanController.home()
+2022-04-12 18:26:20.361  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2022-04-12 18:26:20.453  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2022-04-12 18:26:20.488  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2022-04-12 18:26:20.576  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2022-04-12 18:26:21.699  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2022-04-12 18:26:21.853  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2022-04-12 18:26:57.494  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2022-04-12 18:26:57.517  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2022-04-12 18:26:57.522  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2022-04-12 18:26:57.542  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2022-04-12 18:26:57.546  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2022-04-12 18:26:57.564  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2022-04-12 18:26:57.567  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2022-04-12 18:26:57.569  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2022-04-12 18:26:57.576  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2022-04-12 18:26:57.582  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2022-04-12 18:26:57.583  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2022-04-12 18:26:57.602  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2022-04-12 18:26:57.612  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2022-04-12 18:26:57.613  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2022-04-12 18:26:57.614  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2022-04-12 18:26:57.622  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2022-04-12 18:26:57.627  INFO 1 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2022-04-12 18:27:16.813  INFO 1 --- [           main] b.a.s.AuthenticationManagerConfiguration : 
 
-Using default security password: a28104d8-593e-4d47-bb64-2fb406944ee1
+Using default security password: d2d8097e-9e53-4be3-b730-5d63822c4449
 
-2022-04-11 16:59:49.040  INFO 1 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@202b0582, org.springframework.security.web.context.SecurityContextPersistenceFilter@449a4f23, org.springframework.security.web.header.HeaderWriterFilter@6892b3b6, org.springframework.security.web.authentication.logout.LogoutFilter@8f2ef19, edu.fudan.common.security.jwt.JWTFilter@235ecd9f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b1669c0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d0b7e3c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ca3b418, org.springframework.security.web.session.SessionManagementFilter@76a4ebf2, org.springframework.security.web.access.ExceptionTranslationFilter@1ed4ae0f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@543295b0]
-2022-04-11 17:00:09.468  INFO 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2022-04-11 17:00:09.504  INFO 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2022-04-11 17:00:11.381  INFO 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2022-04-11 17:00:12.722  INFO 1 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration$LazyEndpointPathRequestMatcher@6e535154, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@15a34df2, org.springframework.security.web.context.SecurityContextPersistenceFilter@6bbe85a8, org.springframework.security.web.header.HeaderWriterFilter@53045c6c, org.springframework.web.filter.CorsFilter@5b38c1ec, org.springframework.security.web.authentication.logout.LogoutFilter@548d708a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@350aac89, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a7442c7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4be29ed9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@338fc1d8, org.springframework.security.web.session.SessionManagementFilter@5149d738, org.springframework.security.web.access.ExceptionTranslationFilter@795509d9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@742ff096]
-2022-04-11 17:00:22.635  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28ba21f3: startup date [Mon Apr 11 16:50:21 CST 2022]; root of context hierarchy
-2022-04-11 17:02:02.094  INFO 1 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
-2022-04-11 17:02:26.511  INFO 1 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
-2022-04-11 17:02:27.216  INFO 1 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
-2022-04-11 17:02:29.809  INFO 1 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
-2022-04-11 17:02:29.810  INFO 1 --- [           main] o.s.i.channel.PublishSubscribeChannel    : Channel 'ts-travel-plan-service:14322.errorChannel' has 1 subscriber(s).
-2022-04-11 17:02:29.896  INFO 1 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
-2022-04-11 17:02:30.789  INFO 1 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2022-04-11 17:02:32.403  INFO 1 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2022-04-11 17:02:33.000  INFO 1 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2022-04-11 17:02:36.936  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findByPrincipalAndAfterAndTypeUsingGET_1
-2022-04-11 17:02:41.765  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_1
-2022-04-11 17:02:41.974  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_2
-2022-04-11 17:02:42.104  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_3
-2022-04-11 17:02:42.174  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_4
-2022-04-11 17:02:42.335  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_5
-2022-04-11 17:02:42.468  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_6
-2022-04-11 17:02:42.568  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_7
-2022-04-11 17:02:42.796  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_8
-2022-04-11 17:02:42.940  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_9
-2022-04-11 17:02:43.059  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_10
-2022-04-11 17:02:43.146  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_11
-2022-04-11 17:02:43.290  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_12
-2022-04-11 17:02:43.430  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_13
-2022-04-11 17:02:43.722  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_14
-2022-04-11 17:02:43.788  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_15
-2022-04-11 17:02:44.172  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_16
-2022-04-11 17:02:44.223  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_17
-2022-04-11 17:02:44.347  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_18
-2022-04-11 17:02:44.406  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_19
-2022-04-11 17:02:44.598  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_20
-2022-04-11 17:02:44.635  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_21
-2022-04-11 17:02:44.766  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_22
-2022-04-11 17:02:44.806  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_23
-2022-04-11 17:02:44.864  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: valueUsingGET_1
-2022-04-11 17:02:47.011  INFO 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 14322 (http)
-2022-04-11 17:02:47.331  INFO 1 --- [           main] travelplan.TravelPlanApplication         : Started TravelPlanApplication in 780.19 seconds (JVM running for 831.723)
-2022-04-11 17:20:19.250  INFO 1 --- [io-14322-exec-7] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
-2022-04-11 17:20:19.288  INFO 1 --- [io-14322-exec-7] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
-2022-04-11 17:20:23.862  INFO 1 --- [io-14322-exec-7] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 4570 ms
-2022-04-11 17:20:36.450  INFO 1 --- [io-14322-exec-7] t.controller.TravelPlanController        : [Search Cheapest],start: Nan Jing,end: Shang Hai,time: Mon Apr 11 08:00:00 CST 2022
-2022-04-11 17:23:55.312  INFO 1 --- [io-14322-exec-2] t.controller.TravelPlanController        : [Search Cheapest],start: Nan Jing,end: Shang Hai,time: Mon Apr 11 08:00:00 CST 2022
-2022-04-11 17:24:11.422  INFO 1 --- [io-14322-exec-3] t.controller.TravelPlanController        : [Search Cheapest],start: Nan Jing,end: Shang Hai,time: Mon Apr 11 08:00:00 CST 2022
-2022-04-11 17:26:19.837  INFO 1 --- [io-14322-exec-7] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Mon Apr 11 08:00:00 CST 2022, trainNumber=G1234, startStation=nanjing, destStation=shanghai, seatType=2)
-2022-04-11 17:26:19.853  INFO 1 --- [io-14322-exec-2] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Mon Apr 11 08:00:00 CST 2022, trainNumber=G1234, startStation=nanjing, destStation=shanghai, seatType=2)
-2022-04-11 17:26:19.915  INFO 1 --- [io-14322-exec-3] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Mon Apr 11 08:00:00 CST 2022, trainNumber=G1234, startStation=nanjing, destStation=shanghai, seatType=2)
-2022-04-11 17:26:21.335  INFO 1 --- [io-14322-exec-7] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Mon Apr 11 08:00:00 CST 2022, trainNumber=G1234, startStation=nanjing, destStation=shanghai, seatType=3)
-2022-04-11 17:26:21.639  INFO 1 --- [io-14322-exec-2] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Mon Apr 11 08:00:00 CST 2022, trainNumber=G1234, startStation=nanjing, destStation=shanghai, seatType=3)
-2022-04-11 17:26:21.750  INFO 1 --- [io-14322-exec-3] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Mon Apr 11 08:00:00 CST 2022, trainNumber=G1234, startStation=nanjing, destStation=shanghai, seatType=3)
-2022-04-11 17:26:22.042  INFO 1 --- [io-14322-exec-7] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Mon Apr 11 08:00:00 CST 2022, trainNumber=Z1236, startStation=nanjing, destStation=shanghai, seatType=2)
-2022-04-11 17:26:22.529  INFO 1 --- [io-14322-exec-2] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Mon Apr 11 08:00:00 CST 2022, trainNumber=Z1236, startStation=nanjing, destStation=shanghai, seatType=2)
-2022-04-11 17:26:22.926  INFO 1 --- [io-14322-exec-7] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Mon Apr 11 08:00:00 CST 2022, trainNumber=Z1236, startStation=nanjing, destStation=shanghai, seatType=3)
-2022-04-11 17:26:23.028  INFO 1 --- [io-14322-exec-3] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Mon Apr 11 08:00:00 CST 2022, trainNumber=Z1236, startStation=nanjing, destStation=shanghai, seatType=2)
-2022-04-11 17:26:23.338  INFO 1 --- [io-14322-exec-2] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Mon Apr 11 08:00:00 CST 2022, trainNumber=Z1236, startStation=nanjing, destStation=shanghai, seatType=3)
-2022-04-11 17:26:24.056  INFO 1 --- [io-14322-exec-7] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Mon Apr 11 08:00:00 CST 2022, trainNumber=G1235, startStation=nanjing, destStation=shanghai, seatType=2)
-2022-04-11 17:26:24.231  INFO 1 --- [io-14322-exec-3] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Mon Apr 11 08:00:00 CST 2022, trainNumber=Z1236, startStation=nanjing, destStation=shanghai, seatType=3)
-2022-04-11 17:26:24.553  INFO 1 --- [io-14322-exec-7] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Mon Apr 11 08:00:00 CST 2022, trainNumber=G1235, startStation=nanjing, destStation=shanghai, seatType=3)
-2022-04-11 17:26:25.087  INFO 1 --- [io-14322-exec-7] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Mon Apr 11 08:00:00 CST 2022, trainNumber=G1236, startStation=nanjing, destStation=shanghai, seatType=2)
-2022-04-11 17:26:25.702  INFO 1 --- [io-14322-exec-7] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Mon Apr 11 08:00:00 CST 2022, trainNumber=G1236, startStation=nanjing, destStation=shanghai, seatType=3)
-2022-04-11 17:26:25.865  INFO 1 --- [io-14322-exec-3] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Mon Apr 11 08:00:00 CST 2022, trainNumber=G1235, startStation=nanjing, destStation=shanghai, seatType=2)
-2022-04-11 17:26:26.152  INFO 1 --- [io-14322-exec-2] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Mon Apr 11 08:00:00 CST 2022, trainNumber=G1235, startStation=nanjing, destStation=shanghai, seatType=2)
-2022-04-11 17:26:26.787  INFO 1 --- [io-14322-exec-3] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Mon Apr 11 08:00:00 CST 2022, trainNumber=G1235, startStation=nanjing, destStation=shanghai, seatType=3)
-2022-04-11 17:26:27.168  INFO 1 --- [io-14322-exec-2] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Mon Apr 11 08:00:00 CST 2022, trainNumber=G1235, startStation=nanjing, destStation=shanghai, seatType=3)
-2022-04-11 17:26:27.826  INFO 1 --- [io-14322-exec-3] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Mon Apr 11 08:00:00 CST 2022, trainNumber=G1236, startStation=nanjing, destStation=shanghai, seatType=2)
-2022-04-11 17:26:28.303  INFO 1 --- [io-14322-exec-2] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Mon Apr 11 08:00:00 CST 2022, trainNumber=G1236, startStation=nanjing, destStation=shanghai, seatType=2)
-2022-04-11 17:26:28.634  INFO 1 --- [io-14322-exec-3] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Mon Apr 11 08:00:00 CST 2022, trainNumber=G1236, startStation=nanjing, destStation=shanghai, seatType=3)
-2022-04-11 17:26:28.998  INFO 1 --- [io-14322-exec-2] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Mon Apr 11 08:00:00 CST 2022, trainNumber=G1236, startStation=nanjing, destStation=shanghai, seatType=3)
-2022-04-11 17:38:16.372  INFO 1 --- [io-14322-exec-5] t.controller.TravelPlanController        : [Search Cheapest],start: Nan Jing,end: Shang Hai,time: Mon Apr 11 08:00:00 CST 2022
-2022-04-11 17:38:22.345  INFO 1 --- [io-14322-exec-5] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Mon Apr 11 08:00:00 CST 2022, trainNumber=G1234, startStation=nanjing, destStation=shanghai, seatType=2)
-2022-04-11 17:38:22.546  INFO 1 --- [io-14322-exec-5] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Mon Apr 11 08:00:00 CST 2022, trainNumber=G1234, startStation=nanjing, destStation=shanghai, seatType=3)
-2022-04-11 17:38:23.067  INFO 1 --- [io-14322-exec-5] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Mon Apr 11 08:00:00 CST 2022, trainNumber=Z1236, startStation=nanjing, destStation=shanghai, seatType=2)
-2022-04-11 17:38:23.880  INFO 1 --- [io-14322-exec-5] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Mon Apr 11 08:00:00 CST 2022, trainNumber=Z1236, startStation=nanjing, destStation=shanghai, seatType=3)
-2022-04-11 17:38:24.522  INFO 1 --- [io-14322-exec-5] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Mon Apr 11 08:00:00 CST 2022, trainNumber=G1235, startStation=nanjing, destStation=shanghai, seatType=2)
-2022-04-11 17:38:24.800  INFO 1 --- [io-14322-exec-5] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Mon Apr 11 08:00:00 CST 2022, trainNumber=G1235, startStation=nanjing, destStation=shanghai, seatType=3)
-2022-04-11 17:38:25.081  INFO 1 --- [io-14322-exec-5] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Mon Apr 11 08:00:00 CST 2022, trainNumber=G1236, startStation=nanjing, destStation=shanghai, seatType=2)
-2022-04-11 17:38:25.296  INFO 1 --- [io-14322-exec-5] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Mon Apr 11 08:00:00 CST 2022, trainNumber=G1236, startStation=nanjing, destStation=shanghai, seatType=3)
-2022-04-11 18:58:27.976  INFO 1 --- [o-14322-exec-10] t.controller.TravelPlanController        : [Search Cheapest],start: Nan Jing,end: Shang Hai,time: Mon Apr 11 08:00:00 CST 2022
-2022-04-11 18:58:30.908 ERROR 1 --- [o-14322-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.HttpServerErrorException: 500 Internal Server Error] with root cause
-
-org.springframework.web.client.HttpServerErrorException: 500 Internal Server Error
-	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:111) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:709) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:662) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:622) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:568) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at travelplan.service.TravelPlanServiceImpl.getRoutePlanResultCheapest(TravelPlanServiceImpl.java:228) ~[classes!/:1.0]
-	at travelplan.service.TravelPlanServiceImpl.getCheapest(TravelPlanServiceImpl.java:79) ~[classes!/:1.0]
-	at travelplan.controller.TravelPlanController.getByCheapest(TravelPlanController.java:41) ~[classes!/:1.0]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_111]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_111]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_111]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_111]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:854) ~[spring-webmvc-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:765) ~[spring-webmvc-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[spring-webmvc-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:54) ~[spring-boot-1.5.22.RELEASE.jar!/:1.5.22.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:111) ~[spring-boot-actuator-1.5.22.RELEASE.jar!/:1.5.22.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at edu.fudan.common.security.jwt.JWTFilter.doFilterInternal(JWTFilter.java:27) ~[ts-common-0.1.0.jar!/:0.1.0]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:347) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:263) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:100) ~[spring-boot-actuator-1.5.22.RELEASE.jar!/:1.5.22.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) [tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137) [tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798) [tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:808) [tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498) [tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_111]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_111]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_111]
-
-2022-04-11 18:58:41.715  INFO 1 --- [io-14322-exec-7] t.controller.TravelPlanController        : [Search Cheapest],start: Nan Jing,end: Shang Hai,time: Sun Apr 10 08:00:00 CST 2022
-2022-04-11 18:58:41.796 ERROR 1 --- [io-14322-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.HttpServerErrorException: 500 Internal Server Error] with root cause
-
-org.springframework.web.client.HttpServerErrorException: 500 Internal Server Error
-	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:111) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:709) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:662) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:622) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:568) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at travelplan.service.TravelPlanServiceImpl.getRoutePlanResultCheapest(TravelPlanServiceImpl.java:228) ~[classes!/:1.0]
-	at travelplan.service.TravelPlanServiceImpl.getCheapest(TravelPlanServiceImpl.java:79) ~[classes!/:1.0]
-	at travelplan.controller.TravelPlanController.getByCheapest(TravelPlanController.java:41) ~[classes!/:1.0]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_111]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_111]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_111]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_111]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:854) ~[spring-webmvc-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:765) ~[spring-webmvc-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[spring-webmvc-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:54) ~[spring-boot-1.5.22.RELEASE.jar!/:1.5.22.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:111) ~[spring-boot-actuator-1.5.22.RELEASE.jar!/:1.5.22.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at edu.fudan.common.security.jwt.JWTFilter.doFilterInternal(JWTFilter.java:27) ~[ts-common-0.1.0.jar!/:0.1.0]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177) ~[spring-security-web-4.2.13.RELEASE.jar!/:4.2.13.RELEASE]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:347) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:263) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:100) ~[spring-boot-actuator-1.5.22.RELEASE.jar!/:1.5.22.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.25.RELEASE.jar!/:4.3.25.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) [tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137) [tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798) [tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:808) [tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498) [tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_111]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_111]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.43.jar!/:8.5.43]
-	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_111]
-
-2022-04-11 18:58:46.844  INFO 1 --- [io-14322-exec-3] t.controller.TravelPlanController        : [Search Cheapest],start: Nan Jing,end: Shang Hai,time: Tue Apr 12 08:00:00 CST 2022
-2022-04-11 18:58:48.631  INFO 1 --- [io-14322-exec-3] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Tue Apr 12 08:00:00 CST 2022, trainNumber=G1234, startStation=nanjing, destStation=shanghai, seatType=2)
-2022-04-11 18:58:48.736  INFO 1 --- [io-14322-exec-3] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Tue Apr 12 08:00:00 CST 2022, trainNumber=G1234, startStation=nanjing, destStation=shanghai, seatType=3)
-2022-04-11 18:58:48.873  INFO 1 --- [io-14322-exec-3] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Tue Apr 12 08:00:00 CST 2022, trainNumber=Z1236, startStation=nanjing, destStation=shanghai, seatType=2)
-2022-04-11 18:58:49.093  INFO 1 --- [io-14322-exec-3] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Tue Apr 12 08:00:00 CST 2022, trainNumber=Z1236, startStation=nanjing, destStation=shanghai, seatType=3)
-2022-04-11 18:58:49.385  INFO 1 --- [io-14322-exec-3] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Tue Apr 12 08:00:00 CST 2022, trainNumber=G1235, startStation=nanjing, destStation=shanghai, seatType=2)
-2022-04-11 18:58:49.533  INFO 1 --- [io-14322-exec-3] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Tue Apr 12 08:00:00 CST 2022, trainNumber=G1235, startStation=nanjing, destStation=shanghai, seatType=3)
-2022-04-11 18:58:49.754  INFO 1 --- [io-14322-exec-3] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Tue Apr 12 08:00:00 CST 2022, trainNumber=G1236, startStation=nanjing, destStation=shanghai, seatType=2)
-2022-04-11 18:58:49.846  INFO 1 --- [io-14322-exec-3] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Tue Apr 12 08:00:00 CST 2022, trainNumber=G1236, startStation=nanjing, destStation=shanghai, seatType=3)
+2022-04-12 18:27:37.164  INFO 1 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@27406a17, org.springframework.security.web.context.SecurityContextPersistenceFilter@f78a47e, org.springframework.security.web.header.HeaderWriterFilter@2a7f1f10, org.springframework.security.web.authentication.logout.LogoutFilter@6e6f2380, edu.fudan.common.security.jwt.JWTFilter@2af004b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7526515b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6d4d66d2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@248e319b, org.springframework.security.web.session.SessionManagementFilter@f0c8a99, org.springframework.security.web.access.ExceptionTranslationFilter@750e2b97, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@69e153c5]
+2022-04-12 18:27:54.231  INFO 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-04-12 18:27:54.312  INFO 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-04-12 18:27:57.392  INFO 1 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-04-12 18:27:59.032  INFO 1 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration$LazyEndpointPathRequestMatcher@5a59ca5e, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4bdeaabb, org.springframework.security.web.context.SecurityContextPersistenceFilter@1ca3b418, org.springframework.security.web.header.HeaderWriterFilter@202b0582, org.springframework.web.filter.CorsFilter@6c4906d3, org.springframework.security.web.authentication.logout.LogoutFilter@75d3a5e0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5149d738, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@58cbafc2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2034b64c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@65987993, org.springframework.security.web.session.SessionManagementFilter@235ecd9f, org.springframework.security.web.access.ExceptionTranslationFilter@3b0fe47a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@795509d9]
+2022-04-12 18:28:09.376  INFO 1 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@deb6432: startup date [Tue Apr 12 18:21:25 CST 2022]; root of context hierarchy
+2022-04-12 18:28:35.718  INFO 1 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2022-04-12 18:29:32.269  INFO 1 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2022-04-12 18:29:32.364  INFO 1 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2022-04-12 18:29:35.293  INFO 1 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2022-04-12 18:29:35.356  INFO 1 --- [           main] o.s.i.channel.PublishSubscribeChannel    : Channel 'ts-travel-plan-service:14322.errorChannel' has 1 subscriber(s).
+2022-04-12 18:29:35.359  INFO 1 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2022-04-12 18:29:35.936  INFO 1 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-04-12 18:29:37.089  INFO 1 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-04-12 18:29:37.615  INFO 1 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-04-12 18:29:42.196  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: findByPrincipalAndAfterAndTypeUsingGET_1
+2022-04-12 18:29:46.274  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_1
+2022-04-12 18:29:46.292  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_2
+2022-04-12 18:29:46.295  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_3
+2022-04-12 18:29:46.338  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_4
+2022-04-12 18:29:46.340  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_5
+2022-04-12 18:29:46.352  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_6
+2022-04-12 18:29:46.371  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_7
+2022-04-12 18:29:46.398  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_8
+2022-04-12 18:29:46.528  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_9
+2022-04-12 18:29:46.635  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_10
+2022-04-12 18:29:46.784  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_11
+2022-04-12 18:29:46.787  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_12
+2022-04-12 18:29:46.932  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_13
+2022-04-12 18:29:47.219  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_14
+2022-04-12 18:29:47.406  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_15
+2022-04-12 18:29:47.714  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_16
+2022-04-12 18:29:47.871  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_17
+2022-04-12 18:29:48.051  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_18
+2022-04-12 18:29:48.139  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_19
+2022-04-12 18:29:48.500  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_20
+2022-04-12 18:29:48.566  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_21
+2022-04-12 18:29:48.802  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_22
+2022-04-12 18:29:48.890  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: invokeUsingGET_23
+2022-04-12 18:29:49.019  INFO 1 --- [           main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: valueUsingGET_1
+2022-04-12 18:29:52.031  INFO 1 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 14322 (http)
+2022-04-12 18:29:52.469  INFO 1 --- [           main] travelplan.TravelPlanApplication         : Started TravelPlanApplication in 555.36 seconds (JVM running for 604.88)
+2022-04-12 18:41:58.397  INFO 1 --- [io-14322-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2022-04-12 18:41:58.399  INFO 1 --- [io-14322-exec-4] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2022-04-12 18:41:58.778  INFO 1 --- [io-14322-exec-4] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 379 ms
+2022-04-12 18:42:00.560  INFO 1 --- [io-14322-exec-4] t.controller.TravelPlanController        : [Search Cheapest],start: Nan Jing,end: Shang Hai,time: Tue Apr 12 08:00:00 CST 2022
+2022-04-12 18:42:20.680  INFO 1 --- [io-14322-exec-4] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Tue Apr 12 08:00:00 CST 2022, trainNumber=G1234, startStation=nanjing, destStation=shanghai, seatType=2)
+2022-04-12 18:42:21.024  INFO 1 --- [io-14322-exec-4] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Tue Apr 12 08:00:00 CST 2022, trainNumber=G1234, startStation=nanjing, destStation=shanghai, seatType=3)
+2022-04-12 18:42:21.379  INFO 1 --- [io-14322-exec-4] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Tue Apr 12 08:00:00 CST 2022, trainNumber=Z1236, startStation=nanjing, destStation=shanghai, seatType=2)
+2022-04-12 18:42:21.761  INFO 1 --- [io-14322-exec-4] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Tue Apr 12 08:00:00 CST 2022, trainNumber=Z1236, startStation=nanjing, destStation=shanghai, seatType=3)
+2022-04-12 18:42:22.070  INFO 1 --- [io-14322-exec-4] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Tue Apr 12 08:00:00 CST 2022, trainNumber=G1235, startStation=nanjing, destStation=shanghai, seatType=2)
+2022-04-12 18:42:22.463  INFO 1 --- [io-14322-exec-4] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Tue Apr 12 08:00:00 CST 2022, trainNumber=G1235, startStation=nanjing, destStation=shanghai, seatType=3)
+2022-04-12 18:42:22.766  INFO 1 --- [io-14322-exec-4] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Tue Apr 12 08:00:00 CST 2022, trainNumber=G1236, startStation=nanjing, destStation=shanghai, seatType=2)
+2022-04-12 18:42:23.281  INFO 1 --- [io-14322-exec-4] t.service.TravelPlanServiceImpl          : Seat Request is: Seat(travelDate=Tue Apr 12 08:00:00 CST 2022, trainNumber=G1236, startStation=nanjing, destStation=shanghai, seatType=3)
