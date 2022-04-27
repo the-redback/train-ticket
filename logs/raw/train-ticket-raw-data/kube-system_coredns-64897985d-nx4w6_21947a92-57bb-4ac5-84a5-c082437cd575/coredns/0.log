@@ -1,0 +1,18 @@
+2022-04-27T06:18:10.830827976Z stdout F .:53
+2022-04-27T06:18:10.83086743Z stdout F [INFO] plugin/reload: Running configuration MD5 = db32ca3650231d74073ff4cf814959a7
+2022-04-27T06:18:10.830873545Z stdout F CoreDNS-1.8.6
+2022-04-27T06:18:10.830877068Z stdout F linux/amd64, go1.17.1, 13a9191
+2022-04-27T06:24:44.458127318Z stdout F [WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.215043801s
+2022-04-27T06:25:48.73776559Z stdout F [WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.385981666s
+2022-04-27T06:26:05.897012055Z stdout F [WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.479230673s
+2022-04-27T06:26:49.817927068Z stdout F [WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 2.306182879s
+2022-04-27T06:27:04.320619765Z stdout F [WARNING] plugin/health: Local health request to "http://:8080/health" failed: Get "http://:8080/health": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2022-04-27T06:27:06.112034094Z stdout F [WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 1.552230263s
+2022-04-27T06:29:48.435157051Z stdout F [WARNING] plugin/health: Local health request to "http://:8080/health" failed: Get "http://:8080/health": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2022-04-27T06:29:51.615367643Z stdout F [WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 2.723345194s
+2022-04-27T06:29:54.464267616Z stdout F [WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 2.069219001s
+2022-04-27T06:34:15.453296576Z stdout F [WARNING] plugin/health: Local health request to "http://:8080/health" failed: Get "http://:8080/health": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2022-04-27T06:49:47.483996666Z stdout F [WARNING] plugin/health: Local health request to "http://:8080/health" failed: Get "http://:8080/health": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2022-04-27T06:50:51.841610362Z stdout F [WARNING] plugin/health: Local health request to "http://:8080/health" took more than 1s: 2.590189088s
+2022-04-27T07:13:37.091098205Z stdout F [WARNING] plugin/health: Local health request to "http://:8080/health" failed: Get "http://:8080/health": context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+2022-04-27T07:14:50.336975919Z stdout F [WARNING] plugin/health: Local health request to "http://:8080/health" failed: Get "http://:8080/health": context deadline exceeded (Client.Timeout exceeded while awaiting headers)

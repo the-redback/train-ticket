@@ -1,0 +1,85 @@
+2022-04-27T06:18:05.781170424Z stderr F I0427 06:18:05.780871       1 node.go:163] Successfully retrieved node IP: 172.19.0.2
+2022-04-27T06:18:05.781213151Z stderr F I0427 06:18:05.780968       1 server_others.go:138] "Detected node IP" address="172.19.0.2"
+2022-04-27T06:18:05.809602755Z stderr F I0427 06:18:05.809309       1 server_others.go:206] "Using iptables Proxier"
+2022-04-27T06:18:05.809628929Z stderr F I0427 06:18:05.809330       1 server_others.go:213] "kube-proxy running in dual-stack mode" ipFamily=IPv4
+2022-04-27T06:18:05.809635379Z stderr F I0427 06:18:05.809337       1 server_others.go:214] "Creating dualStackProxier for iptables"
+2022-04-27T06:18:05.80964422Z stderr F I0427 06:18:05.809357       1 server_others.go:491] "Detect-local-mode set to ClusterCIDR, but no IPv6 cluster CIDR defined, , defaulting to no-op detect-local for IPv6"
+2022-04-27T06:18:05.810140669Z stderr F I0427 06:18:05.809942       1 server.go:656] "Version info" version="v1.23.4"
+2022-04-27T06:18:05.810884194Z stderr F I0427 06:18:05.810716       1 conntrack.go:100] "Set sysctl" entry="net/netfilter/nf_conntrack_tcp_timeout_close_wait" value=3600
+2022-04-27T06:18:05.811167666Z stderr F I0427 06:18:05.811011       1 config.go:226] "Starting endpoint slice config controller"
+2022-04-27T06:18:05.811181935Z stderr F I0427 06:18:05.811047       1 shared_informer.go:240] Waiting for caches to sync for endpoint slice config
+2022-04-27T06:18:05.811185917Z stderr F I0427 06:18:05.811074       1 config.go:317] "Starting service config controller"
+2022-04-27T06:18:05.811188763Z stderr F I0427 06:18:05.811079       1 shared_informer.go:240] Waiting for caches to sync for service config
+2022-04-27T06:18:05.911392092Z stderr F I0427 06:18:05.911163       1 shared_informer.go:247] Caches are synced for service config 
+2022-04-27T06:18:05.911446301Z stderr F I0427 06:18:05.911302       1 shared_informer.go:247] Caches are synced for endpoint slice config 
+2022-04-27T06:18:39.341821238Z stderr F E0427 06:18:39.341495       1 proxier.go:1600] "can't open port, skipping it" err="listen tcp4 :31799: bind: address already in use" port={Description:nodePort for istio-system/istio-ingressgateway:https IP: IPFamily:4 Port:31799 Protocol:TCP}
+2022-04-27T06:18:39.341897827Z stderr F E0427 06:18:39.341640       1 proxier.go:1600] "can't open port, skipping it" err="listen tcp4 :32090: bind: address already in use" port={Description:nodePort for istio-system/istio-ingressgateway:tls IP: IPFamily:4 Port:32090 Protocol:TCP}
+2022-04-27T06:18:39.342117497Z stderr F E0427 06:18:39.341896       1 proxier.go:1600] "can't open port, skipping it" err="listen tcp4 :30674: bind: address already in use" port={Description:nodePort for istio-system/istio-ingressgateway:status-port IP: IPFamily:4 Port:30674 Protocol:TCP}
+2022-04-27T06:18:39.342142326Z stderr F E0427 06:18:39.341984       1 proxier.go:1600] "can't open port, skipping it" err="listen tcp4 :31023: bind: address already in use" port={Description:nodePort for istio-system/istio-ingressgateway:http2 IP: IPFamily:4 Port:31023 Protocol:TCP}
+2022-04-27T06:18:39.342486301Z stderr F E0427 06:18:39.342036       1 proxier.go:1600] "can't open port, skipping it" err="listen tcp4 :30862: bind: address already in use" port={Description:nodePort for istio-system/istio-ingressgateway:tcp IP: IPFamily:4 Port:30862 Protocol:TCP}
+2022-04-27T06:19:38.788466713Z stderr F E0427 06:19:38.781784       1 proxier.go:1600] "can't open port, skipping it" err="listen tcp4 :30000: bind: address already in use" port={Description:nodePort for default/ts-auth-service:http IP: IPFamily:4 Port:30000 Protocol:TCP}
+2022-04-27T06:19:46.40450803Z stderr F E0427 06:19:46.403364       1 proxier.go:1600] "can't open port, skipping it" err="listen tcp4 :32677: bind: address already in use" port={Description:nodePort for default/ts-ui-dashboard:http IP: IPFamily:4 Port:32677 Protocol:TCP}
+2022-04-27T06:22:39.606718623Z stderr F I0427 06:22:39.583796       1 trace.go:205] Trace[469214210]: "iptables ChainExists" (27-Apr-2022 06:22:35.743) (total time: 2427ms):
+2022-04-27T06:22:39.607019124Z stderr F Trace[469214210]: [2.427540355s] [2.427540355s] END
+2022-04-27T06:24:58.079884019Z stderr F I0427 06:24:58.076119       1 trace.go:205] Trace[1123584009]: "iptables save" (27-Apr-2022 06:24:56.064) (total time: 2011ms):
+2022-04-27T06:24:58.079932158Z stderr F Trace[1123584009]: [2.011068193s] [2.011068193s] END
+2022-04-27T06:25:22.021926096Z stderr F I0427 06:25:22.019499       1 trace.go:205] Trace[1729753007]: "iptables restore" (27-Apr-2022 06:25:16.690) (total time: 5328ms):
+2022-04-27T06:25:22.021972343Z stderr F Trace[1729753007]: [5.328408479s] [5.328408479s] END
+2022-04-27T06:25:44.731217489Z stderr F I0427 06:25:44.728283       1 trace.go:205] Trace[1708640776]: "iptables save" (27-Apr-2022 06:25:42.671) (total time: 2057ms):
+2022-04-27T06:25:44.731665994Z stderr F Trace[1708640776]: [2.057119405s] [2.057119405s] END
+2022-04-27T06:25:53.254707337Z stderr F I0427 06:25:53.251617       1 trace.go:205] Trace[114324271]: "iptables restore" (27-Apr-2022 06:25:45.856) (total time: 7395ms):
+2022-04-27T06:25:53.254762198Z stderr F Trace[114324271]: [7.395371081s] [7.395371081s] END
+2022-04-27T06:26:06.916442425Z stderr F I0427 06:26:06.916159       1 trace.go:205] Trace[2027832002]: "iptables save" (27-Apr-2022 06:26:03.338) (total time: 3577ms):
+2022-04-27T06:26:06.916498279Z stderr F Trace[2027832002]: [3.577745536s] [3.577745536s] END
+2022-04-27T06:26:11.28357761Z stderr F I0427 06:26:11.283248       1 trace.go:205] Trace[1416377684]: "iptables restore" (27-Apr-2022 06:26:08.366) (total time: 2917ms):
+2022-04-27T06:26:11.283663479Z stderr F Trace[1416377684]: [2.91705334s] [2.91705334s] END
+2022-04-27T06:26:26.234149335Z stderr F I0427 06:26:26.232799       1 trace.go:205] Trace[1897085127]: "iptables restore" (27-Apr-2022 06:26:24.200) (total time: 2004ms):
+2022-04-27T06:26:26.23416146Z stderr F Trace[1897085127]: [2.004689987s] [2.004689987s] END
+2022-04-27T06:27:25.139389584Z stderr F I0427 06:27:25.116889       1 trace.go:205] Trace[416646434]: "iptables ChainExists" (27-Apr-2022 06:27:06.030) (total time: 4556ms):
+2022-04-27T06:27:25.139502819Z stderr F Trace[416646434]: [4.556971001s] [4.556971001s] END
+2022-04-27T06:27:38.352886649Z stderr F I0427 06:27:38.345278       1 trace.go:205] Trace[978112265]: "iptables save" (27-Apr-2022 06:27:35.364) (total time: 3071ms):
+2022-04-27T06:27:38.388016216Z stderr F Trace[978112265]: [3.07160784s] [3.07160784s] END
+2022-04-27T06:27:42.01005976Z stderr F I0427 06:27:42.008005       1 trace.go:205] Trace[602530422]: "iptables restore" (27-Apr-2022 06:27:39.032) (total time: 2975ms):
+2022-04-27T06:27:42.01011255Z stderr F Trace[602530422]: [2.97585973s] [2.97585973s] END
+2022-04-27T06:29:09.328604818Z stderr F I0427 06:29:09.327838       1 trace.go:205] Trace[1002120045]: "iptables ChainExists" (27-Apr-2022 06:29:06.356) (total time: 3006ms):
+2022-04-27T06:29:10.361210593Z stderr F Trace[1002120045]: [3.006982025s] [3.006982025s] END
+2022-04-27T06:29:26.365571946Z stderr F I0427 06:29:26.359543       1 trace.go:205] Trace[600063005]: "iptables save" (27-Apr-2022 06:29:23.348) (total time: 3011ms):
+2022-04-27T06:29:26.365708426Z stderr F Trace[600063005]: [3.011008342s] [3.011008342s] END
+2022-04-27T06:29:32.765807507Z stderr F I0427 06:29:32.765203       1 trace.go:205] Trace[242136644]: "iptables restore" (27-Apr-2022 06:29:27.620) (total time: 5113ms):
+2022-04-27T06:29:32.766010892Z stderr F Trace[242136644]: [5.113004975s] [5.113004975s] END
+2022-04-27T06:30:14.145513418Z stderr F I0427 06:30:14.139739       1 trace.go:205] Trace[704110687]: "iptables restore" (27-Apr-2022 06:30:06.721) (total time: 7281ms):
+2022-04-27T06:30:14.145586819Z stderr F Trace[704110687]: [7.281209405s] [7.281209405s] END
+2022-04-27T06:30:38.119430399Z stderr F I0427 06:30:38.115313       1 trace.go:205] Trace[642153533]: "iptables ChainExists" (27-Apr-2022 06:30:35.801) (total time: 2313ms):
+2022-04-27T06:30:38.119473346Z stderr F Trace[642153533]: [2.313789721s] [2.313789721s] END
+2022-04-27T06:30:38.223242874Z stderr F I0427 06:30:38.219525       1 trace.go:205] Trace[320809743]: "iptables ChainExists" (27-Apr-2022 06:30:35.675) (total time: 2573ms):
+2022-04-27T06:30:38.223300045Z stderr F Trace[320809743]: [2.573298282s] [2.573298282s] END
+2022-04-27T06:31:38.789746841Z stderr F I0427 06:31:38.786073       1 trace.go:205] Trace[795147574]: "iptables ChainExists" (27-Apr-2022 06:31:35.245) (total time: 3528ms):
+2022-04-27T06:31:38.790157733Z stderr F Trace[795147574]: [3.528667199s] [3.528667199s] END
+2022-04-27T06:32:20.36999431Z stderr F I0427 06:32:20.367350       1 trace.go:205] Trace[888423689]: "iptables restore" (27-Apr-2022 06:32:17.364) (total time: 3002ms):
+2022-04-27T06:32:20.370131826Z stderr F Trace[888423689]: [3.002537276s] [3.002537276s] END
+2022-04-27T06:32:41.343034959Z stderr F I0427 06:32:41.341827       1 trace.go:205] Trace[1816449556]: "iptables save" (27-Apr-2022 06:32:38.104) (total time: 3272ms):
+2022-04-27T06:32:41.343384091Z stderr F Trace[1816449556]: [3.272832988s] [3.272832988s] END
+2022-04-27T06:32:49.27374259Z stderr F I0427 06:32:49.273358       1 trace.go:205] Trace[884487613]: "iptables restore" (27-Apr-2022 06:32:46.714) (total time: 2558ms):
+2022-04-27T06:32:49.273818865Z stderr F Trace[884487613]: [2.558294961s] [2.558294961s] END
+2022-04-27T06:33:05.531775147Z stderr F I0427 06:33:05.529490       1 trace.go:205] Trace[1020466273]: "DeltaFIFO Pop Process" ID:default/ts-admin-route-service-mgvbf,Depth:72,Reason:slow event handlers blocking the queue (27-Apr-2022 06:33:05.170) (total time: 358ms):
+2022-04-27T06:33:05.531797996Z stderr F Trace[1020466273]: [358.832387ms] [358.832387ms] END
+2022-04-27T06:33:06.054605282Z stderr F I0427 06:33:06.054166       1 trace.go:205] Trace[387579968]: "DeltaFIFO Pop Process" ID:default/ts-rebook-service,Depth:69,Reason:slow event handlers blocking the queue (27-Apr-2022 06:33:05.465) (total time: 455ms):
+2022-04-27T06:33:06.054654155Z stderr F Trace[387579968]: [455.928272ms] [455.928272ms] END
+2022-04-27T06:33:07.917126327Z stderr F I0427 06:33:07.916246       1 trace.go:205] Trace[164748993]: "iptables ChainExists" (27-Apr-2022 06:33:05.473) (total time: 2442ms):
+2022-04-27T06:33:07.917172614Z stderr F Trace[164748993]: [2.442164953s] [2.442164953s] END
+2022-04-27T06:33:14.510451082Z stderr F I0427 06:33:14.509360       1 trace.go:205] Trace[1102231091]: "iptables restore" (27-Apr-2022 06:33:12.288) (total time: 2208ms):
+2022-04-27T06:33:14.510557819Z stderr F Trace[1102231091]: [2.208360093s] [2.208360093s] END
+2022-04-27T06:33:40.657976416Z stderr F I0427 06:33:40.656852       1 trace.go:205] Trace[69232918]: "iptables restore" (27-Apr-2022 06:33:38.176) (total time: 2502ms):
+2022-04-27T06:33:40.658029722Z stderr F Trace[69232918]: [2.502583823s] [2.502583823s] END
+2022-04-27T06:33:50.800408379Z stderr F I0427 06:33:50.799049       1 trace.go:205] Trace[637215584]: "iptables save" (27-Apr-2022 06:33:45.897) (total time: 4902ms):
+2022-04-27T06:33:50.800441096Z stderr F Trace[637215584]: [4.902002554s] [4.902002554s] END
+2022-04-27T06:34:18.103380796Z stderr F I0427 06:34:18.102824       1 trace.go:205] Trace[828099045]: "iptables save" (27-Apr-2022 06:34:10.560) (total time: 7517ms):
+2022-04-27T06:34:18.103599362Z stderr F Trace[828099045]: [7.517243559s] [7.517243559s] END
+2022-04-27T06:34:21.451410257Z stderr F I0427 06:34:21.450034       1 trace.go:205] Trace[1985399334]: "iptables restore" (27-Apr-2022 06:34:18.647) (total time: 2802ms):
+2022-04-27T06:34:21.451474893Z stderr F Trace[1985399334]: [2.802207628s] [2.802207628s] END
+2022-04-27T06:36:37.919153792Z stderr F I0427 06:36:37.918563       1 trace.go:205] Trace[1902940052]: "iptables save" (27-Apr-2022 06:36:35.864) (total time: 2053ms):
+2022-04-27T06:36:37.921341152Z stderr F Trace[1902940052]: [2.053779932s] [2.053779932s] END
+2022-04-27T06:36:49.413530248Z stderr F I0427 06:36:49.413182       1 trace.go:205] Trace[1632049868]: "iptables restore" (27-Apr-2022 06:36:47.045) (total time: 2367ms):
+2022-04-27T06:36:49.413571654Z stderr F Trace[1632049868]: [2.367825928s] [2.367825928s] END
+2022-04-27T07:13:37.79925366Z stderr F I0427 07:13:37.792739       1 trace.go:205] Trace[495033763]: "iptables ChainExists" (27-Apr-2022 07:13:33.403) (total time: 4405ms):
+2022-04-27T07:13:37.799517915Z stderr F Trace[495033763]: [4.40536937s] [4.40536937s] END

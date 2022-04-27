@@ -1,0 +1,15 @@
+2022-04-27T06:30:22.728228644Z stderr F I0427 06:30:22.727402       1 serving.go:348] Generated self-signed cert in-memory
+2022-04-27T06:30:39.374364707Z stderr F I0427 06:30:39.293453       1 server.go:139] "Starting Kubernetes Scheduler" version="v1.23.4"
+2022-04-27T06:30:39.75777337Z stderr F I0427 06:30:39.755073       1 secure_serving.go:200] Serving securely on 127.0.0.1:10259
+2022-04-27T06:30:39.757806284Z stderr F I0427 06:30:39.755382       1 requestheader_controller.go:169] Starting RequestHeaderAuthRequestController
+2022-04-27T06:30:39.757818942Z stderr F I0427 06:30:39.755408       1 shared_informer.go:240] Waiting for caches to sync for RequestHeaderAuthRequestController
+2022-04-27T06:30:39.757823258Z stderr F I0427 06:30:39.755631       1 tlsconfig.go:240] "Starting DynamicServingCertificateController"
+2022-04-27T06:30:39.849732936Z stderr F I0427 06:30:39.849196       1 configmap_cafile_content.go:201] "Starting controller" name="client-ca::kube-system::extension-apiserver-authentication::client-ca-file"
+2022-04-27T06:30:39.849771692Z stderr F I0427 06:30:39.849255       1 shared_informer.go:240] Waiting for caches to sync for client-ca::kube-system::extension-apiserver-authentication::client-ca-file
+2022-04-27T06:30:41.812920432Z stderr F I0427 06:30:41.812326       1 configmap_cafile_content.go:201] "Starting controller" name="client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file"
+2022-04-27T06:30:41.812967839Z stderr F I0427 06:30:41.812404       1 shared_informer.go:240] Waiting for caches to sync for client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file
+2022-04-27T06:30:41.859261662Z stderr F I0427 06:30:41.858921       1 shared_informer.go:247] Caches are synced for RequestHeaderAuthRequestController 
+2022-04-27T06:30:42.152259171Z stderr F I0427 06:30:42.151665       1 shared_informer.go:247] Caches are synced for client-ca::kube-system::extension-apiserver-authentication::requestheader-client-ca-file 
+2022-04-27T06:30:42.726365063Z stderr F I0427 06:30:42.724993       1 shared_informer.go:247] Caches are synced for client-ca::kube-system::extension-apiserver-authentication::client-ca-file 
+2022-04-27T06:30:47.072203218Z stderr F I0427 06:30:47.069179       1 leaderelection.go:248] attempting to acquire leader lease kube-system/kube-scheduler...
+2022-04-27T06:31:05.235381974Z stderr F I0427 06:31:05.222871       1 leaderelection.go:258] successfully acquired lease kube-system/kube-scheduler

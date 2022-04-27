@@ -1,0 +1,6 @@
+2022-04-27T06:34:08.9993127Z stdout F 
+2022-04-27T06:34:08.999523391Z stdout F > ts-ticket-office-service@0.0.0 start
+2022-04-27T06:34:08.999540728Z stdout F > node bin/www
+2022-04-27T06:34:08.999547973Z stdout F 
+2022-04-27T06:34:24.882543589Z stdout F initMongo连接上数据库啦！
+2022-04-27T06:34:26.73577421Z stdout F init data successful!

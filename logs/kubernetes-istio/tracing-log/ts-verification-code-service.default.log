@@ -1,0 +1,79 @@
+2022-04-27T06:29:21.730782Z	info	FLAG: --concurrency="2"
+2022-04-27T06:29:21.730944Z	info	FLAG: --domain="default.svc.cluster.local"
+2022-04-27T06:29:21.730988Z	info	FLAG: --help="false"
+2022-04-27T06:29:21.730999Z	info	FLAG: --log_as_json="false"
+2022-04-27T06:29:21.731006Z	info	FLAG: --log_caller=""
+2022-04-27T06:29:21.731012Z	info	FLAG: --log_output_level="default:info"
+2022-04-27T06:29:21.731016Z	info	FLAG: --log_rotate=""
+2022-04-27T06:29:21.731022Z	info	FLAG: --log_rotate_max_age="30"
+2022-04-27T06:29:21.731028Z	info	FLAG: --log_rotate_max_backups="1000"
+2022-04-27T06:29:21.731034Z	info	FLAG: --log_rotate_max_size="104857600"
+2022-04-27T06:29:21.731095Z	info	FLAG: --log_stacktrace_level="default:none"
+2022-04-27T06:29:21.731120Z	info	FLAG: --log_target="[stdout]"
+2022-04-27T06:29:21.731129Z	info	FLAG: --meshConfig="./etc/istio/config/mesh"
+2022-04-27T06:29:21.731136Z	info	FLAG: --outlierLogPath=""
+2022-04-27T06:29:21.731143Z	info	FLAG: --proxyComponentLogLevel="misc:error"
+2022-04-27T06:29:21.731149Z	info	FLAG: --proxyLogLevel="warning"
+2022-04-27T06:29:21.731155Z	info	FLAG: --serviceCluster="istio-proxy"
+2022-04-27T06:29:21.731162Z	info	FLAG: --stsPort="0"
+2022-04-27T06:29:21.731169Z	info	FLAG: --templateFile=""
+2022-04-27T06:29:21.731175Z	info	FLAG: --tokenManagerPlugin="GoogleTokenExchange"
+2022-04-27T06:29:21.731185Z	info	FLAG: --vklog="0"
+2022-04-27T06:29:21.731196Z	info	Version 1.13.2-91533d04e894ff86b80acd6d7a4517b144f9e19a-Clean
+2022-04-27T06:29:21.833957Z	info	Proxy role	ips=[10.244.0.69 fe80::dc26:c0ff:fedb:7da5] type=sidecar id=ts-verification-code-service-7f46c78ffd-kpqt9.default domain=default.svc.cluster.local
+2022-04-27T06:29:22.042812Z	info	Apply proxy config from env {}
+
+2022-04-27T06:29:22.071578Z	info	Effective config: binaryPath: /usr/local/bin/envoy
+concurrency: 2
+configPath: ./etc/istio/proxy
+controlPlaneAuthPolicy: MUTUAL_TLS
+discoveryAddress: istiod.istio-system.svc:15012
+drainDuration: 45s
+parentShutdownDuration: 60s
+proxyAdminPort: 15000
+serviceCluster: istio-proxy
+statNameLength: 189
+statusPort: 15020
+terminationDrainDuration: 5s
+tracing:
+  zipkin:
+    address: zipkin.istio-system:9411
+
+2022-04-27T06:29:22.173826Z	info	JWT policy is third-party-jwt
+2022-04-27T06:29:22.451634Z	info	CA Endpoint istiod.istio-system.svc:15012, provider Citadel
+2022-04-27T06:29:22.465295Z	info	Opening status port 15020
+2022-04-27T06:29:22.552766Z	info	Using CA istiod.istio-system.svc:15012 cert with certs: var/run/secrets/istio/root-cert.pem
+2022-04-27T06:29:22.553318Z	info	citadelclient	Citadel client using custom root cert: var/run/secrets/istio/root-cert.pem
+2022-04-27T06:29:31.977417Z	info	ads	All caches have been synced up in 10.762038954s, marking server ready
+2022-04-27T06:29:32.326965Z	info	sds	SDS server for workload certificates started, listening on "etc/istio/proxy/SDS"
+2022-04-27T06:29:32.327109Z	info	xdsproxy	Initializing with upstream address "istiod.istio-system.svc:15012" and cluster "Kubernetes"
+2022-04-27T06:29:32.417032Z	info	sds	Starting SDS grpc server
+2022-04-27T06:29:32.452100Z	info	starting Http service at 127.0.0.1:15004
+2022-04-27T06:29:33.761768Z	info	Pilot SAN: [istiod.istio-system.svc]
+2022-04-27T06:29:35.198039Z	info	Starting proxy agent
+2022-04-27T06:29:35.198129Z	info	Epoch 0 starting
+2022-04-27T06:29:35.198212Z	info	Envoy command: [-c etc/istio/proxy/envoy-rev0.json --restart-epoch 0 --drain-time-s 45 --drain-strategy immediate --parent-shutdown-time-s 60 --local-address-ip-version v4 --file-flush-interval-msec 1000 --disable-hot-restart --log-format %Y-%m-%dT%T.%fZ	%l	envoy %n	%v -l warning --component-log-level misc:error --concurrency 2]
+2022-04-27T06:30:23.767604Z	info	cache	generated new workload certificate	latency=51.43952623s ttl=23h59m59.232412859s
+2022-04-27T06:30:23.767743Z	info	cache	Root cert has changed, start rotating root cert
+2022-04-27T06:30:23.767789Z	info	ads	XDS: Incremental Pushing:0 ConnectedEndpoints:0 Version:
+2022-04-27T06:30:23.767991Z	info	cache	returned workload trust anchor from cache	ttl=23h59m59.232013896s
+2022-04-27T06:30:45.922485Z	info	xdsproxy	connected to upstream XDS server: istiod.istio-system.svc:15012
+2022-04-27T06:32:12.099266Z	info	ads	ADS: new connection for node:ts-verification-code-service-7f46c78ffd-kpqt9.default-1
+2022-04-27T06:32:12.456443Z	info	cache	returned workload certificate from cache	ttl=23h58m10.898339078s
+2022-04-27T06:32:12.565726Z	info	ads	ADS: new connection for node:ts-verification-code-service-7f46c78ffd-kpqt9.default-2
+2022-04-27T06:32:12.882844Z	info	cache	returned workload trust anchor from cache	ttl=23h58m10.117264036s
+2022-04-27T06:32:13.420357Z	info	ads	SDS: PUSH request for node:ts-verification-code-service-7f46c78ffd-kpqt9.default resources:1 size:1.1kB resource:ROOTCA
+2022-04-27T06:32:13.604349Z	info	ads	SDS: PUSH request for node:ts-verification-code-service-7f46c78ffd-kpqt9.default resources:1 size:4.0kB resource:default
+2022-04-27T06:33:45.692055Z	info	Readiness succeeded in 4m24.477564616s
+2022-04-27T06:33:45.693401Z	info	Envoy proxy is ready
+{"upstream_transport_failure_reason":null,"path":"/api/v1/verifycode/generate","bytes_received":0,"route_name":"default","upstream_service_time":"1624","method":"GET","response_code":200,"connection_termination_details":null,"downstream_remote_address":"10.244.0.75:46924","upstream_local_address":"127.0.0.6:56613","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36","bytes_sent":1285,"downstream_local_address":"10.244.0.69:15678","duration":1694,"start_time":"2022-04-27T06:51:04.499Z","authority":"ts-verification-code-service:15678","request_id":"0143e22c-94bc-9c62-a004-89f2f3c990de","upstream_host":"10.244.0.69:15678","requested_server_name":"outbound_.15678_._.ts-verification-code-service.default.svc.cluster.local","x_forwarded_for":null,"response_code_details":"via_upstream","protocol":"HTTP/1.1","response_flags":"-","upstream_cluster":"inbound|15678||"}
+{"x_forwarded_for":null,"response_flags":"-","request_id":"ada6b7fe-efb7-9355-b578-77c49a7b604f","path":"/api/v1/verifycode/generate","upstream_transport_failure_reason":null,"connection_termination_details":null,"upstream_host":"10.244.0.69:15678","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36","response_code_details":"via_upstream","upstream_service_time":"4391","authority":"ts-verification-code-service:15678","bytes_received":0,"bytes_sent":1226,"requested_server_name":"outbound_.15678_._.ts-verification-code-service.default.svc.cluster.local","upstream_local_address":"127.0.0.6:41243","method":"GET","start_time":"2022-04-27T06:51:01.727Z","response_code":200,"route_name":"default","downstream_remote_address":"10.244.0.75:46686","downstream_local_address":"10.244.0.69:15678","duration":4526,"upstream_cluster":"inbound|15678||","protocol":"HTTP/1.1"}
+{"upstream_local_address":"127.0.0.6:50951","bytes_received":0,"request_id":"e206bc8f-af84-9fd3-98fb-2802437b4f3f","duration":385,"user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36","upstream_service_time":"384","start_time":"2022-04-27T06:51:18.890Z","protocol":"HTTP/1.1","response_code_details":"via_upstream","response_flags":"-","connection_termination_details":null,"method":"GET","downstream_remote_address":"10.244.0.49:49964","upstream_cluster":"inbound|15678||","path":"/api/v1/verifycode/verify/OXJS","x_forwarded_for":null,"downstream_local_address":"10.244.0.69:15678","route_name":"default","authority":"ts-verification-code-service:15678","bytes_sent":4,"requested_server_name":"outbound_.15678_._.ts-verification-code-service.default.svc.cluster.local","upstream_host":"10.244.0.69:15678","response_code":200,"upstream_transport_failure_reason":null}
+{"protocol":"HTTP/1.1","upstream_service_time":"22","response_code":200,"upstream_local_address":"127.0.0.6:41243","bytes_received":0,"upstream_transport_failure_reason":null,"response_flags":"-","requested_server_name":"outbound_.15678_._.ts-verification-code-service.default.svc.cluster.local","method":"GET","route_name":"default","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36","downstream_remote_address":"10.244.0.75:46686","upstream_host":"10.244.0.69:15678","start_time":"2022-04-27T06:51:43.438Z","upstream_cluster":"inbound|15678||","request_id":"a15b96ef-c8c3-9830-ae4b-de16d2e4659d","duration":23,"x_forwarded_for":null,"authority":"ts-verification-code-service:15678","bytes_sent":1242,"downstream_local_address":"10.244.0.69:15678","response_code_details":"via_upstream","path":"/api/v1/verifycode/generate","connection_termination_details":null}
+{"upstream_cluster":"inbound|15678||","protocol":"HTTP/1.1","path":"/api/v1/verifycode/generate","route_name":"default","downstream_local_address":"10.244.0.69:15678","upstream_service_time":"38","upstream_host":"10.244.0.69:15678","response_code":200,"downstream_remote_address":"10.244.0.75:46686","response_code_details":"via_upstream","start_time":"2022-04-27T06:51:43.508Z","response_flags":"-","upstream_transport_failure_reason":null,"duration":40,"user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36","authority":"ts-verification-code-service:15678","x_forwarded_for":null,"requested_server_name":"outbound_.15678_._.ts-verification-code-service.default.svc.cluster.local","bytes_received":0,"bytes_sent":1262,"method":"GET","connection_termination_details":null,"upstream_local_address":"127.0.0.6:41243","request_id":"9aa76842-1269-9ff7-b19e-67fb83ff6c86"}
+2022-04-27T06:59:40.798729Z	info	xdsproxy	connected to upstream XDS server: istiod.istio-system.svc:15012
+{"downstream_local_address":"10.244.0.69:15678","connection_termination_details":null,"user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36","x_forwarded_for":null,"path":"/api/v1/verifycode/generate","requested_server_name":"outbound_.15678_._.ts-verification-code-service.default.svc.cluster.local","bytes_received":0,"upstream_host":"10.244.0.69:15678","upstream_cluster":"inbound|15678||","route_name":"default","downstream_remote_address":"10.244.0.75:41670","protocol":"HTTP/1.1","response_code":200,"start_time":"2022-04-27T07:22:59.974Z","duration":352,"response_flags":"-","method":"GET","authority":"ts-verification-code-service:15678","upstream_local_address":"127.0.0.6:38045","request_id":"739e38a5-c4f2-96bb-8052-a38f57957a78","response_code_details":"via_upstream","bytes_sent":1253,"upstream_transport_failure_reason":null,"upstream_service_time":"338"}
+{"path":"/api/v1/verifycode/generate","response_code_details":"via_upstream","method":"GET","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36","response_flags":"-","upstream_transport_failure_reason":null,"x_forwarded_for":null,"request_id":"5846a21f-4f1b-9611-aae5-3fe6b6ddf2e0","route_name":"default","start_time":"2022-04-27T07:23:02.170Z","upstream_service_time":"35","bytes_received":0,"connection_termination_details":null,"authority":"ts-verification-code-service:15678","upstream_local_address":"127.0.0.6:38045","response_code":200,"protocol":"HTTP/1.1","bytes_sent":1327,"downstream_remote_address":"10.244.0.75:41670","upstream_cluster":"inbound|15678||","upstream_host":"10.244.0.69:15678","requested_server_name":"outbound_.15678_._.ts-verification-code-service.default.svc.cluster.local","downstream_local_address":"10.244.0.69:15678","duration":36}
+{"requested_server_name":"outbound_.15678_._.ts-verification-code-service.default.svc.cluster.local","start_time":"2022-04-27T07:23:12.849Z","x_forwarded_for":null,"upstream_service_time":"37","upstream_transport_failure_reason":null,"route_name":"default","method":"GET","request_id":"0f35be14-83d1-9052-9e9c-9a5e27b92bac","protocol":"HTTP/1.1","downstream_local_address":"10.244.0.69:15678","connection_termination_details":null,"user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36","response_code":200,"bytes_sent":4,"response_code_details":"via_upstream","upstream_host":"10.244.0.69:15678","downstream_remote_address":"10.244.0.49:49964","path":"/api/v1/verifycode/verify/T7AW","upstream_cluster":"inbound|15678||","upstream_local_address":"127.0.0.6:59519","bytes_received":0,"authority":"ts-verification-code-service:15678","duration":38,"response_flags":"-"}
+{"response_flags":"-","duration":498,"requested_server_name":"outbound_.15678_._.ts-verification-code-service.default.svc.cluster.local","authority":"ts-verification-code-service:15678","path":"/api/v1/verifycode/generate","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36","upstream_service_time":"495","protocol":"HTTP/1.1","response_code_details":"via_upstream","x_forwarded_for":null,"upstream_cluster":"inbound|15678||","upstream_host":"10.244.0.69:15678","upstream_transport_failure_reason":null,"method":"GET","downstream_remote_address":"10.244.0.75:41670","bytes_sent":1293,"connection_termination_details":null,"route_name":"default","bytes_received":0,"upstream_local_address":"127.0.0.6:38045","start_time":"2022-04-27T07:23:17.389Z","response_code":200,"downstream_local_address":"10.244.0.69:15678","request_id":"b36c4f45-8711-90bd-a121-d5b2b6f65f83"}
+{"path":"/api/v1/verifycode/generate","connection_termination_details":null,"response_flags":"-","protocol":"HTTP/1.1","x_forwarded_for":null,"start_time":"2022-04-27T07:23:47.297Z","upstream_cluster":"inbound|15678||","downstream_local_address":"10.244.0.69:15678","upstream_local_address":"127.0.0.6:38045","downstream_remote_address":"10.244.0.75:46686","user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36","response_code":200,"authority":"ts-verification-code-service:15678","upstream_host":"10.244.0.69:15678","requested_server_name":"outbound_.15678_._.ts-verification-code-service.default.svc.cluster.local","upstream_service_time":"354","duration":386,"method":"GET","response_code_details":"via_upstream","route_name":"default","bytes_sent":1302,"bytes_received":0,"upstream_transport_failure_reason":null,"request_id":"e24f16d0-82a5-9221-ad0f-ceb754000812"}

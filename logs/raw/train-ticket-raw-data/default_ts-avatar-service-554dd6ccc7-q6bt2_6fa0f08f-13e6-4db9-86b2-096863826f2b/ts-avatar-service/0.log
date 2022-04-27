@@ -1,0 +1,164 @@
+2022-04-27T06:32:55.966568872Z stderr F [2022-04-27 14:32:55 +0800] [1] [INFO] Starting gunicorn 20.0.4
+2022-04-27T06:32:56.057415786Z stderr F [2022-04-27 14:32:56 +0800] [1] [INFO] Listening at: http://0.0.0.0:17001 (1)
+2022-04-27T06:32:56.057461593Z stderr F [2022-04-27 14:32:56 +0800] [1] [INFO] Using worker: sync
+2022-04-27T06:32:56.071661622Z stderr F [2022-04-27 14:32:56 +0800] [14] [INFO] Booting worker with pid: 14
+2022-04-27T06:32:56.828349138Z stderr F [2022-04-27 14:32:56 +0800] [15] [INFO] Booting worker with pid: 15
+2022-04-27T06:32:56.892321569Z stderr F [2022-04-27 14:32:56 +0800] [17] [INFO] Booting worker with pid: 17
+2022-04-27T06:32:57.295218968Z stderr F [2022-04-27 14:32:57 +0800] [16] [INFO] Booting worker with pid: 16
+2022-04-27T06:33:26.185729011Z stderr F [2022-04-27 14:33:26 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:14)
+2022-04-27T06:33:26.469337524Z stderr F [2022-04-27 14:33:26 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:15)
+2022-04-27T06:33:26.49473018Z stderr F [2022-04-27 14:33:26 +0800] [15] [INFO] Worker exiting (pid: 15)
+2022-04-27T06:33:26.531054983Z stderr F [2022-04-27 14:33:26 +0800] [14] [INFO] Worker exiting (pid: 14)
+2022-04-27T06:33:26.559649829Z stderr F [2022-04-27 14:33:26 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:16)
+2022-04-27T06:33:26.613455979Z stderr F [2022-04-27 14:33:26 +0800] [16] [INFO] Worker exiting (pid: 16)
+2022-04-27T06:33:27.581914671Z stderr F [2022-04-27 14:33:27 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:17)
+2022-04-27T06:33:27.58267536Z stderr F [2022-04-27 14:33:27 +0800] [17] [INFO] Worker exiting (pid: 17)
+2022-04-27T06:33:28.18183634Z stderr F [2022-04-27 14:33:28 +0800] [46] [INFO] Booting worker with pid: 46
+2022-04-27T06:33:28.274425559Z stderr F [2022-04-27 14:33:28 +0800] [47] [INFO] Booting worker with pid: 47
+2022-04-27T06:33:28.375045452Z stderr F [2022-04-27 14:33:28 +0800] [48] [INFO] Booting worker with pid: 48
+2022-04-27T06:33:28.396767522Z stderr F [2022-04-27 14:33:28 +0800] [49] [INFO] Booting worker with pid: 49
+2022-04-27T06:33:58.750367518Z stderr F [2022-04-27 14:33:58 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:46)
+2022-04-27T06:33:58.750437613Z stderr F [2022-04-27 14:33:58 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:47)
+2022-04-27T06:33:58.750461412Z stderr F [2022-04-27 14:33:58 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:48)
+2022-04-27T06:33:58.750467804Z stderr F [2022-04-27 14:33:58 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:49)
+2022-04-27T06:34:01.45412512Z stderr F [2022-04-27 14:34:01 +0800] [78] [INFO] Booting worker with pid: 78
+2022-04-27T06:34:02.955876344Z stderr F [2022-04-27 14:34:02 +0800] [80] [INFO] Booting worker with pid: 80
+2022-04-27T06:34:03.049804766Z stderr F [2022-04-27 14:34:01 +0800] [79] [INFO] Booting worker with pid: 79
+2022-04-27T06:34:03.214095568Z stderr F [2022-04-27 14:34:03 +0800] [81] [INFO] Booting worker with pid: 81
+2022-04-27T06:34:31.684305721Z stderr F [2022-04-27 14:34:31 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:78)
+2022-04-27T06:34:31.685883058Z stderr F [2022-04-27 14:34:31 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:79)
+2022-04-27T06:34:31.726442027Z stderr F [2022-04-27 14:34:31 +0800] [79] [INFO] Worker exiting (pid: 79)
+2022-04-27T06:34:32.802982871Z stderr F [2022-04-27 14:34:32 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:80)
+2022-04-27T06:34:33.060593842Z stderr F [2022-04-27 14:34:32 +0800] [80] [INFO] Worker exiting (pid: 80)
+2022-04-27T06:34:33.362773018Z stderr F [2022-04-27 14:34:33 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:81)
+2022-04-27T06:34:33.698239369Z stderr F [2022-04-27 14:34:33 +0800] [110] [INFO] Booting worker with pid: 110
+2022-04-27T06:34:34.079748581Z stderr F [2022-04-27 14:34:34 +0800] [111] [INFO] Booting worker with pid: 111
+2022-04-27T06:34:34.336059422Z stderr F [2022-04-27 14:34:34 +0800] [113] [INFO] Booting worker with pid: 113
+2022-04-27T06:34:34.349750627Z stderr F [2022-04-27 14:34:34 +0800] [112] [INFO] Booting worker with pid: 112
+2022-04-27T06:35:03.974436889Z stderr F [2022-04-27 14:35:03 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:110)
+2022-04-27T06:35:03.97568809Z stderr F [2022-04-27 14:35:03 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:111)
+2022-04-27T06:35:04.680460866Z stderr F [2022-04-27 14:35:04 +0800] [111] [INFO] Worker exiting (pid: 111)
+2022-04-27T06:35:04.989254606Z stderr F [2022-04-27 14:35:04 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:112)
+2022-04-27T06:35:04.989293062Z stderr F [2022-04-27 14:35:04 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:113)
+2022-04-27T06:35:05.316186981Z stderr F [2022-04-27 14:35:05 +0800] [112] [INFO] Worker exiting (pid: 112)
+2022-04-27T06:35:05.436236451Z stderr F [2022-04-27 14:35:05 +0800] [113] [ERROR] Exception in worker process
+2022-04-27T06:35:05.436268294Z stderr F Traceback (most recent call last):
+2022-04-27T06:35:05.436273593Z stderr F   File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+2022-04-27T06:35:05.436277676Z stderr F     worker.init_process()
+2022-04-27T06:35:05.436281552Z stderr F   File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 119, in init_process
+2022-04-27T06:35:05.436285285Z stderr F     self.load_wsgi()
+2022-04-27T06:35:05.436288702Z stderr F   File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+2022-04-27T06:35:05.436291898Z stderr F     self.wsgi = self.app.wsgi()
+2022-04-27T06:35:05.436295177Z stderr F   File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+2022-04-27T06:35:05.436298416Z stderr F     self.callable = self.load()
+2022-04-27T06:35:05.436301694Z stderr F   File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+2022-04-27T06:35:05.436304951Z stderr F     return self.load_wsgiapp()
+2022-04-27T06:35:05.436308228Z stderr F   File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+2022-04-27T06:35:05.436311434Z stderr F     return util.import_app(self.app_uri)
+2022-04-27T06:35:05.43631476Z stderr F   File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 358, in import_app
+2022-04-27T06:35:05.436318175Z stderr F     mod = importlib.import_module(module)
+2022-04-27T06:35:05.436321431Z stderr F   File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+2022-04-27T06:35:05.436325319Z stderr F     return _bootstrap._gcd_import(name[level:], package, level)
+2022-04-27T06:35:05.436328569Z stderr F   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+2022-04-27T06:35:05.436331816Z stderr F   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+2022-04-27T06:35:05.436334984Z stderr F   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+2022-04-27T06:35:05.436338221Z stderr F   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+2022-04-27T06:35:05.436341436Z stderr F   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+2022-04-27T06:35:05.436344654Z stderr F   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+2022-04-27T06:35:05.436347842Z stderr F   File "/app/app.py", line 10, in <module>
+2022-04-27T06:35:05.436351104Z stderr F     from face_detect import check
+2022-04-27T06:35:05.436354774Z stderr F   File "/app/face_detect.py", line 2, in <module>
+2022-04-27T06:35:05.436360795Z stderr F     import dlib
+2022-04-27T06:35:05.436365927Z stderr F   File "/usr/local/lib/python3.9/site-packages/dlib/__init__.py", line 19, in <module>
+2022-04-27T06:35:05.436371134Z stderr F     from _dlib_pybind11 import *
+2022-04-27T06:35:05.436375568Z stderr F ImportError: SystemExit: 1
+2022-04-27T06:35:05.436380125Z stderr F 
+2022-04-27T06:35:05.436385313Z stderr F At:
+2022-04-27T06:35:05.436390662Z stderr F   /usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py(201): handle_abort
+2022-04-27T06:35:05.436396062Z stderr F   <frozen importlib._bootstrap>(228): _call_with_frames_removed
+2022-04-27T06:35:05.436400047Z stderr F   <frozen importlib._bootstrap_external>(1173): create_module
+2022-04-27T06:35:05.436403277Z stderr F   <frozen importlib._bootstrap>(565): module_from_spec
+2022-04-27T06:35:05.436475652Z stderr F   <frozen importlib._bootstrap>(666): _load_unlocked
+2022-04-27T06:35:05.436497433Z stderr F   <frozen importlib._bootstrap>(986): _find_and_load_unlocked
+2022-04-27T06:35:05.436506277Z stderr F   <frozen importlib._bootstrap>(1007): _find_and_load
+2022-04-27T06:35:05.436512327Z stderr F   /usr/local/lib/python3.9/site-packages/dlib/__init__.py(19): <module>
+2022-04-27T06:35:05.436517309Z stderr F   <frozen importlib._bootstrap>(228): _call_with_frames_removed
+2022-04-27T06:35:05.436522583Z stderr F   <frozen importlib._bootstrap_external>(850): exec_module
+2022-04-27T06:35:05.436527935Z stderr F   <frozen importlib._bootstrap>(680): _load_unlocked
+2022-04-27T06:35:05.436533231Z stderr F   <frozen importlib._bootstrap>(986): _find_and_load_unlocked
+2022-04-27T06:35:05.436538672Z stderr F   <frozen importlib._bootstrap>(1007): _find_and_load
+2022-04-27T06:35:05.436544412Z stderr F   /app/face_detect.py(2): <module>
+2022-04-27T06:35:05.436549105Z stderr F   <frozen importlib._bootstrap>(228): _call_with_frames_removed
+2022-04-27T06:35:05.436553486Z stderr F   <frozen importlib._bootstrap_external>(850): exec_module
+2022-04-27T06:35:05.436557953Z stderr F   <frozen importlib._bootstrap>(680): _load_unlocked
+2022-04-27T06:35:05.436562645Z stderr F   <frozen importlib._bootstrap>(986): _find_and_load_unlocked
+2022-04-27T06:35:05.436567025Z stderr F   <frozen importlib._bootstrap>(1007): _find_and_load
+2022-04-27T06:35:05.437741314Z stderr F   /app/app.py(10): <module>
+2022-04-27T06:35:05.437762139Z stderr F   <frozen importlib._bootstrap>(228): _call_with_frames_removed
+2022-04-27T06:35:05.437766725Z stderr F   <frozen importlib._bootstrap_external>(850): exec_module
+2022-04-27T06:35:05.43777011Z stderr F   <frozen importlib._bootstrap>(680): _load_unlocked
+2022-04-27T06:35:05.437773438Z stderr F   <frozen importlib._bootstrap>(986): _find_and_load_unlocked
+2022-04-27T06:35:05.437821466Z stderr F   <frozen importlib._bootstrap>(1007): _find_and_load
+2022-04-27T06:35:05.437829032Z stderr F   <frozen importlib._bootstrap>(1030): _gcd_import
+2022-04-27T06:35:05.43783309Z stderr F   /usr/local/lib/python3.9/importlib/__init__.py(127): import_module
+2022-04-27T06:35:05.437836387Z stderr F   /usr/local/lib/python3.9/site-packages/gunicorn/util.py(358): import_app
+2022-04-27T06:35:05.437840053Z stderr F   /usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py(39): load_wsgiapp
+2022-04-27T06:35:05.437843315Z stderr F   /usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py(49): load
+2022-04-27T06:35:05.437846491Z stderr F   /usr/local/lib/python3.9/site-packages/gunicorn/app/base.py(67): wsgi
+2022-04-27T06:35:05.437849664Z stderr F   /usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py(144): load_wsgi
+2022-04-27T06:35:05.437852826Z stderr F   /usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py(119): init_process
+2022-04-27T06:35:05.437856081Z stderr F   /usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py(583): spawn_worker
+2022-04-27T06:35:05.437859235Z stderr F   /usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py(616): spawn_workers
+2022-04-27T06:35:05.43788052Z stderr F   /usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py(545): manage_workers
+2022-04-27T06:35:05.43788548Z stderr F   /usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py(211): run
+2022-04-27T06:35:05.437888797Z stderr F   /usr/local/lib/python3.9/site-packages/gunicorn/app/base.py(72): run
+2022-04-27T06:35:05.437891905Z stderr F   /usr/local/lib/python3.9/site-packages/gunicorn/app/base.py(228): run
+2022-04-27T06:35:05.437895042Z stderr F   /usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py(58): run
+2022-04-27T06:35:05.437898614Z stderr F   /usr/local/bin/gunicorn(8): <module>
+2022-04-27T06:35:05.437901666Z stderr F 
+2022-04-27T06:35:05.484377716Z stderr F [2022-04-27 14:35:05 +0800] [113] [INFO] Worker exiting (pid: 113)
+2022-04-27T06:35:06.737710736Z stderr F [2022-04-27 14:35:06 +0800] [142] [INFO] Booting worker with pid: 142
+2022-04-27T06:35:06.814179368Z stderr F [2022-04-27 14:35:06 +0800] [143] [INFO] Booting worker with pid: 143
+2022-04-27T06:35:07.220790801Z stderr F [2022-04-27 14:35:07 +0800] [144] [INFO] Booting worker with pid: 144
+2022-04-27T06:35:07.423403067Z stderr F [2022-04-27 14:35:07 +0800] [145] [INFO] Booting worker with pid: 145
+2022-04-27T06:35:37.033331848Z stderr F [2022-04-27 14:35:37 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:142)
+2022-04-27T06:35:37.033703054Z stderr F [2022-04-27 14:35:37 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:143)
+2022-04-27T06:35:37.034389518Z stderr F [2022-04-27 14:35:37 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:144)
+2022-04-27T06:35:38.118568867Z stderr F [2022-04-27 14:35:38 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:145)
+2022-04-27T06:35:38.642350243Z stderr F [2022-04-27 14:35:38 +0800] [174] [INFO] Booting worker with pid: 174
+2022-04-27T06:35:38.726550664Z stderr F [2022-04-27 14:35:38 +0800] [175] [INFO] Booting worker with pid: 175
+2022-04-27T06:35:38.937071328Z stderr F [2022-04-27 14:35:38 +0800] [176] [INFO] Booting worker with pid: 176
+2022-04-27T06:35:39.078179013Z stderr F [2022-04-27 14:35:39 +0800] [177] [INFO] Booting worker with pid: 177
+2022-04-27T06:36:08.673453026Z stderr F [2022-04-27 14:36:08 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:174)
+2022-04-27T06:36:09.699917908Z stderr F [2022-04-27 14:36:09 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:175)
+2022-04-27T06:36:09.700003784Z stderr F [2022-04-27 14:36:09 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:176)
+2022-04-27T06:36:09.700214309Z stderr F [2022-04-27 14:36:09 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:177)
+2022-04-27T06:36:11.110157266Z stderr F [2022-04-27 14:36:11 +0800] [206] [INFO] Booting worker with pid: 206
+2022-04-27T06:36:11.244568179Z stderr F [2022-04-27 14:36:11 +0800] [207] [INFO] Booting worker with pid: 207
+2022-04-27T06:36:11.379005138Z stderr F [2022-04-27 14:36:11 +0800] [208] [INFO] Booting worker with pid: 208
+2022-04-27T06:36:11.560417453Z stderr F [2022-04-27 14:36:11 +0800] [209] [INFO] Booting worker with pid: 209
+2022-04-27T06:36:41.625271695Z stderr F [2022-04-27 14:36:41 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:206)
+2022-04-27T06:36:41.625798805Z stderr F [2022-04-27 14:36:41 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:207)
+2022-04-27T06:36:41.681059455Z stderr F [2022-04-27 14:36:41 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:208)
+2022-04-27T06:36:41.681105889Z stderr F [2022-04-27 14:36:41 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:209)
+2022-04-27T06:36:44.384416399Z stderr F [2022-04-27 14:36:44 +0800] [238] [INFO] Booting worker with pid: 238
+2022-04-27T06:36:44.624988695Z stderr F [2022-04-27 14:36:44 +0800] [239] [INFO] Booting worker with pid: 239
+2022-04-27T06:36:45.036467252Z stderr F [2022-04-27 14:36:45 +0800] [240] [INFO] Booting worker with pid: 240
+2022-04-27T06:36:45.295241313Z stderr F [2022-04-27 14:36:45 +0800] [241] [INFO] Booting worker with pid: 241
+2022-04-27T06:37:15.022368405Z stderr F [2022-04-27 14:37:15 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:238)
+2022-04-27T06:37:15.026358301Z stderr F [2022-04-27 14:37:15 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:239)
+2022-04-27T06:37:15.026716435Z stderr F [2022-04-27 14:37:15 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:240)
+2022-04-27T06:37:15.026879201Z stderr F [2022-04-27 14:37:15 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:241)
+2022-04-27T06:37:16.339163131Z stderr F [2022-04-27 14:37:16 +0800] [270] [INFO] Booting worker with pid: 270
+2022-04-27T06:37:16.429577934Z stderr F [2022-04-27 14:37:16 +0800] [271] [INFO] Booting worker with pid: 271
+2022-04-27T06:37:16.507721753Z stderr F [2022-04-27 14:37:16 +0800] [272] [INFO] Booting worker with pid: 272
+2022-04-27T06:37:16.52744151Z stderr F [2022-04-27 14:37:16 +0800] [273] [INFO] Booting worker with pid: 273
+2022-04-27T06:37:47.180240127Z stderr F [2022-04-27 14:37:47 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:270)
+2022-04-27T06:37:47.180280384Z stderr F [2022-04-27 14:37:47 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:271)
+2022-04-27T06:37:47.180285769Z stderr F [2022-04-27 14:37:47 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:273)
+2022-04-27T06:37:47.678156752Z stderr F [2022-04-27 14:37:47 +0800] [270] [INFO] Worker exiting (pid: 270)
+2022-04-27T06:37:48.478869041Z stderr F [2022-04-27 14:37:48 +0800] [302] [INFO] Booting worker with pid: 302
+2022-04-27T06:37:48.482536337Z stderr F [2022-04-27 14:37:48 +0800] [303] [INFO] Booting worker with pid: 303
+2022-04-27T06:37:48.583680297Z stderr F [2022-04-27 14:37:48 +0800] [304] [INFO] Booting worker with pid: 304
+2022-04-27T07:23:39.763152445Z stdout F 人脸数： 0 
+2022-04-27T07:23:39.763363198Z stdout F 
