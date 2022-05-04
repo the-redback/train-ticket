@@ -1,0 +1,27 @@
+2022-04-30T04:36:00.026522811Z stderr F ts=2022-04-30T04:36:00.023Z caller=main.go:444 level=info msg="Starting Prometheus" version="(version=2.31.1, branch=HEAD, revision=411021ada9ab41095923b8d2df9365b632fd40c3)"
+2022-04-30T04:36:00.086807454Z stderr F ts=2022-04-30T04:36:00.023Z caller=main.go:449 level=info build_context="(go=go1.17.3, user=root@9419c9c2d4e0, date=20211105-20:35:02)"
+2022-04-30T04:36:00.086904239Z stderr F ts=2022-04-30T04:36:00.086Z caller=main.go:450 level=info host_details="(Linux 5.10.104-linuxkit #1 SMP Thu Mar 17 17:08:06 UTC 2022 x86_64 prometheus-7cc96d969f-2xnz6 (none))"
+2022-04-30T04:36:00.095835318Z stderr F ts=2022-04-30T04:36:00.086Z caller=main.go:451 level=info fd_limits="(soft=1048576, hard=1048576)"
+2022-04-30T04:36:00.103927867Z stderr F ts=2022-04-30T04:36:00.096Z caller=main.go:452 level=info vm_limits="(soft=unlimited, hard=unlimited)"
+2022-04-30T04:36:00.241599756Z stderr F ts=2022-04-30T04:36:00.240Z caller=web.go:542 level=info component=web msg="Start listening for connections" address=0.0.0.0:9090
+2022-04-30T04:36:00.478172635Z stderr F ts=2022-04-30T04:36:00.474Z caller=main.go:839 level=info msg="Starting TSDB ..."
+2022-04-30T04:36:00.68368107Z stderr F ts=2022-04-30T04:36:00.683Z caller=tls_config.go:195 level=info component=web msg="TLS is disabled." http2=false
+2022-04-30T04:36:01.248229469Z stderr F ts=2022-04-30T04:36:01.247Z caller=head.go:479 level=info component=tsdb msg="Replaying on-disk memory mappable chunks if any"
+2022-04-30T04:36:01.248276937Z stderr F ts=2022-04-30T04:36:01.247Z caller=head.go:513 level=info component=tsdb msg="On-disk memory mappable chunks replay completed" duration=4.489µs
+2022-04-30T04:36:01.248292335Z stderr F ts=2022-04-30T04:36:01.247Z caller=head.go:519 level=info component=tsdb msg="Replaying WAL, this may take a while"
+2022-04-30T04:39:42.549416708Z stderr F ts=2022-04-30T04:39:42.506Z caller=head.go:590 level=info component=tsdb msg="WAL segment loaded" segment=0 maxSegment=1
+2022-04-30T04:39:42.649239022Z stderr F ts=2022-04-30T04:39:42.645Z caller=head.go:590 level=info component=tsdb msg="WAL segment loaded" segment=1 maxSegment=1
+2022-04-30T04:39:42.649286479Z stderr F ts=2022-04-30T04:39:42.645Z caller=head.go:596 level=info component=tsdb msg="WAL replay completed" checkpoint_replay_duration=98.863µs wal_replay_duration=3m41.572183205s total_replay_duration=3m41.572311276s
+2022-04-30T04:39:58.516137265Z stderr F ts=2022-04-30T04:39:58.509Z caller=main.go:866 level=info fs_type=EXT4_SUPER_MAGIC
+2022-04-30T04:39:58.516483221Z stderr F ts=2022-04-30T04:39:58.509Z caller=main.go:869 level=info msg="TSDB started"
+2022-04-30T04:39:58.516580827Z stderr F ts=2022-04-30T04:39:58.509Z caller=main.go:996 level=info msg="Loading configuration file" filename=/etc/config/prometheus.yml
+2022-04-30T04:39:59.758073106Z stderr F ts=2022-04-30T04:39:59.743Z caller=kubernetes.go:284 level=info component="discovery manager scrape" discovery=kubernetes msg="Using pod service account via in-cluster config"
+2022-04-30T04:40:03.508705736Z stderr F ts=2022-04-30T04:40:03.505Z caller=kubernetes.go:284 level=info component="discovery manager scrape" discovery=kubernetes msg="Using pod service account via in-cluster config"
+2022-04-30T04:40:05.72618429Z stderr F ts=2022-04-30T04:40:05.724Z caller=kubernetes.go:284 level=info component="discovery manager scrape" discovery=kubernetes msg="Using pod service account via in-cluster config"
+2022-04-30T04:40:06.357272532Z stderr F ts=2022-04-30T04:40:06.353Z caller=kubernetes.go:284 level=info component="discovery manager scrape" discovery=kubernetes msg="Using pod service account via in-cluster config"
+2022-04-30T04:40:07.623206892Z stderr F ts=2022-04-30T04:40:07.622Z caller=main.go:1033 level=info msg="Completed loading of configuration file" filename=/etc/config/prometheus.yml totalDuration=9.134910938s db_storage=3.102µs remote_storage=5.339µs web_handler=1.333µs query_engine=2.331µs scrape=11.918889ms scrape_sd=7.818156386s notify=5.851µs notify_sd=20.185µs rules=83.0702ms
+2022-04-30T04:40:07.623256244Z stderr F ts=2022-04-30T04:40:07.622Z caller=main.go:811 level=info msg="Server is ready to receive web requests."
+2022-04-30T07:26:32.513823398Z stderr F ts=2022-04-30T07:26:32.505Z caller=compact.go:518 level=info component=tsdb msg="write block" mint=1651292786133 maxt=1651298400000 ulid=01G1WNT8A1RM0VD8608MQ51DQ9 duration=4.345483134s
+2022-04-30T07:26:32.680236777Z stderr F ts=2022-04-30T07:26:32.679Z caller=head.go:803 level=info component=tsdb msg="Head GC completed" duration=161.082527ms
+2022-04-30T07:26:32.692277656Z stderr F ts=2022-04-30T07:26:32.691Z caller=checkpoint.go:97 level=info component=tsdb msg="Creating checkpoint" from_segment=0 to_segment=1 mint=1651298400000
+2022-04-30T07:26:34.373289239Z stderr F ts=2022-04-30T07:26:34.372Z caller=head.go:972 level=info component=tsdb msg="WAL checkpoint complete" first=0 last=1 duration=1.681564338s
