@@ -1,0 +1,106 @@
+2022-05-09T06:51:23.574927941Z stdout F 2022-05-09T06:51:23.572410Z	info	FLAG: --concurrency="2"
+2022-05-09T06:51:23.57498288Z stdout F 2022-05-09T06:51:23.572440Z	info	FLAG: --domain="default.svc.cluster.local"
+2022-05-09T06:51:23.574988414Z stdout F 2022-05-09T06:51:23.572445Z	info	FLAG: --help="false"
+2022-05-09T06:51:23.574991591Z stdout F 2022-05-09T06:51:23.572448Z	info	FLAG: --log_as_json="false"
+2022-05-09T06:51:23.574994504Z stdout F 2022-05-09T06:51:23.572451Z	info	FLAG: --log_caller=""
+2022-05-09T06:51:23.574997396Z stdout F 2022-05-09T06:51:23.572453Z	info	FLAG: --log_output_level="default:info"
+2022-05-09T06:51:23.575000268Z stdout F 2022-05-09T06:51:23.572455Z	info	FLAG: --log_rotate=""
+2022-05-09T06:51:23.575003144Z stdout F 2022-05-09T06:51:23.572458Z	info	FLAG: --log_rotate_max_age="30"
+2022-05-09T06:51:23.575005935Z stdout F 2022-05-09T06:51:23.572461Z	info	FLAG: --log_rotate_max_backups="1000"
+2022-05-09T06:51:23.575008757Z stdout F 2022-05-09T06:51:23.572463Z	info	FLAG: --log_rotate_max_size="104857600"
+2022-05-09T06:51:23.575011602Z stdout F 2022-05-09T06:51:23.572466Z	info	FLAG: --log_stacktrace_level="default:none"
+2022-05-09T06:51:23.575014432Z stdout F 2022-05-09T06:51:23.572474Z	info	FLAG: --log_target="[stdout]"
+2022-05-09T06:51:23.575017283Z stdout F 2022-05-09T06:51:23.572477Z	info	FLAG: --meshConfig="./etc/istio/config/mesh"
+2022-05-09T06:51:23.575020106Z stdout F 2022-05-09T06:51:23.572479Z	info	FLAG: --outlierLogPath=""
+2022-05-09T06:51:23.575022913Z stdout F 2022-05-09T06:51:23.572481Z	info	FLAG: --proxyComponentLogLevel="misc:error"
+2022-05-09T06:51:23.575025687Z stdout F 2022-05-09T06:51:23.572484Z	info	FLAG: --proxyLogLevel="warning"
+2022-05-09T06:51:23.575028529Z stdout F 2022-05-09T06:51:23.572486Z	info	FLAG: --serviceCluster="istio-proxy"
+2022-05-09T06:51:23.575031461Z stdout F 2022-05-09T06:51:23.572489Z	info	FLAG: --stsPort="0"
+2022-05-09T06:51:23.575034372Z stdout F 2022-05-09T06:51:23.572491Z	info	FLAG: --templateFile=""
+2022-05-09T06:51:23.575037843Z stdout F 2022-05-09T06:51:23.572494Z	info	FLAG: --tokenManagerPlugin="GoogleTokenExchange"
+2022-05-09T06:51:23.575040783Z stdout F 2022-05-09T06:51:23.572497Z	info	FLAG: --vklog="0"
+2022-05-09T06:51:23.575043696Z stdout F 2022-05-09T06:51:23.572500Z	info	Version 1.13.2-91533d04e894ff86b80acd6d7a4517b144f9e19a-Clean
+2022-05-09T06:51:23.575046649Z stdout F 2022-05-09T06:51:23.572774Z	info	Proxy role	ips=[10.244.0.24 fe80::c2a:9bff:fee1:6095] type=sidecar id=ts-security-mongo-6f9d5866c9-lrvms.default domain=default.svc.cluster.local
+2022-05-09T06:51:23.575050385Z stdout F 2022-05-09T06:51:23.572853Z	info	Apply proxy config from env {}
+2022-05-09T06:51:23.575053133Z stdout F 
+2022-05-09T06:51:23.57984222Z stdout F 2022-05-09T06:51:23.578616Z	info	Effective config: binaryPath: /usr/local/bin/envoy
+2022-05-09T06:51:23.579868419Z stdout F concurrency: 2
+2022-05-09T06:51:23.57987339Z stdout F configPath: ./etc/istio/proxy
+2022-05-09T06:51:23.579877244Z stdout F controlPlaneAuthPolicy: MUTUAL_TLS
+2022-05-09T06:51:23.579880272Z stdout F discoveryAddress: istiod.istio-system.svc:15012
+2022-05-09T06:51:23.579883783Z stdout F drainDuration: 45s
+2022-05-09T06:51:23.579886733Z stdout F parentShutdownDuration: 60s
+2022-05-09T06:51:23.579889627Z stdout F proxyAdminPort: 15000
+2022-05-09T06:51:23.57989252Z stdout F serviceCluster: istio-proxy
+2022-05-09T06:51:23.579895367Z stdout F statNameLength: 189
+2022-05-09T06:51:23.57989826Z stdout F statusPort: 15020
+2022-05-09T06:51:23.579901534Z stdout F terminationDrainDuration: 5s
+2022-05-09T06:51:23.579906068Z stdout F tracing:
+2022-05-09T06:51:23.579914531Z stdout F   zipkin:
+2022-05-09T06:51:23.579920241Z stdout F     address: zipkin.istio-system:9411
+2022-05-09T06:51:23.579923406Z stdout F 
+2022-05-09T06:51:23.579926774Z stdout F 2022-05-09T06:51:23.578722Z	info	JWT policy is third-party-jwt
+2022-05-09T06:51:23.583921254Z stdout F 2022-05-09T06:51:23.582436Z	info	CA Endpoint istiod.istio-system.svc:15012, provider Citadel
+2022-05-09T06:51:23.583965199Z stdout F 2022-05-09T06:51:23.582738Z	info	Using CA istiod.istio-system.svc:15012 cert with certs: var/run/secrets/istio/root-cert.pem
+2022-05-09T06:51:23.583995052Z stdout F 2022-05-09T06:51:23.582878Z	info	citadelclient	Citadel client using custom root cert: var/run/secrets/istio/root-cert.pem
+2022-05-09T06:51:23.588037014Z stdout F 2022-05-09T06:51:23.584107Z	info	Opening status port 15020
+2022-05-09T06:51:23.621034571Z stdout F 2022-05-09T06:51:23.620131Z	info	ads	All caches have been synced up in 67.15646ms, marking server ready
+2022-05-09T06:51:23.621057006Z stdout F 2022-05-09T06:51:23.620384Z	info	sds	SDS server for workload certificates started, listening on "etc/istio/proxy/SDS"
+2022-05-09T06:51:23.621061605Z stdout F 2022-05-09T06:51:23.620411Z	info	xdsproxy	Initializing with upstream address "istiod.istio-system.svc:15012" and cluster "Kubernetes"
+2022-05-09T06:51:23.624372319Z stdout F 2022-05-09T06:51:23.623261Z	info	sds	Starting SDS grpc server
+2022-05-09T06:51:23.625844335Z stdout F 2022-05-09T06:51:23.625673Z	info	starting Http service at 127.0.0.1:15004
+2022-05-09T06:51:23.628350391Z stdout F 2022-05-09T06:51:23.628061Z	info	Pilot SAN: [istiod.istio-system.svc]
+2022-05-09T06:51:23.635599786Z stdout F 2022-05-09T06:51:23.634979Z	info	Starting proxy agent
+2022-05-09T06:51:23.635621688Z stdout F 2022-05-09T06:51:23.635068Z	info	Epoch 0 starting
+2022-05-09T06:51:23.635626514Z stdout F 2022-05-09T06:51:23.635128Z	info	Envoy command: [-c etc/istio/proxy/envoy-rev0.json --restart-epoch 0 --drain-time-s 45 --drain-strategy immediate --parent-shutdown-time-s 60 --local-address-ip-version v4 --file-flush-interval-msec 1000 --disable-hot-restart --log-format %Y-%m-%dT%T.%fZ	%l	envoy %n	%v -l warning --component-log-level misc:error --concurrency 2]
+2022-05-09T06:51:24.045195131Z stdout F 2022-05-09T06:51:24.044744Z	info	xdsproxy	connected to upstream XDS server: istiod.istio-system.svc:15012
+2022-05-09T06:51:24.18821189Z stdout F 2022-05-09T06:51:24.187847Z	info	ads	ADS: new connection for node:ts-security-mongo-6f9d5866c9-lrvms.default-1
+2022-05-09T06:51:24.229034736Z stdout F 2022-05-09T06:51:24.228476Z	info	ads	ADS: new connection for node:ts-security-mongo-6f9d5866c9-lrvms.default-2
+2022-05-09T06:51:24.294833646Z stdout F 2022-05-09T06:51:24.294544Z	info	cache	generated new workload certificate	latency=673.708995ms ttl=23h59m59.705466482s
+2022-05-09T06:51:24.294868293Z stdout F 2022-05-09T06:51:24.294571Z	info	cache	Root cert has changed, start rotating root cert
+2022-05-09T06:51:24.294883263Z stdout F 2022-05-09T06:51:24.294583Z	info	ads	XDS: Incremental Pushing:0 ConnectedEndpoints:2 Version:
+2022-05-09T06:51:24.294896013Z stdout F 2022-05-09T06:51:24.294688Z	info	cache	returned workload trust anchor from cache	ttl=23h59m59.705316075s
+2022-05-09T06:51:24.294901324Z stdout F 2022-05-09T06:51:24.294722Z	info	cache	returned workload trust anchor from cache	ttl=23h59m59.705280207s
+2022-05-09T06:51:24.295217829Z stdout F 2022-05-09T06:51:24.295035Z	info	ads	SDS: PUSH request for node:ts-security-mongo-6f9d5866c9-lrvms.default resources:1 size:1.1kB resource:ROOTCA
+2022-05-09T06:51:24.295271419Z stdout F 2022-05-09T06:51:24.295142Z	info	cache	returned workload trust anchor from cache	ttl=23h59m59.704866143s
+2022-05-09T06:51:24.295322131Z stdout F 2022-05-09T06:51:24.295189Z	info	ads	SDS: PUSH for node:ts-security-mongo-6f9d5866c9-lrvms.default resources:1 size:1.1kB resource:ROOTCA
+2022-05-09T06:51:24.295588158Z stdout F 2022-05-09T06:51:24.295420Z	info	cache	returned workload certificate from cache	ttl=23h59m59.70497098s
+2022-05-09T06:51:24.296395883Z stdout F 2022-05-09T06:51:24.296266Z	info	ads	SDS: PUSH request for node:ts-security-mongo-6f9d5866c9-lrvms.default resources:1 size:4.0kB resource:default
+2022-05-09T06:51:24.676861466Z stdout F 2022-05-09T06:51:24.676556Z	info	Readiness succeeded in 1.112719549s
+2022-05-09T06:51:24.677484258Z stdout F 2022-05-09T06:51:24.677258Z	info	Envoy proxy is ready
+2022-05-09T06:59:57.380356087Z stdout F 2022-05-09T06:59:57.069978Z	warn	xdsproxy	upstream [1] terminated with unexpected error rpc error: code = Unavailable desc = keepalive ping failed to receive ACK within timeout
+2022-05-09T07:00:44.148856668Z stdout F 2022-05-09T07:00:44.148496Z	info	xdsproxy	connected to upstream XDS server: istiod.istio-system.svc:15012
+2022-05-09T07:02:30.653692077Z stdout F 2022-05-09T07:02:30.485003Z	warn	xdsproxy	upstream [3] terminated with unexpected error rpc error: code = Unavailable desc = keepalive ping failed to receive ACK within timeout
+2022-05-09T07:03:17.86664201Z stderr F 2022-05-09T07:03:17.686050Z	warning	envoy config	StreamAggregatedResources gRPC config stream closed since 44s ago: 14, connection error: desc = "transport: authentication handshake failed: context deadline exceeded"
+2022-05-09T07:03:38.919206968Z stderr F 2022-05-09T07:03:38.907709Z	warning	envoy config	StreamAggregatedResources gRPC config stream closed since 65s ago: 14, failed to receive server preface within timeout
+2022-05-09T07:03:52.298357721Z stdout F 2022-05-09T07:03:52.292073Z	info	xdsproxy	connected to upstream XDS server: istiod.istio-system.svc:15012
+2022-05-09T07:03:56.847138129Z stdout F 2022-05-09T07:03:56.842874Z	warn	xdsproxy	upstream [6] terminated with unexpected error rpc error: code = Unauthenticated desc = authentication failure
+2022-05-09T07:03:56.990888453Z stderr F 2022-05-09T07:03:56.990475Z	warning	envoy config	StreamAggregatedResources gRPC config stream closed: 16, authentication failure
+2022-05-09T07:03:59.505142902Z stderr F 2022-05-09T07:03:59.498583Z	warning	envoy config	StreamAggregatedResources gRPC config stream closed since 86s ago: 14, connection error: desc = "transport: Error while dialing dial tcp 10.96.224.88:15012: connect: connection refused"
+2022-05-09T07:04:07.271613982Z stderr F 2022-05-09T07:04:07.271106Z	warning	envoy config	StreamAggregatedResources gRPC config stream closed since 94s ago: 14, connection error: desc = "transport: Error while dialing dial tcp 10.96.224.88:15012: connect: connection refused"
+2022-05-09T07:04:12.751131836Z stderr F 2022-05-09T07:04:12.750523Z	warning	envoy config	StreamAggregatedResources gRPC config stream closed since 99s ago: 14, connection error: desc = "transport: Error while dialing dial tcp 10.96.224.88:15012: connect: connection refused"
+2022-05-09T07:04:23.830742314Z stderr F 2022-05-09T07:04:23.827215Z	warning	envoy config	StreamAggregatedResources gRPC config stream closed since 110s ago: 14, connection error: desc = "transport: Error while dialing dial tcp 10.96.224.88:15012: connect: connection refused"
+2022-05-09T07:04:27.844440245Z stderr F 2022-05-09T07:04:27.843241Z	warning	envoy config	StreamAggregatedResources gRPC config stream closed since 114s ago: 14, connection error: desc = "transport: Error while dialing dial tcp 10.96.224.88:15012: connect: connection refused"
+2022-05-09T07:05:00.470225566Z stderr F 2022-05-09T07:05:00.468127Z	warning	envoy config	StreamAggregatedResources gRPC config stream closed since 147s ago: 14, connection error: desc = "transport: Error while dialing dial tcp 10.96.224.88:15012: connect: connection refused"
+2022-05-09T07:05:11.113090156Z stderr F 2022-05-09T07:05:11.110994Z	warning	envoy config	StreamAggregatedResources gRPC config stream closed since 157s ago: 14, connection error: desc = "transport: Error while dialing dial tcp 10.96.224.88:15012: connect: connection refused"
+2022-05-09T07:05:28.328241384Z stderr F 2022-05-09T07:05:28.327746Z	warning	envoy config	StreamAggregatedResources gRPC config stream closed since 175s ago: 14, connection error: desc = "transport: Error while dialing dial tcp 10.96.224.88:15012: connect: connection refused"
+2022-05-09T07:05:35.817460581Z stderr F 2022-05-09T07:05:35.816853Z	warning	envoy config	StreamAggregatedResources gRPC config stream closed since 182s ago: 14, connection error: desc = "transport: Error while dialing dial tcp 10.96.224.88:15012: connect: connection refused"
+2022-05-09T07:05:46.880487075Z stderr F 2022-05-09T07:05:46.878528Z	warning	envoy config	StreamAggregatedResources gRPC config stream closed since 193s ago: 14, connection error: desc = "transport: Error while dialing dial tcp 10.96.224.88:15012: connect: connection refused"
+2022-05-09T07:05:53.196651982Z stderr F 2022-05-09T07:05:53.193469Z	warning	envoy config	StreamAggregatedResources gRPC config stream closed since 200s ago: 14, connection error: desc = "transport: Error while dialing dial tcp 10.96.224.88:15012: connect: connection refused"
+2022-05-09T07:06:21.77680245Z stderr F 2022-05-09T07:06:21.776148Z	warning	envoy config	StreamAggregatedResources gRPC config stream closed since 228s ago: 14, connection error: desc = "transport: Error while dialing dial tcp 10.96.224.88:15012: connect: connection refused"
+2022-05-09T07:06:34.39768711Z stderr F 2022-05-09T07:06:34.397034Z	warning	envoy config	StreamAggregatedResources gRPC config stream closed since 241s ago: 14, connection error: desc = "transport: Error while dialing dial tcp 10.96.224.88:15012: connect: connection refused"
+2022-05-09T07:06:47.620647364Z stderr F 2022-05-09T07:06:47.619254Z	warning	envoy config	StreamAggregatedResources gRPC config stream closed since 254s ago: 14, connection error: desc = "transport: Error while dialing dial tcp 10.96.224.88:15012: connect: connection refused"
+2022-05-09T07:06:57.536261352Z stderr F 2022-05-09T07:06:57.533554Z	warning	envoy config	StreamAggregatedResources gRPC config stream closed since 264s ago: 14, connection error: desc = "transport: Error while dialing dial tcp 10.96.224.88:15012: connect: connection refused"
+2022-05-09T07:07:05.557661871Z stderr F 2022-05-09T07:07:05.556726Z	warning	envoy config	StreamAggregatedResources gRPC config stream closed since 272s ago: 14, connection error: desc = "transport: Error while dialing dial tcp 10.96.224.88:15012: connect: connection refused"
+2022-05-09T07:07:15.279295066Z stderr F 2022-05-09T07:07:15.278913Z	warning	envoy config	StreamAggregatedResources gRPC config stream closed since 282s ago: 14, connection error: desc = "transport: Error while dialing dial tcp 10.96.224.88:15012: connect: connection refused"
+2022-05-09T07:07:25.498416567Z stderr F 2022-05-09T07:07:25.498068Z	warning	envoy config	StreamAggregatedResources gRPC config stream closed since 292s ago: 14, connection error: desc = "transport: Error while dialing dial tcp 10.96.224.88:15012: connect: connection refused"
+2022-05-09T07:07:38.167088756Z stderr F 2022-05-09T07:07:38.166613Z	warning	envoy config	StreamAggregatedResources gRPC config stream closed since 305s ago: 14, connection error: desc = "transport: Error while dialing dial tcp 10.96.224.88:15012: connect: connection refused"
+2022-05-09T07:07:53.286524753Z stderr F 2022-05-09T07:07:53.286078Z	warning	envoy config	StreamAggregatedResources gRPC config stream closed since 320s ago: 14, connection error: desc = "transport: Error while dialing dial tcp 10.96.224.88:15012: connect: connection refused"
+2022-05-09T07:08:02.671255402Z stderr F 2022-05-09T07:08:02.670457Z	warning	envoy config	StreamAggregatedResources gRPC config stream closed since 329s ago: 14, connection error: desc = "transport: Error while dialing dial tcp 10.96.224.88:15012: connect: connection refused"
+2022-05-09T07:08:30.266216531Z stderr F 2022-05-09T07:08:30.264703Z	warning	envoy config	StreamAggregatedResources gRPC config stream closed since 357s ago: 14, connection error: desc = "transport: Error while dialing dial tcp 10.96.224.88:15012: connect: connection refused"
+2022-05-09T07:08:35.546964218Z stderr F 2022-05-09T07:08:35.546228Z	warning	envoy config	StreamAggregatedResources gRPC config stream closed since 362s ago: 14, connection error: desc = "transport: Error while dialing dial tcp 10.96.224.88:15012: connect: connection refused"
+2022-05-09T07:08:39.1780644Z stderr F 2022-05-09T07:08:39.177418Z	warning	envoy config	StreamAggregatedResources gRPC config stream closed since 366s ago: 14, connection error: desc = "transport: Error while dialing dial tcp 10.96.224.88:15012: connect: connection refused"
+2022-05-09T07:08:45.850962153Z stderr F 2022-05-09T07:08:45.846632Z	warning	envoy config	StreamAggregatedResources gRPC config stream closed since 372s ago: 14, connection error: desc = "transport: Error while dialing dial tcp 10.96.224.88:15012: connect: connection refused"
+2022-05-09T07:09:23.36809797Z stdout F 2022-05-09T07:09:23.367499Z	info	xdsproxy	connected to upstream XDS server: istiod.istio-system.svc:15012
+2022-05-09T07:42:06.491300724Z stdout F 2022-05-09T07:42:06.487641Z	info	xdsproxy	connected to upstream XDS server: istiod.istio-system.svc:15012
+2022-05-09T08:10:48.468201492Z stdout F 2022-05-09T08:10:48.466759Z	info	xdsproxy	connected to upstream XDS server: istiod.istio-system.svc:15012
