@@ -112,7 +112,7 @@ public class ExecuteServiceImpl implements ExecuteService {
 
     private Response executeOrder(String orderId, int status, HttpHeaders headers) {
         ExecuteServiceImpl.LOGGER.info("[Execute Service][Execute Order] Executing....");
-        HttpEntity requestEntity = new HttpEntity(headers);
+        HttpEntity requestEntity = new HttpEntity(null);
         ResponseEntity<Response> re = restTemplate.exchange(
                 "http://ts-order-service:12031/api/v1/orderservice/order/status/" + orderId + "/" + status,
                 HttpMethod.GET,
@@ -124,7 +124,7 @@ public class ExecuteServiceImpl implements ExecuteService {
 
     private Response executeOrderOther(String orderId, int status, HttpHeaders headers) {
         ExecuteServiceImpl.LOGGER.info("[Execute Service][Execute Order] Executing....");
-        HttpEntity requestEntity = new HttpEntity(headers);
+        HttpEntity requestEntity = new HttpEntity(null);
         ResponseEntity<Response> re = restTemplate.exchange(
                 "http://ts-order-other-service:12032/api/v1/orderOtherService/orderOther/status/" + orderId + "/" + status,
                 HttpMethod.GET,
@@ -135,7 +135,7 @@ public class ExecuteServiceImpl implements ExecuteService {
 
     private Response<Order> getOrderByIdFromOrder(String orderId, HttpHeaders headers) {
         ExecuteServiceImpl.LOGGER.info("[Execute Service][Get Order] Getting....");
-        HttpEntity requestEntity = new HttpEntity(headers);
+        HttpEntity requestEntity = new HttpEntity(null);
         ResponseEntity<Response<Order>> re = restTemplate.exchange(
                 "http://ts-order-service:12031/api/v1/orderservice/order/" + orderId,
                 HttpMethod.GET,
@@ -147,7 +147,7 @@ public class ExecuteServiceImpl implements ExecuteService {
 
     private Response<Order> getOrderByIdFromOrderOther(String orderId, HttpHeaders headers) {
         ExecuteServiceImpl.LOGGER.info("[Execute Service][Get Order] Getting....");
-        HttpEntity requestEntity = new HttpEntity(headers);
+        HttpEntity requestEntity = new HttpEntity(null);
         ResponseEntity<Response<Order>> re = restTemplate.exchange(
                 "http://ts-order-other-service:12032/api/v1/orderOtherService/orderOther/" + orderId,
                 HttpMethod.GET,

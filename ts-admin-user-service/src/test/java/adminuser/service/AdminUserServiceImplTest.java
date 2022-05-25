@@ -28,7 +28,7 @@ public class AdminUserServiceImplTest {
     private RestTemplate restTemplate;
 
     private HttpHeaders headers = new HttpHeaders();
-    private HttpEntity requestEntity = new HttpEntity(headers);
+    private HttpEntity requestEntity = new HttpEntity(null);
 
     @Before
     public void setUp() {
@@ -65,7 +65,7 @@ public class AdminUserServiceImplTest {
     @Test
     public void testUpdateUser() {
         UserDto userDto = new UserDto();
-        HttpEntity requestEntity2 = new HttpEntity(userDto, headers);
+        HttpEntity requestEntity2 = new HttpEntity(userDto, null);
         Response response = new Response<>();
         ResponseEntity<Response> re = new ResponseEntity<>(response, HttpStatus.OK);
         Mockito.when(restTemplate.exchange(
@@ -80,7 +80,7 @@ public class AdminUserServiceImplTest {
     @Test
     public void testAddUser() {
         UserDto userDto = new UserDto();
-        HttpEntity requestEntity2 = new HttpEntity(userDto, headers);
+        HttpEntity requestEntity2 = new HttpEntity(userDto, null);
         Response<User> response = new Response<>();
         ResponseEntity<Response<User>> re = new ResponseEntity<>(response, HttpStatus.OK);
         Mockito.when(restTemplate.exchange(

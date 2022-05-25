@@ -42,7 +42,7 @@ public class ConsignServiceImplTest {
 
     @Test
     public void testInsertConsignRecord() {
-        HttpEntity requestEntity = new HttpEntity(null, headers);
+        HttpEntity requestEntity = new HttpEntity(null, null);
         Response<Double> response = new Response<>(1, null, 3.0);
         ResponseEntity<Response<Double>> re = new ResponseEntity<>(response, HttpStatus.OK);
         Consign consignRequest = new Consign(UUID.randomUUID(), UUID.randomUUID(), UUID.randomUUID(), "handle_date", "target_date", "place_from", "place_to", "consignee", "10001", 1.0, true);
@@ -60,7 +60,7 @@ public class ConsignServiceImplTest {
 
     @Test
     public void testUpdateConsignRecord1() {
-        HttpEntity requestEntity = new HttpEntity(null, headers);
+        HttpEntity requestEntity = new HttpEntity(null, null);
         Response<Double> response = new Response<>(1, null, 3.0);
         ResponseEntity<Response<Double>> re = new ResponseEntity<>(response, HttpStatus.OK);
         Consign consignRequest = new Consign(UUID.randomUUID(), UUID.randomUUID(), UUID.randomUUID(), "handle_date", "target_date", "place_from", "place_to", "consignee", "10001", 1.0, true);

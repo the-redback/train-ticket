@@ -29,7 +29,7 @@ public class PreserveOtherServiceImplTest {
     private RestTemplate restTemplate;
 
     private HttpHeaders headers = new HttpHeaders();
-    private HttpEntity requestEntity = new HttpEntity(headers);
+    private HttpEntity requestEntity = new HttpEntity(null);
 
     @Before
     public void setUp() {

@@ -27,7 +27,7 @@ public class AdminOrderServiceImplTest {
     private RestTemplate restTemplate;
 
     private HttpHeaders headers = new HttpHeaders();
-    private HttpEntity requestEntity = new HttpEntity(headers);
+    private HttpEntity requestEntity = new HttpEntity(null);
 
     @Before
     public void setUp() {
@@ -105,7 +105,7 @@ public class AdminOrderServiceImplTest {
     @Test
     public void testUpdateOrder1() {
         Order order = new Order(null, null, null, null, null, null, 0, null, "G", 0, 0, null, null, null, 0, null);
-        HttpEntity<Order> requestEntity2 = new HttpEntity<>(order, headers);
+        HttpEntity<Order> requestEntity2 = new HttpEntity<>(order, null);
         Response response = new Response();
         ResponseEntity<Response> re = new ResponseEntity<>(response, HttpStatus.OK);
         Mockito.when(restTemplate.exchange(
@@ -120,7 +120,7 @@ public class AdminOrderServiceImplTest {
     @Test
     public void testUpdateOrder2() {
         Order order = new Order(null, null, null, null, null, null, 0, null, "K", 0, 0, null, null, null, 0, null);
-        HttpEntity<Order> requestEntity2 = new HttpEntity<>(order, headers);
+        HttpEntity<Order> requestEntity2 = new HttpEntity<>(order, null);
         Response response = new Response();
         ResponseEntity<Response> re = new ResponseEntity<>(response, HttpStatus.OK);
         Mockito.when(restTemplate.exchange(

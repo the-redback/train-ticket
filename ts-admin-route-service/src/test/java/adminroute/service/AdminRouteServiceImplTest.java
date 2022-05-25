@@ -26,7 +26,7 @@ public class AdminRouteServiceImplTest {
     private RestTemplate restTemplate;
 
     private HttpHeaders headers = new HttpHeaders();
-    private HttpEntity requestEntity = new HttpEntity(headers);
+    private HttpEntity requestEntity = new HttpEntity(null);
     private Response response = new Response();
     private ResponseEntity<Response> re = new ResponseEntity<>(response, HttpStatus.OK);
 
@@ -49,7 +49,7 @@ public class AdminRouteServiceImplTest {
     @Test
     public void testCreateAndModifyRoute() {
         RouteInfo request = new RouteInfo();
-        HttpEntity requestEntity2 = new HttpEntity(request, headers);
+        HttpEntity requestEntity2 = new HttpEntity(request, null);
         ResponseEntity<Response<Route>> re2 = new ResponseEntity<>(response, HttpStatus.OK);
         Mockito.when(restTemplate.exchange(
                 "http://ts-route-service:11178/api/v1/routeservice/routes",

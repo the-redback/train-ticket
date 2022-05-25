@@ -42,7 +42,7 @@ public class TokenServiceImplTest {
     private AuthenticationManager authenticationManager;
 
     private HttpHeaders headers = new HttpHeaders();
-    HttpEntity requestEntity = new HttpEntity(headers);
+    HttpEntity requestEntity = new HttpEntity(null);
 
     @Before
     public void setUp() {

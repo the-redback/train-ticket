@@ -27,7 +27,7 @@ public class BasicServiceImplTest {
     private RestTemplate restTemplate;
 
     private HttpHeaders headers = new HttpHeaders();
-    private HttpEntity requestEntity = new HttpEntity(headers);
+    private HttpEntity requestEntity = new HttpEntity(null);
 
     @Before
     public void setUp() {
@@ -64,7 +64,7 @@ public class BasicServiceImplTest {
                 requestEntity,
                 Response.class)).thenReturn(re);
         //mock queryPriceConfigByRouteIdAndTrainType()
-        HttpEntity requestEntity2 = new HttpEntity(null, headers);
+        HttpEntity requestEntity2 = new HttpEntity(null, null);
         Response response2 = new Response<>(1, null, new PriceConfig(UUID.randomUUID(), "", "", 1.0, 2.0));
         ResponseEntity<Response> re2 = new ResponseEntity<>(response2, HttpStatus.OK);
         Mockito.when(restTemplate.exchange(

@@ -176,7 +176,7 @@ public class OrderServiceImplTest {
     @Test
     public void testQueryForStationId() {
         List<String> ids = new ArrayList<>();
-        HttpEntity requestEntity = new HttpEntity<>(ids, headers);
+        HttpEntity requestEntity = new HttpEntity<>(ids, null);
         Response<List<String>> response = new Response<>();
         ResponseEntity<Response<List<String>>> re = new ResponseEntity<>(response, HttpStatus.OK);
         Mockito.when(restTemplate.exchange(

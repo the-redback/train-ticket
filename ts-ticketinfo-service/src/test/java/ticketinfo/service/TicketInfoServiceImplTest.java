@@ -33,7 +33,7 @@ public class TicketInfoServiceImplTest {
     @Test
     public void testQueryForTravel() {
         Travel info = new Travel();
-        HttpEntity requestEntity = new HttpEntity(info, headers);
+        HttpEntity requestEntity = new HttpEntity(info, null);
         Response response = new Response();
         ResponseEntity<Response> re = new ResponseEntity<>(response, HttpStatus.OK);
         Mockito.when(restTemplate.exchange(
@@ -47,7 +47,7 @@ public class TicketInfoServiceImplTest {
 
     @Test
     public void testQueryForStationId() {
-        HttpEntity requestEntity = new HttpEntity(headers);
+        HttpEntity requestEntity = new HttpEntity(null);
         Response response = new Response();
         ResponseEntity<Response> re = new ResponseEntity<>(response, HttpStatus.OK);
         Mockito.when( restTemplate.exchange(

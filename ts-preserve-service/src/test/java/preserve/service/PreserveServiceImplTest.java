@@ -29,7 +29,7 @@ public class PreserveServiceImplTest {
     private RestTemplate restTemplate;
 
     private HttpHeaders headers = new HttpHeaders();
-    private HttpEntity requestEntity = new HttpEntity(headers);
+    private HttpEntity requestEntity = new HttpEntity(null);
 
     @Before
     public void setUp() {
@@ -138,7 +138,7 @@ public class PreserveServiceImplTest {
     public void testDipatchSeat() {
         long mills = System.currentTimeMillis();
         Seat seatRequest = new Seat(new Date(mills), "G1234", "start_station", "dest_station", 2);
-        HttpEntity requestEntityTicket = new HttpEntity(seatRequest, headers);
+        HttpEntity requestEntityTicket = new HttpEntity(seatRequest, null);
         Response<Ticket> response = new Response<>();
         ResponseEntity<Response<Ticket>> reTicket = new ResponseEntity<>(response, HttpStatus.OK);
         Mockito.when(restTemplate.exchange(
@@ -154,7 +154,7 @@ public class PreserveServiceImplTest {
     @Test
     public void testSendEmail() {
         NotifyInfo notifyInfo = new NotifyInfo();
-        HttpEntity requestEntitySendEmail = new HttpEntity(notifyInfo, headers);
+        HttpEntity requestEntitySendEmail = new HttpEntity(notifyInfo, null);
         ResponseEntity<Boolean> reSendEmail = new ResponseEntity<>(true, HttpStatus.OK);
         Mockito.when(restTemplate.exchange(
                 "http://ts-notification-service:17853/api/v1/notifyservice/notification/preserve_success",

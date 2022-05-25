@@ -31,7 +31,9 @@ public class CancelServiceImpl implements CancelService {
     String orderStatusCancelNotPermitted = "Order Status Cancel Not Permitted";
 
     @Override
-    public Response cancelOrder(String orderId, String loginId, HttpHeaders headers) {
+    public Response cancelOrder(String orderId, String loginId, HttpHeaders httpHeaders) {
+
+        HttpHeaders headers = getAuthorizationHeadersFrom(httpHeaders);
 
         Response<Order> orderResult = getOrderByIdFromOrder(orderId, headers);
         if (orderResult.getStatus() == 1) {
@@ -128,7 +130,8 @@ public class CancelServiceImpl implements CancelService {
         }
     }
 
-    public boolean sendEmail(NotifyInfo notifyInfo, HttpHeaders headers) {
+    public boolean sendEmail(NotifyInfo notifyInfo, HttpHeaders httpHeaders) {
+        HttpHeaders headers = getAuthorizationHeadersFrom(httpHeaders);
         CancelServiceImpl.LOGGER.info("[Cancel Order Service][Send Email]");
         HttpEntity requestEntity = new HttpEntity(notifyInfo, headers);
         ResponseEntity<Boolean> re = restTemplate.exchange(
@@ -262,7 +265,7 @@ public class CancelServiceImpl implements CancelService {
 
     public Response<User> getAccount(String orderId, HttpHeaders headers) {
         CancelServiceImpl.LOGGER.info("[Cancel Order Service][Get By Id]");
-        HttpEntity requestEntity = new HttpEntity( headers);
+        HttpEntity requestEntity = new HttpEntity(headers);
         ResponseEntity<Response<User>> re = restTemplate.exchange(
                 "http://ts-user-service:12342/api/v1/userservice/users/id/" + orderId,
                 HttpMethod.GET,
@@ -286,7 +289,7 @@ public class CancelServiceImpl implements CancelService {
 
     private Response<Order> getOrderByIdFromOrderOther(String orderId, HttpHeaders headers) {
         CancelServiceImpl.LOGGER.info("[Cancel Order Service][Get Order] Getting....");
-        HttpEntity requestEntity = new HttpEntity(  headers);
+        HttpEntity requestEntity = new HttpEntity(headers);
         ResponseEntity<Response<Order>> re = restTemplate.exchange(
                 "http://ts-order-other-service:12032/api/v1/orderOtherService/orderOther/" + orderId,
                 HttpMethod.GET,
@@ -294,6 +297,14 @@ public class CancelServiceImpl implements CancelService {
                 new ParameterizedTypeReference<Response<Order>>() {
                 });
         return re.getBody();
+    }
+
+    public static HttpHeaders getAuthorizationHeadersFrom(HttpHeaders oldHeaders) {
+        HttpHeaders newHeaders = new HttpHeaders();
+        if (oldHeaders.containsKey(HttpHeaders.AUTHORIZATION)) {
+            newHeaders.add(HttpHeaders.AUTHORIZATION, oldHeaders.getFirst(HttpHeaders.AUTHORIZATION));
+        }
+        return newHeaders;
     }
 
 }

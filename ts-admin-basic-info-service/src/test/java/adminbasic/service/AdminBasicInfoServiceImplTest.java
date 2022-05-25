@@ -21,7 +21,7 @@ public class AdminBasicInfoServiceImplTest {
     private RestTemplate restTemplate;
 
     private HttpHeaders headers = new HttpHeaders();
-    private HttpEntity requestEntity = new HttpEntity(headers);
+    private HttpEntity requestEntity = new HttpEntity(null);
     private Response response = new Response();
     private ResponseEntity<Response> re = new ResponseEntity<>(response, HttpStatus.OK);
 

@@ -28,7 +28,10 @@ public class PreserveServiceImpl implements PreserveService {
     private static final Logger LOGGER = LoggerFactory.getLogger(PreserveServiceImpl.class);
 
     @Override
-    public Response preserve(OrderTicketsInfo oti, HttpHeaders headers) {
+    public Response preserve(OrderTicketsInfo oti, HttpHeaders httpHeaders) {
+
+        HttpHeaders headers = getAuthorizationHeadersFrom(httpHeaders);
+
         //1.detect ticket scalper
         PreserveServiceImpl.LOGGER.info("[Preserve Service] [Step 1] Check Security");
 
@@ -390,6 +393,14 @@ public class PreserveServiceImpl implements PreserveService {
                 requestEntityResultForTravel,
                 Response.class);
         return reResultForTravel.getBody();
+    }
+
+    public static HttpHeaders getAuthorizationHeadersFrom(HttpHeaders oldHeaders) {
+        HttpHeaders newHeaders = new HttpHeaders();
+        if (oldHeaders.containsKey(HttpHeaders.AUTHORIZATION)) {
+            newHeaders.add(HttpHeaders.AUTHORIZATION, oldHeaders.getFirst(HttpHeaders.AUTHORIZATION));
+        }
+        return newHeaders;
     }
 
 }

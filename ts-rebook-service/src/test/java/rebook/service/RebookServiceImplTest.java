@@ -125,7 +125,7 @@ public class RebookServiceImplTest {
     public void testDipatchSeat() {
         long mills = System.currentTimeMillis();
         Seat seatRequest = new Seat(new Date(mills), "G1234", "start_station", "dest_station", 2);
-        HttpEntity requestEntityTicket = new HttpEntity<>(seatRequest, headers);
+        HttpEntity requestEntityTicket = new HttpEntity<>(seatRequest, null);
         Response<Ticket> response = new Response<>();
         ResponseEntity<Response<Ticket>> reTicket = new ResponseEntity<>(response, HttpStatus.OK);
         Mockito.when(restTemplate.exchange(

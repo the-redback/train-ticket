@@ -116,7 +116,7 @@ public class UserServiceImplTest {
         UUID userId = UUID.randomUUID();
         User user = new User();
         Mockito.when(userRepository.findByUserId(Mockito.any(UUID.class))).thenReturn(user);
-        HttpEntity<Response> httpEntity = new HttpEntity<>(headers);
+        HttpEntity<Response> httpEntity = new HttpEntity<>(null);
         Mockito.when(restTemplate.exchange("http://ts-auth-service:12340/api/v1" + "/users/" + userId,
                 HttpMethod.DELETE,
                 httpEntity,
@@ -156,7 +156,7 @@ public class UserServiceImplTest {
     @Test
     public void testDeleteUserAuth() {
         UUID userId = UUID.randomUUID();
-        HttpEntity<Response> httpEntity = new HttpEntity<>(headers);
+        HttpEntity<Response> httpEntity = new HttpEntity<>(null);
         Mockito.when(restTemplate.exchange("http://ts-auth-service:12340/api/v1" + "/users/" + userId,
                 HttpMethod.DELETE,
                 httpEntity,

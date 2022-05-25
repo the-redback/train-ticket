@@ -27,7 +27,7 @@ public class CancelServiceImplTest {
     private RestTemplate restTemplate;
 
     private HttpHeaders headers = new HttpHeaders();
-    private HttpEntity requestEntity = new HttpEntity(headers);
+    private HttpEntity requestEntity = new HttpEntity(null);
 
     @Before
     public void setUp() {
@@ -80,7 +80,7 @@ public class CancelServiceImplTest {
     @Test
     public void testSendEmail() {
         NotifyInfo notifyInfo = new NotifyInfo();
-        HttpEntity requestEntity2 = new HttpEntity(notifyInfo, headers);
+        HttpEntity requestEntity2 = new HttpEntity(notifyInfo, null);
         ResponseEntity<Boolean> re = new ResponseEntity<>(true, HttpStatus.OK);
         Mockito.when(restTemplate.exchange(
                 "http://ts-notification-service:17853/api/v1/notifyservice/notification/order_cancel_success",

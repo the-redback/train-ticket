@@ -38,7 +38,7 @@ public class InsidePaymentServiceImplTest {
     private RestTemplate restTemplate;
 
     private HttpHeaders headers = new HttpHeaders();
-    HttpEntity httpEntity = new HttpEntity(headers);
+    HttpEntity httpEntity = new HttpEntity(null);
 
     @Before
     public void setUp() {

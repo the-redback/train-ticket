@@ -32,7 +32,8 @@ public class ConsignServiceImpl implements ConsignService {
     private static final Logger LOGGER = LoggerFactory.getLogger(ConsignServiceImpl.class);
 
     @Override
-    public Response insertConsignRecord(Consign consignRequest, HttpHeaders headers) {
+    public Response insertConsignRecord(Consign consignRequest, HttpHeaders httpHeaders) {
+        HttpHeaders headers = getAuthorizationHeadersFrom(httpHeaders);
         ConsignServiceImpl.LOGGER.info("[Consign servie] [ Insert new consign record] {}", consignRequest.getOrderId());
 
         ConsignRecord consignRecord = new ConsignRecord();
@@ -68,7 +69,9 @@ public class ConsignServiceImpl implements ConsignService {
     }
 
     @Override
-    public Response updateConsignRecord(Consign consignRequest, HttpHeaders headers) {
+    public Response updateConsignRecord(Consign consignRequest, HttpHeaders httpHeaders) {
+        HttpHeaders headers = getAuthorizationHeadersFrom(httpHeaders);
+
         ConsignServiceImpl.LOGGER.info("[Consign servie] [ Update consign record]");
 
         ConsignRecord originalRecord = repository.findById(consignRequest.getId());
@@ -131,5 +134,13 @@ public class ConsignServiceImpl implements ConsignService {
         }else {
             return new Response<>(0, "No Content according to consignee", null);
         }
+    }
+
+    public static HttpHeaders getAuthorizationHeadersFrom(HttpHeaders oldHeaders) {
+        HttpHeaders newHeaders = new HttpHeaders();
+        if (oldHeaders.containsKey(HttpHeaders.AUTHORIZATION)) {
+            newHeaders.add(HttpHeaders.AUTHORIZATION, oldHeaders.getFirst(HttpHeaders.AUTHORIZATION));
+        }
+        return newHeaders;
     }
 }
