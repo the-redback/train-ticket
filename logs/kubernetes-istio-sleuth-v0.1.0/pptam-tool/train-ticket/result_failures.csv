@@ -1,5 +1,2 @@
 Method,Name,Error,Occurrences
-POST,set_new_contact,504 Server Error: Gateway Timeout for url: set_new_contact,2
-GET,book,403 Client Error: Forbidden for url: book,4
-POST,create_user,504 Server Error: Gateway Timeout for url: create_user,4
-PUT,pick_up_ticket,504 Server Error: Gateway Timeout for url: pick_up_ticket,1
+GET,book,504 Server Error: Gateway Timeout for url: book,4

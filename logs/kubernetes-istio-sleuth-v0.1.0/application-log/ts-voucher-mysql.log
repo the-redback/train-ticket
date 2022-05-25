@@ -1,56 +1,56 @@
 Initializing database
-2022-05-09 21:46:10 0 [Note] Ignoring --secure-file-priv value as server is running with --bootstrap.
-2022-05-09 21:46:10 0 [Note] /usr/sbin/mysqld (mysqld 5.6.35) starting as process 44 ...
-2022-05-09 21:46:10 44 [Note] InnoDB: Using atomics to ref count buffer pool pages
-2022-05-09 21:46:10 44 [Note] InnoDB: The InnoDB memory heap is disabled
-2022-05-09 21:46:10 44 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
-2022-05-09 21:46:10 44 [Note] InnoDB: Memory barrier is not used
-2022-05-09 21:46:10 44 [Note] InnoDB: Compressed tables use zlib 1.2.8
-2022-05-09 21:46:10 44 [Note] InnoDB: Using Linux native AIO
-2022-05-09 21:46:10 44 [Note] InnoDB: Using CPU crc32 instructions
-2022-05-09 21:46:10 44 [Note] InnoDB: Initializing buffer pool, size = 128.0M
-2022-05-09 21:46:10 44 [Note] InnoDB: Completed initialization of buffer pool
-2022-05-09 21:46:10 44 [Note] InnoDB: The first specified data file ./ibdata1 did not exist: a new database to be created!
-2022-05-09 21:46:10 44 [Note] InnoDB: Setting file ./ibdata1 size to 12 MB
-2022-05-09 21:46:10 44 [Note] InnoDB: Database physically writes the file full: wait...
-2022-05-09 21:46:11 44 [Note] InnoDB: Setting log file ./ib_logfile101 size to 48 MB
-2022-05-09 21:46:12 44 [Note] InnoDB: Setting log file ./ib_logfile1 size to 48 MB
-2022-05-09 21:46:12 44 [Note] InnoDB: Renaming log file ./ib_logfile101 to ./ib_logfile0
-2022-05-09 21:46:12 44 [Warning] InnoDB: New log files created, LSN=45781
-2022-05-09 21:46:12 44 [Note] InnoDB: Doublewrite buffer not found: creating new
-2022-05-09 21:46:13 44 [Note] InnoDB: Doublewrite buffer created
-2022-05-09 21:46:13 44 [Note] InnoDB: 128 rollback segment(s) are active.
-2022-05-09 21:46:13 44 [Warning] InnoDB: Creating foreign key constraint system tables.
-2022-05-09 21:46:13 44 [Note] InnoDB: Foreign key constraint system tables created
-2022-05-09 21:46:13 44 [Note] InnoDB: Creating tablespace and datafile system tables.
-2022-05-09 21:46:13 44 [Note] InnoDB: Tablespace and datafile system tables created.
-2022-05-09 21:46:13 44 [Note] InnoDB: Waiting for purge to start
-2022-05-09 21:46:13 44 [Note] InnoDB: 5.6.35 started; log sequence number 0
-2022-05-09 21:46:15 44 [Note] Binlog end
-2022-05-09 21:46:15 44 [Note] InnoDB: FTS optimize thread exiting.
-2022-05-09 21:46:15 44 [Note] InnoDB: Starting shutdown...
-2022-05-09 21:46:16 44 [Note] InnoDB: Shutdown completed; log sequence number 1625977
+2022-05-25 10:52:22 0 [Note] Ignoring --secure-file-priv value as server is running with --bootstrap.
+2022-05-25 10:52:22 0 [Note] /usr/sbin/mysqld (mysqld 5.6.35) starting as process 43 ...
+2022-05-25 10:52:23 43 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2022-05-25 10:52:23 43 [Note] InnoDB: The InnoDB memory heap is disabled
+2022-05-25 10:52:23 43 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2022-05-25 10:52:23 43 [Note] InnoDB: Memory barrier is not used
+2022-05-25 10:52:23 43 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2022-05-25 10:52:23 43 [Note] InnoDB: Using Linux native AIO
+2022-05-25 10:52:23 43 [Note] InnoDB: Using CPU crc32 instructions
+2022-05-25 10:52:23 43 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2022-05-25 10:52:23 43 [Note] InnoDB: Completed initialization of buffer pool
+2022-05-25 10:52:23 43 [Note] InnoDB: The first specified data file ./ibdata1 did not exist: a new database to be created!
+2022-05-25 10:52:23 43 [Note] InnoDB: Setting file ./ibdata1 size to 12 MB
+2022-05-25 10:52:23 43 [Note] InnoDB: Database physically writes the file full: wait...
+2022-05-25 10:52:24 43 [Note] InnoDB: Setting log file ./ib_logfile101 size to 48 MB
+2022-05-25 10:52:25 43 [Note] InnoDB: Setting log file ./ib_logfile1 size to 48 MB
+2022-05-25 10:52:28 43 [Note] InnoDB: Renaming log file ./ib_logfile101 to ./ib_logfile0
+2022-05-25 10:52:28 43 [Warning] InnoDB: New log files created, LSN=45781
+2022-05-25 10:52:28 43 [Note] InnoDB: Doublewrite buffer not found: creating new
+2022-05-25 10:52:28 43 [Note] InnoDB: Doublewrite buffer created
+2022-05-25 10:52:28 43 [Note] InnoDB: 128 rollback segment(s) are active.
+2022-05-25 10:52:28 43 [Warning] InnoDB: Creating foreign key constraint system tables.
+2022-05-25 10:52:28 43 [Note] InnoDB: Foreign key constraint system tables created
+2022-05-25 10:52:28 43 [Note] InnoDB: Creating tablespace and datafile system tables.
+2022-05-25 10:52:28 43 [Note] InnoDB: Tablespace and datafile system tables created.
+2022-05-25 10:52:28 43 [Note] InnoDB: Waiting for purge to start
+2022-05-25 10:52:28 43 [Note] InnoDB: 5.6.35 started; log sequence number 0
+2022-05-25 10:52:34 43 [Note] Binlog end
+2022-05-25 10:52:34 43 [Note] InnoDB: FTS optimize thread exiting.
+2022-05-25 10:52:34 43 [Note] InnoDB: Starting shutdown...
+2022-05-25 10:52:36 43 [Note] InnoDB: Shutdown completed; log sequence number 1625977
 
 
-2022-05-09 21:46:16 0 [Note] Ignoring --secure-file-priv value as server is running with --bootstrap.
-2022-05-09 21:46:16 0 [Note] /usr/sbin/mysqld (mysqld 5.6.35) starting as process 67 ...
-2022-05-09 21:46:16 67 [Note] InnoDB: Using atomics to ref count buffer pool pages
-2022-05-09 21:46:16 67 [Note] InnoDB: The InnoDB memory heap is disabled
-2022-05-09 21:46:16 67 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
-2022-05-09 21:46:16 67 [Note] InnoDB: Memory barrier is not used
-2022-05-09 21:46:16 67 [Note] InnoDB: Compressed tables use zlib 1.2.8
-2022-05-09 21:46:16 67 [Note] InnoDB: Using Linux native AIO
-2022-05-09 21:46:16 67 [Note] InnoDB: Using CPU crc32 instructions
-2022-05-09 21:46:16 67 [Note] InnoDB: Initializing buffer pool, size = 128.0M
-2022-05-09 21:46:16 67 [Note] InnoDB: Completed initialization of buffer pool
-2022-05-09 21:46:16 67 [Note] InnoDB: Highest supported file format is Barracuda.
-2022-05-09 21:46:17 67 [Note] InnoDB: 128 rollback segment(s) are active.
-2022-05-09 21:46:17 67 [Note] InnoDB: Waiting for purge to start
-2022-05-09 21:46:17 67 [Note] InnoDB: 5.6.35 started; log sequence number 1625977
-2022-05-09 21:46:19 67 [Note] Binlog end
-2022-05-09 21:46:19 67 [Note] InnoDB: FTS optimize thread exiting.
-2022-05-09 21:46:19 67 [Note] InnoDB: Starting shutdown...
-2022-05-09 21:46:20 67 [Note] InnoDB: Shutdown completed; log sequence number 1625987
+2022-05-25 10:52:37 0 [Note] Ignoring --secure-file-priv value as server is running with --bootstrap.
+2022-05-25 10:52:37 0 [Note] /usr/sbin/mysqld (mysqld 5.6.35) starting as process 66 ...
+2022-05-25 10:52:37 66 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2022-05-25 10:52:37 66 [Note] InnoDB: The InnoDB memory heap is disabled
+2022-05-25 10:52:37 66 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2022-05-25 10:52:37 66 [Note] InnoDB: Memory barrier is not used
+2022-05-25 10:52:37 66 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2022-05-25 10:52:37 66 [Note] InnoDB: Using Linux native AIO
+2022-05-25 10:52:37 66 [Note] InnoDB: Using CPU crc32 instructions
+2022-05-25 10:52:37 66 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2022-05-25 10:52:38 66 [Note] InnoDB: Completed initialization of buffer pool
+2022-05-25 10:52:38 66 [Note] InnoDB: Highest supported file format is Barracuda.
+2022-05-25 10:52:39 66 [Note] InnoDB: 128 rollback segment(s) are active.
+2022-05-25 10:52:39 66 [Note] InnoDB: Waiting for purge to start
+2022-05-25 10:52:39 66 [Note] InnoDB: 5.6.35 started; log sequence number 1625977
+2022-05-25 10:52:40 66 [Note] Binlog end
+2022-05-25 10:52:40 66 [Note] InnoDB: FTS optimize thread exiting.
+2022-05-25 10:52:40 66 [Note] InnoDB: Starting shutdown...
+2022-05-25 10:52:42 66 [Note] InnoDB: Shutdown completed; log sequence number 1625987
 
 
 
@@ -59,7 +59,7 @@ PLEASE REMEMBER TO SET A PASSWORD FOR THE MySQL root USER !
 To do so, start the server, then issue the following commands:
 
   /usr/bin/mysqladmin -u root password 'new-password'
-  /usr/bin/mysqladmin -u root -h ts-voucher-mysql-866b74d746-5rggj password 'new-password'
+  /usr/bin/mysqladmin -u root -h ts-voucher-mysql-6bf998bc8d-s4bgm password 'new-password'
 
 Alternatively you can run:
 
@@ -92,110 +92,133 @@ MySQL init process in progress...
 MySQL init process in progress...
 MySQL init process in progress...
 MySQL init process in progress...
-2022-05-09 21:46:26 0 [Note] mysqld (mysqld 5.6.35) starting as process 95 ...
-2022-05-09 21:46:26 95 [Note] Plugin 'FEDERATED' is disabled.
-2022-05-09 21:46:26 95 [Note] InnoDB: Using atomics to ref count buffer pool pages
-2022-05-09 21:46:26 95 [Note] InnoDB: The InnoDB memory heap is disabled
-2022-05-09 21:46:26 95 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
-2022-05-09 21:46:26 95 [Note] InnoDB: Memory barrier is not used
-2022-05-09 21:46:26 95 [Note] InnoDB: Compressed tables use zlib 1.2.8
-2022-05-09 21:46:26 95 [Note] InnoDB: Using Linux native AIO
-2022-05-09 21:46:26 95 [Note] InnoDB: Using CPU crc32 instructions
-2022-05-09 21:46:26 95 [Note] InnoDB: Initializing buffer pool, size = 128.0M
 MySQL init process in progress...
-2022-05-09 21:46:27 95 [Note] InnoDB: Completed initialization of buffer pool
-2022-05-09 21:46:27 95 [Note] InnoDB: Highest supported file format is Barracuda.
-2022-05-09 21:46:28 95 [Note] InnoDB: 128 rollback segment(s) are active.
-2022-05-09 21:46:28 95 [Note] InnoDB: Waiting for purge to start
-2022-05-09 21:46:28 95 [Note] InnoDB: 5.6.35 started; log sequence number 1625987
-2022-05-09 21:46:28 95 [Warning] No existing UUID has been found, so we assume that this is the first time that this server has been started. Generating a new UUID: 7b8867a7-cfe1-11ec-be69-46ed0471010d.
-2022-05-09 21:46:29 95 [Warning] 'user' entry 'root@ts-voucher-mysql-866b74d746-5rggj' ignored in --skip-name-resolve mode.
-2022-05-09 21:46:29 95 [Warning] 'user' entry '@ts-voucher-mysql-866b74d746-5rggj' ignored in --skip-name-resolve mode.
-2022-05-09 21:46:29 95 [Warning] 'proxies_priv' entry '@ root@ts-voucher-mysql-866b74d746-5rggj' ignored in --skip-name-resolve mode.
-2022-05-09 21:46:30 95 [Note] Event Scheduler: Loaded 0 events
-2022-05-09 21:46:30 95 [Note] mysqld: ready for connections.
+MySQL init process in progress...
+MySQL init process in progress...
+MySQL init process in progress...
+MySQL init process in progress...
+MySQL init process in progress...
+MySQL init process in progress...
+MySQL init process in progress...
+MySQL init process in progress...
+MySQL init process in progress...
+MySQL init process in progress...
+MySQL init process in progress...
+MySQL init process in progress...
+MySQL init process in progress...
+MySQL init process in progress...
+MySQL init process in progress...
+MySQL init process in progress...
+MySQL init process in progress...
+MySQL init process in progress...
+MySQL init process in progress...
+MySQL init process in progress...
+MySQL init process in progress...
+MySQL init process in progress...
+2022-05-25 10:53:35 0 [Note] mysqld (mysqld 5.6.35) starting as process 94 ...
+2022-05-25 10:53:35 94 [Note] Plugin 'FEDERATED' is disabled.
+2022-05-25 10:53:35 94 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2022-05-25 10:53:35 94 [Note] InnoDB: The InnoDB memory heap is disabled
+2022-05-25 10:53:35 94 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2022-05-25 10:53:35 94 [Note] InnoDB: Memory barrier is not used
+2022-05-25 10:53:35 94 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2022-05-25 10:53:35 94 [Note] InnoDB: Using Linux native AIO
+2022-05-25 10:53:35 94 [Note] InnoDB: Using CPU crc32 instructions
+2022-05-25 10:53:35 94 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2022-05-25 10:53:36 94 [Note] InnoDB: Completed initialization of buffer pool
+MySQL init process in progress...
+2022-05-25 10:53:36 94 [Note] InnoDB: Highest supported file format is Barracuda.
+2022-05-25 10:53:36 94 [Note] InnoDB: 128 rollback segment(s) are active.
+2022-05-25 10:53:36 94 [Note] InnoDB: Waiting for purge to start
+2022-05-25 10:53:36 94 [Note] InnoDB: 5.6.35 started; log sequence number 1625987
+2022-05-25 10:53:36 94 [Warning] No existing UUID has been found, so we assume that this is the first time that this server has been started. Generating a new UUID: edbce16a-dc18-11ec-8e13-2ab5cee61eac.
+2022-05-25 10:53:36 94 [Warning] 'user' entry 'root@ts-voucher-mysql-6bf998bc8d-s4bgm' ignored in --skip-name-resolve mode.
+2022-05-25 10:53:36 94 [Warning] 'user' entry '@ts-voucher-mysql-6bf998bc8d-s4bgm' ignored in --skip-name-resolve mode.
+2022-05-25 10:53:36 94 [Warning] 'proxies_priv' entry '@ root@ts-voucher-mysql-6bf998bc8d-s4bgm' ignored in --skip-name-resolve mode.
+2022-05-25 10:53:36 94 [Note] Event Scheduler: Loaded 0 events
+2022-05-25 10:53:36 94 [Note] mysqld: ready for connections.
 Version: '5.6.35'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server (GPL)
 Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
 Warning: Unable to load '/usr/share/zoneinfo/leap-seconds.list' as time zone. Skipping it.
 Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
-2022-05-09 21:48:13 95 [Warning] 'proxies_priv' entry '@ root@ts-voucher-mysql-866b74d746-5rggj' ignored in --skip-name-resolve mode.
+2022-05-25 10:54:42 94 [Warning] 'proxies_priv' entry '@ root@ts-voucher-mysql-6bf998bc8d-s4bgm' ignored in --skip-name-resolve mode.
 
-2022-05-09 21:48:13 95 [Note] mysqld: Normal shutdown
+2022-05-25 10:54:42 94 [Note] mysqld: Normal shutdown
 
-2022-05-09 21:48:13 95 [Note] Giving 0 client threads a chance to die gracefully
-2022-05-09 21:48:13 95 [Note] Event Scheduler: Purging the queue. 0 events
-2022-05-09 21:48:13 95 [Note] Shutting down slave threads
-2022-05-09 21:48:13 95 [Note] Forcefully disconnecting 0 remaining clients
-2022-05-09 21:48:13 95 [Note] Binlog end
-2022-05-09 21:48:13 95 [Note] Shutting down plugin 'partition'
-2022-05-09 21:48:13 95 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
-2022-05-09 21:48:13 95 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
-2022-05-09 21:48:13 95 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
-2022-05-09 21:48:13 95 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
-2022-05-09 21:48:13 95 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
-2022-05-09 21:48:13 95 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
-2022-05-09 21:48:13 95 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
-2022-05-09 21:48:13 95 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
-2022-05-09 21:48:13 95 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
-2022-05-09 21:48:13 95 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
-2022-05-09 21:48:13 95 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
-2022-05-09 21:48:13 95 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
-2022-05-09 21:48:13 95 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
-2022-05-09 21:48:13 95 [Note] Shutting down plugin 'INNODB_FT_DELETED'
-2022-05-09 21:48:13 95 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
-2022-05-09 21:48:13 95 [Note] Shutting down plugin 'INNODB_METRICS'
-2022-05-09 21:48:13 95 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
-2022-05-09 21:48:13 95 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
-2022-05-09 21:48:13 95 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
-2022-05-09 21:48:13 95 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
-2022-05-09 21:48:13 95 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
-2022-05-09 21:48:13 95 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
-2022-05-09 21:48:13 95 [Note] Shutting down plugin 'INNODB_CMPMEM'
-2022-05-09 21:48:13 95 [Note] Shutting down plugin 'INNODB_CMP_RESET'
-2022-05-09 21:48:13 95 [Note] Shutting down plugin 'INNODB_CMP'
-2022-05-09 21:48:13 95 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
-2022-05-09 21:48:13 95 [Note] Shutting down plugin 'INNODB_LOCKS'
-2022-05-09 21:48:13 95 [Note] Shutting down plugin 'INNODB_TRX'
-2022-05-09 21:48:13 95 [Note] Shutting down plugin 'InnoDB'
-2022-05-09 21:48:13 95 [Note] InnoDB: FTS optimize thread exiting.
-2022-05-09 21:48:13 95 [Note] InnoDB: Starting shutdown...
-2022-05-09 21:48:15 95 [Note] InnoDB: Shutdown completed; log sequence number 1625997
-2022-05-09 21:48:15 95 [Note] Shutting down plugin 'BLACKHOLE'
-2022-05-09 21:48:15 95 [Note] Shutting down plugin 'ARCHIVE'
-2022-05-09 21:48:15 95 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
-2022-05-09 21:48:15 95 [Note] Shutting down plugin 'MRG_MYISAM'
-2022-05-09 21:48:15 95 [Note] Shutting down plugin 'MyISAM'
-2022-05-09 21:48:15 95 [Note] Shutting down plugin 'CSV'
-2022-05-09 21:48:15 95 [Note] Shutting down plugin 'MEMORY'
-2022-05-09 21:48:15 95 [Note] Shutting down plugin 'sha256_password'
-2022-05-09 21:48:15 95 [Note] Shutting down plugin 'mysql_old_password'
-2022-05-09 21:48:15 95 [Note] Shutting down plugin 'mysql_native_password'
-2022-05-09 21:48:15 95 [Note] Shutting down plugin 'binlog'
-2022-05-09 21:48:15 95 [Note] mysqld: Shutdown complete
+2022-05-25 10:54:42 94 [Note] Giving 0 client threads a chance to die gracefully
+2022-05-25 10:54:42 94 [Note] Event Scheduler: Purging the queue. 0 events
+2022-05-25 10:54:42 94 [Note] Shutting down slave threads
+2022-05-25 10:54:42 94 [Note] Forcefully disconnecting 0 remaining clients
+2022-05-25 10:54:42 94 [Note] Binlog end
+2022-05-25 10:54:42 94 [Note] Shutting down plugin 'partition'
+2022-05-25 10:54:42 94 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2022-05-25 10:54:42 94 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2022-05-25 10:54:42 94 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2022-05-25 10:54:42 94 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2022-05-25 10:54:42 94 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2022-05-25 10:54:42 94 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2022-05-25 10:54:42 94 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2022-05-25 10:54:42 94 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2022-05-25 10:54:42 94 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2022-05-25 10:54:42 94 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2022-05-25 10:54:42 94 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2022-05-25 10:54:42 94 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2022-05-25 10:54:42 94 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2022-05-25 10:54:42 94 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2022-05-25 10:54:42 94 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2022-05-25 10:54:42 94 [Note] Shutting down plugin 'INNODB_METRICS'
+2022-05-25 10:54:42 94 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2022-05-25 10:54:42 94 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2022-05-25 10:54:42 94 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2022-05-25 10:54:42 94 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2022-05-25 10:54:42 94 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2022-05-25 10:54:42 94 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2022-05-25 10:54:42 94 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2022-05-25 10:54:42 94 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2022-05-25 10:54:42 94 [Note] Shutting down plugin 'INNODB_CMP'
+2022-05-25 10:54:42 94 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2022-05-25 10:54:42 94 [Note] Shutting down plugin 'INNODB_LOCKS'
+2022-05-25 10:54:42 94 [Note] Shutting down plugin 'INNODB_TRX'
+2022-05-25 10:54:42 94 [Note] Shutting down plugin 'InnoDB'
+2022-05-25 10:54:42 94 [Note] InnoDB: FTS optimize thread exiting.
+2022-05-25 10:54:42 94 [Note] InnoDB: Starting shutdown...
+2022-05-25 10:54:44 94 [Note] InnoDB: Shutdown completed; log sequence number 1625997
+2022-05-25 10:54:44 94 [Note] Shutting down plugin 'BLACKHOLE'
+2022-05-25 10:54:44 94 [Note] Shutting down plugin 'ARCHIVE'
+2022-05-25 10:54:44 94 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2022-05-25 10:54:44 94 [Note] Shutting down plugin 'MRG_MYISAM'
+2022-05-25 10:54:44 94 [Note] Shutting down plugin 'MyISAM'
+2022-05-25 10:54:44 94 [Note] Shutting down plugin 'CSV'
+2022-05-25 10:54:44 94 [Note] Shutting down plugin 'MEMORY'
+2022-05-25 10:54:44 94 [Note] Shutting down plugin 'sha256_password'
+2022-05-25 10:54:44 94 [Note] Shutting down plugin 'mysql_old_password'
+2022-05-25 10:54:44 94 [Note] Shutting down plugin 'mysql_native_password'
+2022-05-25 10:54:44 94 [Note] Shutting down plugin 'binlog'
+2022-05-25 10:54:45 94 [Note] mysqld: Shutdown complete
 
 
 MySQL init process done. Ready for start up.
 
-2022-05-09 21:48:20 0 [Note] mysqld (mysqld 5.6.35) starting as process 1 ...
-2022-05-09 21:48:20 1 [Note] Plugin 'FEDERATED' is disabled.
-2022-05-09 21:48:20 1 [Note] InnoDB: Using atomics to ref count buffer pool pages
-2022-05-09 21:48:20 1 [Note] InnoDB: The InnoDB memory heap is disabled
-2022-05-09 21:48:20 1 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
-2022-05-09 21:48:20 1 [Note] InnoDB: Memory barrier is not used
-2022-05-09 21:48:20 1 [Note] InnoDB: Compressed tables use zlib 1.2.8
-2022-05-09 21:48:20 1 [Note] InnoDB: Using Linux native AIO
-2022-05-09 21:48:20 1 [Note] InnoDB: Using CPU crc32 instructions
-2022-05-09 21:48:20 1 [Note] InnoDB: Initializing buffer pool, size = 128.0M
-2022-05-09 21:48:20 1 [Note] InnoDB: Completed initialization of buffer pool
-2022-05-09 21:48:20 1 [Note] InnoDB: Highest supported file format is Barracuda.
-2022-05-09 21:48:21 1 [Note] InnoDB: 128 rollback segment(s) are active.
-2022-05-09 21:48:21 1 [Note] InnoDB: Waiting for purge to start
-2022-05-09 21:48:21 1 [Note] InnoDB: 5.6.35 started; log sequence number 1625997
-2022-05-09 21:48:21 1 [Note] Server hostname (bind-address): '*'; port: 3306
-2022-05-09 21:48:21 1 [Note] IPv6 is available.
-2022-05-09 21:48:21 1 [Note]   - '::' resolves to '::';
-2022-05-09 21:48:21 1 [Note] Server socket created on IP: '::'.
-2022-05-09 21:48:21 1 [Warning] 'proxies_priv' entry '@ root@ts-voucher-mysql-866b74d746-5rggj' ignored in --skip-name-resolve mode.
-2022-05-09 21:48:21 1 [Note] Event Scheduler: Loaded 0 events
-2022-05-09 21:48:21 1 [Note] mysqld: ready for connections.
+2022-05-25 10:54:48 0 [Note] mysqld (mysqld 5.6.35) starting as process 1 ...
+2022-05-25 10:54:48 1 [Note] Plugin 'FEDERATED' is disabled.
+2022-05-25 10:54:48 1 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2022-05-25 10:54:48 1 [Note] InnoDB: The InnoDB memory heap is disabled
+2022-05-25 10:54:48 1 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2022-05-25 10:54:48 1 [Note] InnoDB: Memory barrier is not used
+2022-05-25 10:54:48 1 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2022-05-25 10:54:48 1 [Note] InnoDB: Using Linux native AIO
+2022-05-25 10:54:48 1 [Note] InnoDB: Using CPU crc32 instructions
+2022-05-25 10:54:48 1 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2022-05-25 10:54:48 1 [Note] InnoDB: Completed initialization of buffer pool
+2022-05-25 10:54:48 1 [Note] InnoDB: Highest supported file format is Barracuda.
+2022-05-25 10:54:48 1 [Note] InnoDB: 128 rollback segment(s) are active.
+2022-05-25 10:54:48 1 [Note] InnoDB: Waiting for purge to start
+2022-05-25 10:54:49 1 [Note] InnoDB: 5.6.35 started; log sequence number 1625997
+2022-05-25 10:54:49 1 [Note] Server hostname (bind-address): '*'; port: 3306
+2022-05-25 10:54:49 1 [Note] IPv6 is available.
+2022-05-25 10:54:49 1 [Note]   - '::' resolves to '::';
+2022-05-25 10:54:49 1 [Note] Server socket created on IP: '::'.
+2022-05-25 10:54:49 1 [Warning] 'proxies_priv' entry '@ root@ts-voucher-mysql-6bf998bc8d-s4bgm' ignored in --skip-name-resolve mode.
+2022-05-25 10:54:49 1 [Note] Event Scheduler: Loaded 0 events
+2022-05-25 10:54:49 1 [Note] mysqld: ready for connections.
 Version: '5.6.35'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
