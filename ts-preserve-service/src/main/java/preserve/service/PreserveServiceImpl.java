@@ -33,7 +33,9 @@ public class PreserveServiceImpl implements PreserveService {
     private static final Logger LOGGER = LoggerFactory.getLogger(PreserveServiceImpl.class);
 
     @Override
-    public Response preserve(OrderTicketsInfo oti, HttpHeaders headers) {
+    public Response preserve(OrderTicketsInfo oti, HttpHeaders httpHeaders) {
+        HttpHeaders headers = getAuthorizationHeadersFrom(httpHeaders);
+
         //1.detect ticket scalper
         PreserveServiceImpl.LOGGER.info("[Step 1] Check Security");
 
@@ -221,12 +223,13 @@ public class PreserveServiceImpl implements PreserveService {
         }
 
         //8.send notification
-
+        PreserveServiceImpl.LOGGER.info("[Step 8]");
         User getUser = getAccount(order.getAccountId().toString(), headers);
-
+        PreserveServiceImpl.LOGGER.info("[Step 9]");
         NotifyInfo notifyInfo = new NotifyInfo();
         notifyInfo.setDate(new Date().toString());
 
+        PreserveServiceImpl.LOGGER.info("[Step 10]");
         notifyInfo.setEmail(getUser.getEmail());
         notifyInfo.setStartingPlace(order.getFrom());
         notifyInfo.setEndPlace(order.getTo());
@@ -237,6 +240,7 @@ public class PreserveServiceImpl implements PreserveService {
         notifyInfo.setSeatClass(SeatClass.getNameByCode(order.getSeatClass()));
         notifyInfo.setStartingTime(order.getTravelTime().toString());
 
+        PreserveServiceImpl.LOGGER.info("[Step 11]");
         // TODO: change to async message serivce
         // sendEmail(notifyInfo, headers);
 
@@ -397,6 +401,14 @@ public class PreserveServiceImpl implements PreserveService {
                 requestEntityResultForTravel,
                 Response.class);
         return reResultForTravel.getBody();
+    }
+
+    public static HttpHeaders getAuthorizationHeadersFrom(HttpHeaders oldHeaders) {
+        HttpHeaders newHeaders = new HttpHeaders();
+        if (oldHeaders.containsKey(HttpHeaders.AUTHORIZATION)) {
+            newHeaders.add(HttpHeaders.AUTHORIZATION, oldHeaders.getFirst(HttpHeaders.AUTHORIZATION));
+        }
+        return newHeaders;
     }
 
 }

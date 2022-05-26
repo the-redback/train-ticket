@@ -36,7 +36,9 @@ public class InsidePaymentServiceImpl implements InsidePaymentService {
     private static final Logger LOGGER = LoggerFactory.getLogger(InsidePaymentServiceImpl.class);
 
     @Override
-    public Response pay(PaymentInfo info, HttpHeaders headers) {
+    public Response pay(PaymentInfo info, HttpHeaders httpHeaders) {
+
+        HttpHeaders headers = getAuthorizationHeadersFrom(httpHeaders);
 
         String userId = info.getUserId();
 
@@ -247,7 +249,8 @@ public class InsidePaymentServiceImpl implements InsidePaymentService {
     }
 
     @Override
-    public Response payDifference(PaymentInfo info, HttpHeaders headers) {
+    public Response payDifference(PaymentInfo info, HttpHeaders httpHeaders) {
+        HttpHeaders headers = getAuthorizationHeadersFrom(httpHeaders);
 
         String userId = info.getUserId();
 
@@ -352,6 +355,14 @@ public class InsidePaymentServiceImpl implements InsidePaymentService {
         } else {
             InsidePaymentServiceImpl.LOGGER.error("[Init Payment] Already Exists, paymentId: {}, orderId: {}", payment.getId(), payment.getOrderId());
         }
+    }
+
+    public static HttpHeaders getAuthorizationHeadersFrom(HttpHeaders oldHeaders) {
+        HttpHeaders newHeaders = new HttpHeaders();
+        if (oldHeaders.containsKey(HttpHeaders.AUTHORIZATION)) {
+            newHeaders.add(HttpHeaders.AUTHORIZATION, oldHeaders.getFirst(HttpHeaders.AUTHORIZATION));
+        }
+        return newHeaders;
     }
 
 }

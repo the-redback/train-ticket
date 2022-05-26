@@ -45,14 +45,17 @@ public class TokenServiceImpl implements TokenService {
     private RestTemplate restTemplate;
 
     @Override
-    public Response getToken(BasicAuthDto dto, HttpHeaders headers) throws UserOperationException {
+    public Response getToken(BasicAuthDto dto, HttpHeaders httpHeaders) throws UserOperationException {
+
+        HttpHeaders headers = getAuthorizationHeadersFrom(httpHeaders);
+
         String username = dto.getUsername();
         String password = dto.getPassword();
         String verifyCode = dto.getVerificationCode();
 //        LOGGER.info("LOGIN USER :" + username + " __ " + password + " __ " + verifyCode);
 
         if (!StringUtils.isEmpty(verifyCode)) {
-            HttpEntity requestEntity = new HttpEntity(headers);
+            HttpEntity requestEntity = new HttpEntity(null);
             ResponseEntity<Boolean> re = restTemplate.exchange(
                     "http://ts-verification-code-service:15678/api/v1/verifycode/verify/" + verifyCode,
                     HttpMethod.GET,
@@ -85,4 +88,14 @@ public class TokenServiceImpl implements TokenService {
         LOGGER.info("USER ID: " + user.getUserId());
         return new Response<>(1, "login success", new TokenDto(user.getUserId(), username, token));
     }
+
+    public static HttpHeaders getAuthorizationHeadersFrom(HttpHeaders oldHeaders) {
+        HttpHeaders newHeaders = new HttpHeaders();
+        if (oldHeaders.containsKey(HttpHeaders.AUTHORIZATION)) {
+            newHeaders.add(HttpHeaders.AUTHORIZATION, oldHeaders.getFirst(HttpHeaders.AUTHORIZATION));
+        }
+        return newHeaders;
+    }
+
+
 }
