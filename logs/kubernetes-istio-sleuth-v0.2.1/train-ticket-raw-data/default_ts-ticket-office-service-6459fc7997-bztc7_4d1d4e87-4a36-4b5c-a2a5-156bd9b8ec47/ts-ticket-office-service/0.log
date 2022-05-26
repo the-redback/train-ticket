@@ -1,0 +1,15 @@
+2022-05-26T05:33:44.964197494Z stdout F 
+2022-05-26T05:33:44.964323009Z stdout F > ts-ticket-office-service@0.0.0 start
+2022-05-26T05:33:44.964335432Z stdout F > node bin/www
+2022-05-26T05:33:44.964440968Z stdout F 
+2022-05-26T05:33:50.921039509Z stdout F initMongo连接上数据库啦！
+2022-05-26T05:33:50.954702853Z stderr F /app/node_modules/mongodb/lib/mongo_client.js:421
+2022-05-26T05:33:50.954767058Z stderr F           throw err
+2022-05-26T05:33:50.954816044Z stderr F           ^
+2022-05-26T05:33:50.954979296Z stderr F 
+2022-05-26T05:33:50.955008002Z stderr F TypeError: Cannot read property 'collection' of null
+2022-05-26T05:33:50.955017519Z stderr F     at initData (/app/bin/db.js:11:26)
+2022-05-26T05:33:50.955023774Z stderr F     at /app/bin/db.js:133:9
+2022-05-26T05:33:50.955030195Z stderr F     at connectCallback (/app/node_modules/mongodb/lib/mongo_client.js:515:5)
+2022-05-26T05:33:50.955035185Z stderr F     at /app/node_modules/mongodb/lib/mongo_client.js:418:11
+2022-05-26T05:33:50.955040693Z stderr F     at processTicksAndRejections (node:internal/process/task_queues:78:11)

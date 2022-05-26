@@ -1,10 +1,12 @@
 Clone the Repository
+
 ```bash
 git clone --depth=1 git@github.com:the-redback/train-ticket.git
 cd train-ticket/
 ```
 
 Setup Environment
+
 ```bash 
 export IMG_REPO=maruftuhin
 export IMG_TAG=0.2.1-sleuth
@@ -13,6 +15,7 @@ export TAG=0.2.1-sleuth
 ```
 
 To Build image from source
+
 ```bash
 mvn clean package -Dmaven.test.skip=true
 docker-compose build

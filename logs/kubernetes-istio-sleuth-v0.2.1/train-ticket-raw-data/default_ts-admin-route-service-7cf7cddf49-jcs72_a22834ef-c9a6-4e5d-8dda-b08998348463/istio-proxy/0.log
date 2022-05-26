@@ -1,0 +1,75 @@
+2022-05-26T05:27:21.069543488Z stdout F 2022-05-26T05:27:21.069303Z	info	FLAG: --concurrency="2"
+2022-05-26T05:27:21.070357345Z stdout F 2022-05-26T05:27:21.069793Z	info	FLAG: --domain="default.svc.cluster.local"
+2022-05-26T05:27:21.070632869Z stdout F 2022-05-26T05:27:21.070356Z	info	FLAG: --help="false"
+2022-05-26T05:27:21.071029216Z stdout F 2022-05-26T05:27:21.070610Z	info	FLAG: --log_as_json="false"
+2022-05-26T05:27:21.071185815Z stdout F 2022-05-26T05:27:21.070898Z	info	FLAG: --log_caller=""
+2022-05-26T05:27:21.071191821Z stdout F 2022-05-26T05:27:21.070948Z	info	FLAG: --log_output_level="default:info"
+2022-05-26T05:27:21.071203257Z stdout F 2022-05-26T05:27:21.070998Z	info	FLAG: --log_rotate=""
+2022-05-26T05:27:21.071210547Z stdout F 2022-05-26T05:27:21.071182Z	info	FLAG: --log_rotate_max_age="30"
+2022-05-26T05:27:21.071353313Z stdout F 2022-05-26T05:27:21.071215Z	info	FLAG: --log_rotate_max_backups="1000"
+2022-05-26T05:27:21.0713733Z stdout F 2022-05-26T05:27:21.071348Z	info	FLAG: --log_rotate_max_size="104857600"
+2022-05-26T05:27:21.071730228Z stdout F 2022-05-26T05:27:21.071382Z	info	FLAG: --log_stacktrace_level="default:none"
+2022-05-26T05:27:21.072034028Z stdout F 2022-05-26T05:27:21.071768Z	info	FLAG: --log_target="[stdout]"
+2022-05-26T05:27:21.072125488Z stdout F 2022-05-26T05:27:21.071972Z	info	FLAG: --meshConfig="./etc/istio/config/mesh"
+2022-05-26T05:27:21.072531555Z stdout F 2022-05-26T05:27:21.072025Z	info	FLAG: --outlierLogPath=""
+2022-05-26T05:27:21.072684703Z stdout F 2022-05-26T05:27:21.072273Z	info	FLAG: --proxyComponentLogLevel="misc:error"
+2022-05-26T05:27:21.072705019Z stdout F 2022-05-26T05:27:21.072473Z	info	FLAG: --proxyLogLevel="warning"
+2022-05-26T05:27:21.073251537Z stdout F 2022-05-26T05:27:21.072754Z	info	FLAG: --serviceCluster="istio-proxy"
+2022-05-26T05:27:21.07366886Z stdout F 2022-05-26T05:27:21.073188Z	info	FLAG: --stsPort="0"
+2022-05-26T05:27:21.07369287Z stdout F 2022-05-26T05:27:21.073429Z	info	FLAG: --templateFile=""
+2022-05-26T05:27:21.073716196Z stdout F 2022-05-26T05:27:21.073478Z	info	FLAG: --tokenManagerPlugin="GoogleTokenExchange"
+2022-05-26T05:27:21.073731091Z stdout F 2022-05-26T05:27:21.073671Z	info	FLAG: --vklog="0"
+2022-05-26T05:27:21.073955508Z stdout F 2022-05-26T05:27:21.073860Z	info	Version 1.13.2-91533d04e894ff86b80acd6d7a4517b144f9e19a-Clean
+2022-05-26T05:27:21.074706627Z stdout F 2022-05-26T05:27:21.074507Z	info	Proxy role	ips=[10.244.0.37 fe80::8414:6fff:fe0d:efe4] type=sidecar id=ts-admin-route-service-7cf7cddf49-jcs72.default domain=default.svc.cluster.local
+2022-05-26T05:27:21.075373163Z stdout F 2022-05-26T05:27:21.075040Z	info	Apply proxy config from env {}
+2022-05-26T05:27:21.075394775Z stdout F 
+2022-05-26T05:27:21.081371455Z stdout F 2022-05-26T05:27:21.081086Z	info	Effective config: binaryPath: /usr/local/bin/envoy
+2022-05-26T05:27:21.081410666Z stdout F concurrency: 2
+2022-05-26T05:27:21.08142422Z stdout F configPath: ./etc/istio/proxy
+2022-05-26T05:27:21.081431568Z stdout F controlPlaneAuthPolicy: MUTUAL_TLS
+2022-05-26T05:27:21.081437303Z stdout F discoveryAddress: istiod.istio-system.svc:15012
+2022-05-26T05:27:21.081443418Z stdout F drainDuration: 45s
+2022-05-26T05:27:21.081448538Z stdout F parentShutdownDuration: 60s
+2022-05-26T05:27:21.081456904Z stdout F proxyAdminPort: 15000
+2022-05-26T05:27:21.081463173Z stdout F serviceCluster: istio-proxy
+2022-05-26T05:27:21.081468342Z stdout F statNameLength: 189
+2022-05-26T05:27:21.081473349Z stdout F statusPort: 15020
+2022-05-26T05:27:21.081478581Z stdout F terminationDrainDuration: 5s
+2022-05-26T05:27:21.081484157Z stdout F tracing:
+2022-05-26T05:27:21.081489277Z stdout F   zipkin:
+2022-05-26T05:27:21.081494227Z stdout F     address: zipkin.istio-system:9411
+2022-05-26T05:27:21.081499205Z stdout F 
+2022-05-26T05:27:21.081875606Z stdout F 2022-05-26T05:27:21.081571Z	info	JWT policy is third-party-jwt
+2022-05-26T05:27:21.086273574Z stdout F 2022-05-26T05:27:21.085839Z	info	CA Endpoint istiod.istio-system.svc:15012, provider Citadel
+2022-05-26T05:27:21.086302888Z stdout F 2022-05-26T05:27:21.086079Z	info	Using CA istiod.istio-system.svc:15012 cert with certs: var/run/secrets/istio/root-cert.pem
+2022-05-26T05:27:21.086602831Z stdout F 2022-05-26T05:27:21.086303Z	info	citadelclient	Citadel client using custom root cert: var/run/secrets/istio/root-cert.pem
+2022-05-26T05:27:21.087282061Z stdout F 2022-05-26T05:27:21.086687Z	info	Opening status port 15020
+2022-05-26T05:27:21.199045266Z stdout F 2022-05-26T05:27:21.198506Z	info	ads	All caches have been synced up in 176.758878ms, marking server ready
+2022-05-26T05:27:21.20115527Z stdout F 2022-05-26T05:27:21.200744Z	info	sds	SDS server for workload certificates started, listening on "etc/istio/proxy/SDS"
+2022-05-26T05:27:21.201332128Z stdout F 2022-05-26T05:27:21.200845Z	info	xdsproxy	Initializing with upstream address "istiod.istio-system.svc:15012" and cluster "Kubernetes"
+2022-05-26T05:27:21.20350145Z stdout F 2022-05-26T05:27:21.201491Z	info	sds	Starting SDS grpc server
+2022-05-26T05:27:21.203736923Z stdout F 2022-05-26T05:27:21.202759Z	info	starting Http service at 127.0.0.1:15004
+2022-05-26T05:27:21.20824422Z stdout F 2022-05-26T05:27:21.207736Z	info	Pilot SAN: [istiod.istio-system.svc]
+2022-05-26T05:27:21.217240383Z stdout F 2022-05-26T05:27:21.216327Z	info	Starting proxy agent
+2022-05-26T05:27:21.217291564Z stdout F 2022-05-26T05:27:21.216505Z	info	Epoch 0 starting
+2022-05-26T05:27:21.217309507Z stdout F 2022-05-26T05:27:21.216574Z	info	Envoy command: [-c etc/istio/proxy/envoy-rev0.json --restart-epoch 0 --drain-time-s 45 --drain-strategy immediate --parent-shutdown-time-s 60 --local-address-ip-version v4 --file-flush-interval-msec 1000 --disable-hot-restart --log-format %Y-%m-%dT%T.%fZ	%l	envoy %n	%v -l warning --component-log-level misc:error --concurrency 2]
+2022-05-26T05:27:21.922584477Z stdout F 2022-05-26T05:27:21.921880Z	info	xdsproxy	connected to upstream XDS server: istiod.istio-system.svc:15012
+2022-05-26T05:27:22.103868717Z stdout F 2022-05-26T05:27:22.102473Z	info	cache	generated new workload certificate	latency=901.530088ms ttl=23h59m59.89755028s
+2022-05-26T05:27:22.103912942Z stdout F 2022-05-26T05:27:22.102562Z	info	cache	Root cert has changed, start rotating root cert
+2022-05-26T05:27:22.104048723Z stdout F 2022-05-26T05:27:22.102602Z	info	ads	XDS: Incremental Pushing:0 ConnectedEndpoints:0 Version:
+2022-05-26T05:27:22.104063881Z stdout F 2022-05-26T05:27:22.102681Z	info	cache	returned workload trust anchor from cache	ttl=23h59m59.897324773s
+2022-05-26T05:27:22.535358481Z stdout F 2022-05-26T05:27:22.534594Z	info	ads	ADS: new connection for node:ts-admin-route-service-7cf7cddf49-jcs72.default-1
+2022-05-26T05:27:22.535400159Z stdout F 2022-05-26T05:27:22.535031Z	info	cache	returned workload certificate from cache	ttl=23h59m59.465001023s
+2022-05-26T05:27:22.54137214Z stdout F 2022-05-26T05:27:22.538632Z	info	ads	SDS: PUSH request for node:ts-admin-route-service-7cf7cddf49-jcs72.default resources:1 size:4.0kB resource:default
+2022-05-26T05:27:22.590577307Z stdout F 2022-05-26T05:27:22.589044Z	info	ads	ADS: new connection for node:ts-admin-route-service-7cf7cddf49-jcs72.default-2
+2022-05-26T05:27:22.59064283Z stdout F 2022-05-26T05:27:22.589349Z	info	cache	returned workload trust anchor from cache	ttl=23h59m59.410678284s
+2022-05-26T05:27:22.59070766Z stdout F 2022-05-26T05:27:22.590406Z	info	ads	SDS: PUSH request for node:ts-admin-route-service-7cf7cddf49-jcs72.default resources:1 size:1.1kB resource:ROOTCA
+2022-05-26T05:27:24.813694538Z stdout F 2022-05-26T05:27:24.813328Z	info	Readiness succeeded in 3.770857276s
+2022-05-26T05:27:24.81479595Z stdout F 2022-05-26T05:27:24.814328Z	info	Envoy proxy is ready
+2022-05-26T05:32:47.799714972Z stdout F 2022-05-26T05:32:45.510814Z	error	failed scraping envoy metrics: error scraping http://localhost:15090/stats/prometheus: Get "http://localhost:15090/stats/prometheus": context deadline exceeded
+2022-05-26T05:32:48.444132293Z stdout F 2022-05-26T05:32:48.443375Z	error	failed to write agent metrics: write tcp 10.244.0.37:15020->10.244.0.8:47228: write: broken pipe
+2022-05-26T05:47:45.487547251Z stdout F 2022-05-26T05:47:45.294797Z	warn	xdsproxy	upstream [1] terminated with unexpected error rpc error: code = Unavailable desc = keepalive ping failed to receive ACK within timeout
+2022-05-26T05:47:56.750785477Z stdout F 2022-05-26T05:47:56.750475Z	info	xdsproxy	connected to upstream XDS server: istiod.istio-system.svc:15012
+2022-05-26T06:15:31.816401966Z stdout F 2022-05-26T06:15:31.813273Z	info	xdsproxy	connected to upstream XDS server: istiod.istio-system.svc:15012
+2022-05-26T06:44:00.563568824Z stdout F 2022-05-26T06:44:00.561257Z	info	xdsproxy	connected to upstream XDS server: istiod.istio-system.svc:15012
+2022-05-26T07:15:59.413825156Z stdout F 2022-05-26T07:15:59.413632Z	info	xdsproxy	connected to upstream XDS server: istiod.istio-system.svc:15012

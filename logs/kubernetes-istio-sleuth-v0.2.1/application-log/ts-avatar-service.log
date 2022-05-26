@@ -1,191 +1,15 @@
-[2022-05-09 19:49:22 +0800] [1] [INFO] Starting gunicorn 20.0.4
-[2022-05-09 19:49:22 +0800] [1] [INFO] Listening at: http://0.0.0.0:17001 (1)
-[2022-05-09 19:49:22 +0800] [1] [INFO] Using worker: sync
-[2022-05-09 19:49:22 +0800] [14] [INFO] Booting worker with pid: 14
-[2022-05-09 19:49:22 +0800] [15] [INFO] Booting worker with pid: 15
-[2022-05-09 19:49:23 +0800] [16] [INFO] Booting worker with pid: 16
-[2022-05-09 19:49:23 +0800] [17] [INFO] Booting worker with pid: 17
-[2022-05-09 21:22:19 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:14)
-[2022-05-09 21:22:19 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:15)
-[2022-05-09 21:22:19 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:16)
-[2022-05-09 21:22:19 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:17)
-[2022-05-09 21:22:19 +0800] [17] [INFO] Worker exiting (pid: 17)
-[2022-05-09 21:22:19 +0800] [14] [INFO] Worker exiting (pid: 14)
-[2022-05-09 21:22:19 +0800] [16] [INFO] Worker exiting (pid: 16)
-[2022-05-09 21:22:19 +0800] [15] [INFO] Worker exiting (pid: 15)
-[2022-05-09 21:22:22 +0800] [18] [INFO] Booting worker with pid: 18
-[2022-05-09 21:22:23 +0800] [19] [INFO] Booting worker with pid: 19
-[2022-05-09 21:22:24 +0800] [20] [INFO] Booting worker with pid: 20
-[2022-05-09 21:22:24 +0800] [21] [INFO] Booting worker with pid: 21
-[2022-05-09 22:16:42 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:18)
-[2022-05-09 22:16:42 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:19)
-[2022-05-09 22:16:42 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:20)
-[2022-05-09 22:16:42 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:21)
-[2022-05-09 22:16:42 +0800] [19] [INFO] Worker exiting (pid: 19)
-[2022-05-09 22:16:42 +0800] [20] [INFO] Worker exiting (pid: 20)
-[2022-05-09 22:16:42 +0800] [18] [INFO] Worker exiting (pid: 18)
-[2022-05-09 22:16:44 +0800] [22] [INFO] Booting worker with pid: 22
-[2022-05-09 22:16:47 +0800] [23] [INFO] Booting worker with pid: 23
-[2022-05-09 22:16:50 +0800] [24] [INFO] Booting worker with pid: 24
-[2022-05-09 22:16:51 +0800] [25] [INFO] Booting worker with pid: 25
-[2022-05-09 23:10:36 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:22)
-[2022-05-09 23:10:37 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:23)
-[2022-05-09 23:10:37 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:24)
-[2022-05-09 23:10:37 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:25)
-[2022-05-09 23:10:38 +0800] [23] [INFO] Worker exiting (pid: 23)
-[2022-05-09 23:10:39 +0800] [25] [INFO] Worker exiting (pid: 25)
-[2022-05-09 23:10:41 +0800] [26] [INFO] Booting worker with pid: 26
-[2022-05-09 23:10:41 +0800] [27] [INFO] Booting worker with pid: 27
-[2022-05-09 23:10:42 +0800] [29] [INFO] Booting worker with pid: 29
-[2022-05-09 23:10:42 +0800] [28] [INFO] Booting worker with pid: 28
-[2022-05-10 00:58:47 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:26)
-[2022-05-10 00:58:47 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:27)
-[2022-05-10 00:58:47 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:28)
-[2022-05-10 00:58:47 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:29)
-[2022-05-10 00:58:47 +0800] [27] [INFO] Worker exiting (pid: 27)
-[2022-05-10 00:58:47 +0800] [26] [INFO] Worker exiting (pid: 26)
-[2022-05-10 00:58:52 +0800] [30] [INFO] Booting worker with pid: 30
-[2022-05-10 00:58:53 +0800] [31] [INFO] Booting worker with pid: 31
-[2022-05-10 00:58:54 +0800] [32] [INFO] Booting worker with pid: 32
-[2022-05-10 00:59:03 +0800] [33] [INFO] Booting worker with pid: 33
-[2022-05-10 01:52:54 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:30)
-[2022-05-10 01:52:56 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:31)
-[2022-05-10 01:52:56 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:32)
-[2022-05-10 01:52:56 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:33)
-[2022-05-10 01:52:56 +0800] [32] [INFO] Worker exiting (pid: 32)
-[2022-05-10 01:52:56 +0800] [30] [INFO] Worker exiting (pid: 30)
-[2022-05-10 01:52:57 +0800] [31] [INFO] Worker exiting (pid: 31)
-[2022-05-10 01:52:56 +0800] [33] [INFO] Worker exiting (pid: 33)
-[2022-05-10 01:52:59 +0800] [35] [INFO] Booting worker with pid: 35
-[2022-05-10 01:52:59 +0800] [34] [INFO] Booting worker with pid: 34
-[2022-05-10 01:53:00 +0800] [36] [INFO] Booting worker with pid: 36
-[2022-05-10 01:53:03 +0800] [37] [INFO] Booting worker with pid: 37
-[2022-05-10 02:47:08 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:34)
-[2022-05-10 02:47:08 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:35)
-[2022-05-10 02:47:09 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:36)
-[2022-05-10 02:47:09 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:37)
-[2022-05-10 02:47:09 +0800] [35] [INFO] Worker exiting (pid: 35)
-[2022-05-10 02:47:09 +0800] [37] [INFO] Worker exiting (pid: 37)
-[2022-05-10 02:47:10 +0800] [36] [INFO] Worker exiting (pid: 36)
-[2022-05-10 02:47:14 +0800] [38] [INFO] Booting worker with pid: 38
-[2022-05-10 02:47:17 +0800] [39] [INFO] Booting worker with pid: 39
-[2022-05-10 02:47:23 +0800] [40] [INFO] Booting worker with pid: 40
-[2022-05-10 02:47:24 +0800] [41] [INFO] Booting worker with pid: 41
-[2022-05-10 03:41:03 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:38)
-[2022-05-10 03:41:03 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:39)
-[2022-05-10 03:41:03 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:40)
-[2022-05-10 03:41:03 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:41)
-[2022-05-10 03:41:03 +0800] [38] [INFO] Worker exiting (pid: 38)
-[2022-05-10 03:41:03 +0800] [41] [INFO] Worker exiting (pid: 41)
-[2022-05-10 03:41:03 +0800] [40] [INFO] Worker exiting (pid: 40)
-[2022-05-10 03:41:03 +0800] [39] [INFO] Worker exiting (pid: 39)
-[2022-05-10 03:41:04 +0800] [42] [INFO] Booting worker with pid: 42
-[2022-05-10 03:41:06 +0800] [43] [INFO] Booting worker with pid: 43
-[2022-05-10 03:41:07 +0800] [44] [INFO] Booting worker with pid: 44
-[2022-05-10 03:41:08 +0800] [45] [INFO] Booting worker with pid: 45
-[2022-05-10 04:26:22 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:42)
-[2022-05-10 04:26:32 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:43)
-[2022-05-10 04:26:33 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:44)
-[2022-05-10 04:26:33 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:45)
-[2022-05-10 04:26:33 +0800] [42] [INFO] Worker exiting (pid: 42)
-[2022-05-10 04:26:44 +0800] [46] [INFO] Booting worker with pid: 46
-[2022-05-10 04:26:44 +0800] [47] [INFO] Booting worker with pid: 47
-[2022-05-10 04:26:48 +0800] [48] [INFO] Booting worker with pid: 48
-[2022-05-10 04:26:49 +0800] [49] [INFO] Booting worker with pid: 49
-[2022-05-10 04:27:14 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:46)
-[2022-05-10 04:27:15 +0800] [46] [INFO] Worker exiting (pid: 46)
-[2022-05-10 04:27:15 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:47)
-[2022-05-10 04:27:15 +0800] [47] [INFO] Worker exiting (pid: 47)
-[2022-05-10 04:27:16 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:48)
-[2022-05-10 04:27:16 +0800] [48] [INFO] Worker exiting (pid: 48)
-[2022-05-10 04:27:19 +0800] [78] [INFO] Booting worker with pid: 78
-[2022-05-10 04:27:20 +0800] [79] [INFO] Booting worker with pid: 79
-[2022-05-10 04:27:21 +0800] [80] [INFO] Booting worker with pid: 80
-[2022-05-10 04:27:21 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:49)
-[2022-05-10 04:27:22 +0800] [49] [INFO] Worker exiting (pid: 49)
-[2022-05-10 04:27:23 +0800] [81] [INFO] Booting worker with pid: 81
-[2022-05-10 04:27:48 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:78)
-[2022-05-10 04:27:48 +0800] [78] [INFO] Worker exiting (pid: 78)
-[2022-05-10 04:27:49 +0800] [110] [INFO] Booting worker with pid: 110
-[2022-05-10 04:27:50 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:79)
-[2022-05-10 04:27:50 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:80)
-[2022-05-10 04:27:50 +0800] [80] [INFO] Worker exiting (pid: 80)
-[2022-05-10 04:27:51 +0800] [79] [INFO] Worker exiting (pid: 79)
-[2022-05-10 04:27:52 +0800] [111] [INFO] Booting worker with pid: 111
-[2022-05-10 04:27:52 +0800] [112] [INFO] Booting worker with pid: 112
-[2022-05-10 04:27:53 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:81)
-[2022-05-10 04:27:54 +0800] [113] [INFO] Booting worker with pid: 113
-[2022-05-10 04:28:20 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:110)
-[2022-05-10 04:28:22 +0800] [142] [INFO] Booting worker with pid: 142
-[2022-05-10 04:28:23 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:111)
-[2022-05-10 04:28:23 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:112)
-[2022-05-10 04:28:25 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:113)
-[2022-05-10 04:28:25 +0800] [143] [INFO] Booting worker with pid: 143
-[2022-05-10 04:28:25 +0800] [144] [INFO] Booting worker with pid: 144
-[2022-05-10 04:28:26 +0800] [145] [INFO] Booting worker with pid: 145
-[2022-05-10 04:28:51 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:142)
-[2022-05-10 04:28:54 +0800] [174] [INFO] Booting worker with pid: 174
-[2022-05-10 04:28:55 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:143)
-[2022-05-10 04:28:56 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:144)
-[2022-05-10 04:28:56 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:145)
-[2022-05-10 04:28:59 +0800] [175] [INFO] Booting worker with pid: 175
-[2022-05-10 04:29:02 +0800] [176] [INFO] Booting worker with pid: 176
-[2022-05-10 04:29:02 +0800] [177] [INFO] Booting worker with pid: 177
-[2022-05-10 04:29:25 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:174)
-[2022-05-10 04:29:26 +0800] [206] [INFO] Booting worker with pid: 206
-[2022-05-10 04:29:29 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:175)
-[2022-05-10 04:29:31 +0800] [207] [INFO] Booting worker with pid: 207
-[2022-05-10 04:29:32 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:176)
-[2022-05-10 04:29:32 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:177)
-[2022-05-10 04:29:33 +0800] [208] [INFO] Booting worker with pid: 208
-[2022-05-10 04:29:34 +0800] [209] [INFO] Booting worker with pid: 209
-[2022-05-10 04:29:57 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:206)
-[2022-05-10 04:29:59 +0800] [238] [INFO] Booting worker with pid: 238
-[2022-05-10 04:30:01 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:207)
-[2022-05-10 04:30:03 +0800] [239] [INFO] Booting worker with pid: 239
-[2022-05-10 04:30:04 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:208)
-[2022-05-10 04:30:04 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:209)
-[2022-05-10 04:30:05 +0800] [240] [INFO] Booting worker with pid: 240
-[2022-05-10 04:30:05 +0800] [241] [INFO] Booting worker with pid: 241
-[2022-05-10 04:30:30 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:238)
-[2022-05-10 04:30:32 +0800] [270] [INFO] Booting worker with pid: 270
-[2022-05-10 04:30:34 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:239)
-[2022-05-10 04:30:35 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:240)
-[2022-05-10 04:30:35 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:241)
-[2022-05-10 04:30:35 +0800] [271] [INFO] Booting worker with pid: 271
-[2022-05-10 04:30:37 +0800] [272] [INFO] Booting worker with pid: 272
-[2022-05-10 04:30:38 +0800] [273] [INFO] Booting worker with pid: 273
-[2022-05-10 04:31:02 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:270)
-[2022-05-10 04:31:04 +0800] [302] [INFO] Booting worker with pid: 302
-[2022-05-10 04:31:06 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:271)
-[2022-05-10 04:31:07 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:272)
-[2022-05-10 04:31:07 +0800] [303] [INFO] Booting worker with pid: 303
-[2022-05-10 04:31:09 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:273)
-[2022-05-10 04:31:09 +0800] [304] [INFO] Booting worker with pid: 304
-[2022-05-10 04:31:10 +0800] [305] [INFO] Booting worker with pid: 305
-[2022-05-10 04:31:35 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:302)
-[2022-05-10 04:31:36 +0800] [334] [INFO] Booting worker with pid: 334
-[2022-05-10 04:31:37 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:303)
-[2022-05-10 04:31:39 +0800] [335] [INFO] Booting worker with pid: 335
-[2022-05-10 04:31:40 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:304)
-[2022-05-10 04:31:40 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:305)
-[2022-05-10 04:31:42 +0800] [336] [INFO] Booting worker with pid: 336
-[2022-05-10 04:31:42 +0800] [337] [INFO] Booting worker with pid: 337
-[2022-05-10 04:32:07 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:334)
-[2022-05-10 04:32:10 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:335)
-[2022-05-10 04:32:11 +0800] [366] [INFO] Booting worker with pid: 366
-[2022-05-10 04:32:12 +0800] [367] [INFO] Booting worker with pid: 367
-[2022-05-10 04:32:13 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:336)
-[2022-05-10 04:32:13 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:337)
-[2022-05-10 04:32:15 +0800] [368] [INFO] Booting worker with pid: 368
-[2022-05-10 04:32:16 +0800] [369] [INFO] Booting worker with pid: 369
-[2022-05-10 04:32:41 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:366)
-[2022-05-10 04:32:41 +0800] [366] [INFO] Worker exiting (pid: 366)
-[2022-05-10 04:32:42 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:367)
-[2022-05-10 04:32:42 +0800] [398] [INFO] Booting worker with pid: 398
-[2022-05-10 04:32:42 +0800] [399] [INFO] Booting worker with pid: 399
-[2022-05-10 04:32:45 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:368)
-[2022-05-10 04:32:46 +0800] [368] [ERROR] Exception in worker process
+[2022-05-26 13:37:27 +0800] [1] [INFO] Starting gunicorn 20.0.4
+[2022-05-26 13:37:27 +0800] [1] [INFO] Listening at: http://0.0.0.0:17001 (1)
+[2022-05-26 13:37:27 +0800] [1] [INFO] Using worker: sync
+[2022-05-26 13:37:27 +0800] [13] [INFO] Booting worker with pid: 13
+[2022-05-26 13:37:28 +0800] [14] [INFO] Booting worker with pid: 14
+[2022-05-26 13:37:28 +0800] [15] [INFO] Booting worker with pid: 15
+[2022-05-26 13:37:28 +0800] [16] [INFO] Booting worker with pid: 16
+[2022-05-26 13:37:58 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:13)
+[2022-05-26 13:37:58 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:14)
+[2022-05-26 13:37:58 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:15)
+[2022-05-26 13:37:58 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:16)
+[2022-05-26 13:37:58 +0800] [13] [ERROR] Exception in worker process
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
     worker.init_process()
@@ -254,316 +78,233 @@ At:
   /usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py(583): spawn_worker
   /usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py(616): spawn_workers
   /usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py(545): manage_workers
-  /usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py(211): run
+  /usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py(202): run
   /usr/local/lib/python3.9/site-packages/gunicorn/app/base.py(72): run
   /usr/local/lib/python3.9/site-packages/gunicorn/app/base.py(228): run
   /usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py(58): run
   /usr/local/bin/gunicorn(8): <module>
 
-[2022-05-10 04:32:46 +0800] [368] [INFO] Worker exiting (pid: 368)
-[2022-05-10 04:32:46 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:369)
-[2022-05-10 04:32:47 +0800] [369] [INFO] Worker exiting (pid: 369)
-[2022-05-10 04:32:48 +0800] [400] [INFO] Booting worker with pid: 400
-[2022-05-10 04:32:48 +0800] [401] [INFO] Booting worker with pid: 401
-[2022-05-10 04:33:13 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:398)
-[2022-05-10 04:33:13 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:399)
-[2022-05-10 04:33:18 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:400)
-[2022-05-10 04:33:20 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:401)
-[2022-05-10 04:33:21 +0800] [430] [INFO] Booting worker with pid: 430
-[2022-05-10 04:33:22 +0800] [431] [INFO] Booting worker with pid: 431
-[2022-05-10 04:33:28 +0800] [432] [INFO] Booting worker with pid: 432
-[2022-05-10 04:33:29 +0800] [433] [INFO] Booting worker with pid: 433
-[2022-05-10 04:33:50 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:430)
-[2022-05-10 04:33:52 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:431)
-[2022-05-10 04:33:57 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:432)
-[2022-05-10 04:33:57 +0800] [432] [INFO] Worker exiting (pid: 432)
-[2022-05-10 04:34:00 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:433)
-[2022-05-10 04:34:02 +0800] [441] [INFO] Booting worker with pid: 441
-[2022-05-10 04:34:03 +0800] [442] [INFO] Booting worker with pid: 442
-[2022-05-10 04:34:03 +0800] [443] [INFO] Booting worker with pid: 443
-[2022-05-10 04:34:04 +0800] [444] [INFO] Booting worker with pid: 444
-[2022-05-10 04:34:33 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:441)
-[2022-05-10 04:34:33 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:442)
-[2022-05-10 04:34:34 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:443)
-[2022-05-10 04:34:34 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:444)
-[2022-05-10 04:34:34 +0800] [444] [INFO] Worker exiting (pid: 444)
-[2022-05-10 04:34:36 +0800] [473] [INFO] Booting worker with pid: 473
-[2022-05-10 04:34:39 +0800] [474] [INFO] Booting worker with pid: 474
-[2022-05-10 04:34:41 +0800] [475] [INFO] Booting worker with pid: 475
-[2022-05-10 04:34:41 +0800] [476] [INFO] Booting worker with pid: 476
-[2022-05-10 04:35:06 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:473)
-[2022-05-10 04:35:07 +0800] [473] [INFO] Worker exiting (pid: 473)
-[2022-05-10 04:35:09 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:474)
-[2022-05-10 04:35:11 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:475)
-[2022-05-10 04:35:11 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:476)
-[2022-05-10 04:35:12 +0800] [505] [INFO] Booting worker with pid: 505
-[2022-05-10 04:35:16 +0800] [507] [INFO] Booting worker with pid: 507
-[2022-05-10 04:35:16 +0800] [506] [INFO] Booting worker with pid: 506
-[2022-05-10 04:35:16 +0800] [508] [INFO] Booting worker with pid: 508
-[2022-05-10 04:35:41 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:505)
-[2022-05-10 04:35:41 +0800] [505] [INFO] Worker exiting (pid: 505)
-[2022-05-10 04:35:43 +0800] [537] [INFO] Booting worker with pid: 537
-[2022-05-10 04:35:47 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:506)
-[2022-05-10 04:35:47 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:507)
-[2022-05-10 04:35:47 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:508)
-[2022-05-10 04:35:48 +0800] [508] [INFO] Worker exiting (pid: 508)
-[2022-05-10 04:35:49 +0800] [538] [INFO] Booting worker with pid: 538
-[2022-05-10 04:35:49 +0800] [539] [INFO] Booting worker with pid: 539
-[2022-05-10 04:35:49 +0800] [540] [INFO] Booting worker with pid: 540
-[2022-05-10 04:36:13 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:537)
-[2022-05-10 04:36:19 +0800] [569] [INFO] Booting worker with pid: 569
-[2022-05-10 04:36:20 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:538)
-[2022-05-10 04:36:20 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:539)
-[2022-05-10 04:36:20 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:540)
-[2022-05-10 04:36:20 +0800] [540] [INFO] Worker exiting (pid: 540)
-[2022-05-10 04:36:22 +0800] [570] [INFO] Booting worker with pid: 570
-[2022-05-10 04:36:22 +0800] [571] [INFO] Booting worker with pid: 571
-[2022-05-10 04:36:23 +0800] [572] [INFO] Booting worker with pid: 572
-[2022-05-10 04:36:48 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:569)
-[2022-05-10 04:36:48 +0800] [569] [INFO] Worker exiting (pid: 569)
-[2022-05-10 04:36:50 +0800] [601] [INFO] Booting worker with pid: 601
-[2022-05-10 04:36:53 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:570)
-[2022-05-10 04:36:53 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:571)
-[2022-05-10 04:36:53 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:572)
-[2022-05-10 04:36:53 +0800] [570] [INFO] Worker exiting (pid: 570)
-[2022-05-10 04:36:53 +0800] [572] [INFO] Worker exiting (pid: 572)
-[2022-05-10 04:36:53 +0800] [571] [INFO] Worker exiting (pid: 571)
-[2022-05-10 04:36:54 +0800] [602] [INFO] Booting worker with pid: 602
-[2022-05-10 04:36:55 +0800] [603] [INFO] Booting worker with pid: 603
-[2022-05-10 04:36:55 +0800] [604] [INFO] Booting worker with pid: 604
-[2022-05-10 04:37:21 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:601)
-[2022-05-10 04:37:25 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:602)
-[2022-05-10 04:37:25 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:603)
-[2022-05-10 04:37:25 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:604)
-[2022-05-10 04:37:33 +0800] [633] [INFO] Booting worker with pid: 633
-[2022-05-10 04:37:41 +0800] [635] [INFO] Booting worker with pid: 635
-[2022-05-10 04:37:41 +0800] [634] [INFO] Booting worker with pid: 634
-[2022-05-10 04:37:43 +0800] [636] [INFO] Booting worker with pid: 636
-[2022-05-10 04:38:04 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:633)
-[2022-05-10 04:38:04 +0800] [633] [INFO] Worker exiting (pid: 633)
-[2022-05-10 04:38:06 +0800] [665] [INFO] Booting worker with pid: 665
-[2022-05-10 04:38:11 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:634)
-[2022-05-10 04:38:11 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:635)
-[2022-05-10 04:38:11 +0800] [634] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 119, in init_process
-    self.load_wsgi()
-  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
-    return self.load_wsgiapp()
-  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 358, in import_app
-    mod = importlib.import_module(module)
-  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
-  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
-  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
-  File "/app/app.py", line 10, in <module>
-    from face_detect import check
-  File "/app/face_detect.py", line 2, in <module>
-    import dlib
-  File "/usr/local/lib/python3.9/site-packages/dlib/__init__.py", line 19, in <module>
-    from _dlib_pybind11 import *
-ImportError: SystemExit: 1
-
-At:
-  /usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py(201): handle_abort
-  <frozen importlib._bootstrap>(228): _call_with_frames_removed
-  <frozen importlib._bootstrap_external>(1173): create_module
-  <frozen importlib._bootstrap>(565): module_from_spec
-  <frozen importlib._bootstrap>(666): _load_unlocked
-  <frozen importlib._bootstrap>(986): _find_and_load_unlocked
-  <frozen importlib._bootstrap>(1007): _find_and_load
-  /usr/local/lib/python3.9/site-packages/dlib/__init__.py(19): <module>
-  <frozen importlib._bootstrap>(228): _call_with_frames_removed
-  <frozen importlib._bootstrap_external>(850): exec_module
-  <frozen importlib._bootstrap>(680): _load_unlocked
-  <frozen importlib._bootstrap>(986): _find_and_load_unlocked
-  <frozen importlib._bootstrap>(1007): _find_and_load
-  /app/face_detect.py(2): <module>
-  <frozen importlib._bootstrap>(228): _call_with_frames_removed
-  <frozen importlib._bootstrap_external>(850): exec_module
-  <frozen importlib._bootstrap>(680): _load_unlocked
-  <frozen importlib._bootstrap>(986): _find_and_load_unlocked
-  <frozen importlib._bootstrap>(1007): _find_and_load
-  /app/app.py(10): <module>
-  <frozen importlib._bootstrap>(228): _call_with_frames_removed
-  <frozen importlib._bootstrap_external>(850): exec_module
-  <frozen importlib._bootstrap>(680): _load_unlocked
-  <frozen importlib._bootstrap>(986): _find_and_load_unlocked
-  <frozen importlib._bootstrap>(1007): _find_and_load
-  <frozen importlib._bootstrap>(1030): _gcd_import
-  /usr/local/lib/python3.9/importlib/__init__.py(127): import_module
-  /usr/local/lib/python3.9/site-packages/gunicorn/util.py(358): import_app
-  /usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py(39): load_wsgiapp
-  /usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py(49): load
-  /usr/local/lib/python3.9/site-packages/gunicorn/app/base.py(67): wsgi
-  /usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py(144): load_wsgi
-  /usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py(119): init_process
-  /usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py(583): spawn_worker
-  /usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py(616): spawn_workers
-  /usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py(545): manage_workers
-  /usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py(211): run
-  /usr/local/lib/python3.9/site-packages/gunicorn/app/base.py(72): run
-  /usr/local/lib/python3.9/site-packages/gunicorn/app/base.py(228): run
-  /usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py(58): run
-  /usr/local/bin/gunicorn(8): <module>
-
-[2022-05-10 04:38:12 +0800] [634] [INFO] Worker exiting (pid: 634)
-[2022-05-10 04:38:11 +0800] [635] [ERROR] Exception in worker process
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
-    worker.init_process()
-  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 119, in init_process
-    self.load_wsgi()
-  File "/usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
-    self.wsgi = self.app.wsgi()
-  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
-    self.callable = self.load()
-  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
-    return self.load_wsgiapp()
-  File "/usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
-    return util.import_app(self.app_uri)
-  File "/usr/local/lib/python3.9/site-packages/gunicorn/util.py", line 358, in import_app
-    mod = importlib.import_module(module)
-  File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
-  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
-  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
-  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
-  File "/app/app.py", line 10, in <module>
-    from face_detect import check
-  File "/app/face_detect.py", line 2, in <module>
-    import dlib
-  File "/usr/local/lib/python3.9/site-packages/dlib/__init__.py", line 19, in <module>
-    from _dlib_pybind11 import *
-ImportError: SystemExit: 1
-
-At:
-  /usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py(201): handle_abort
-  <frozen importlib._bootstrap>(228): _call_with_frames_removed
-  <frozen importlib._bootstrap_external>(1173): create_module
-  <frozen importlib._bootstrap>(565): module_from_spec
-  <frozen importlib._bootstrap>(666): _load_unlocked
-  <frozen importlib._bootstrap>(986): _find_and_load_unlocked
-  <frozen importlib._bootstrap>(1007): _find_and_load
-  /usr/local/lib/python3.9/site-packages/dlib/__init__.py(19): <module>
-  <frozen importlib._bootstrap>(228): _call_with_frames_removed
-  <frozen importlib._bootstrap_external>(850): exec_module
-  <frozen importlib._bootstrap>(680): _load_unlocked
-  <frozen importlib._bootstrap>(986): _find_and_load_unlocked
-  <frozen importlib._bootstrap>(1007): _find_and_load
-  /app/face_detect.py(2): <module>
-  <frozen importlib._bootstrap>(228): _call_with_frames_removed
-  <frozen importlib._bootstrap_external>(850): exec_module
-  <frozen importlib._bootstrap>(680): _load_unlocked
-  <frozen importlib._bootstrap>(986): _find_and_load_unlocked
-  <frozen importlib._bootstrap>(1007): _find_and_load
-  /app/app.py(10): <module>
-  <frozen importlib._bootstrap>(228): _call_with_frames_removed
-  <frozen importlib._bootstrap_external>(850): exec_module
-  <frozen importlib._bootstrap>(680): _load_unlocked
-  <frozen importlib._bootstrap>(986): _find_and_load_unlocked
-  <frozen importlib._bootstrap>(1007): _find_and_load
-  <frozen importlib._bootstrap>(1030): _gcd_import
-  /usr/local/lib/python3.9/importlib/__init__.py(127): import_module
-  /usr/local/lib/python3.9/site-packages/gunicorn/util.py(358): import_app
-  /usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py(39): load_wsgiapp
-  /usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py(49): load
-  /usr/local/lib/python3.9/site-packages/gunicorn/app/base.py(67): wsgi
-  /usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py(144): load_wsgi
-  /usr/local/lib/python3.9/site-packages/gunicorn/workers/base.py(119): init_process
-  /usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py(583): spawn_worker
-  /usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py(616): spawn_workers
-  /usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py(545): manage_workers
-  /usr/local/lib/python3.9/site-packages/gunicorn/arbiter.py(211): run
-  /usr/local/lib/python3.9/site-packages/gunicorn/app/base.py(72): run
-  /usr/local/lib/python3.9/site-packages/gunicorn/app/base.py(228): run
-  /usr/local/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py(58): run
-  /usr/local/bin/gunicorn(8): <module>
-
-[2022-05-10 04:38:13 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:636)
-[2022-05-10 04:38:13 +0800] [666] [INFO] Booting worker with pid: 666
-[2022-05-10 04:38:13 +0800] [667] [INFO] Booting worker with pid: 667
-[2022-05-10 04:38:14 +0800] [668] [INFO] Booting worker with pid: 668
-[2022-05-10 04:38:41 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:665)
-[2022-05-10 04:38:46 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:666)
-[2022-05-10 04:38:47 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:667)
-[2022-05-10 04:38:47 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:668)
-[2022-05-10 04:38:56 +0800] [697] [INFO] Booting worker with pid: 697
-[2022-05-10 04:38:56 +0800] [698] [INFO] Booting worker with pid: 698
-[2022-05-10 04:38:57 +0800] [699] [INFO] Booting worker with pid: 699
-[2022-05-10 04:38:57 +0800] [700] [INFO] Booting worker with pid: 700
-[2022-05-10 04:39:26 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:697)
-[2022-05-10 04:39:26 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:698)
-[2022-05-10 04:39:26 +0800] [697] [INFO] Worker exiting (pid: 697)
-[2022-05-10 04:39:27 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:699)
-[2022-05-10 04:39:28 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:700)
-[2022-05-10 04:39:29 +0800] [730] [INFO] Booting worker with pid: 730
-[2022-05-10 04:39:30 +0800] [729] [INFO] Booting worker with pid: 729
-[2022-05-10 04:39:30 +0800] [731] [INFO] Booting worker with pid: 731
-[2022-05-10 04:39:30 +0800] [732] [INFO] Booting worker with pid: 732
-[2022-05-10 04:40:00 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:729)
-[2022-05-10 04:40:00 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:730)
-[2022-05-10 04:40:00 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:731)
-[2022-05-10 04:40:00 +0800] [729] [INFO] Worker exiting (pid: 729)
-[2022-05-10 04:40:00 +0800] [731] [INFO] Worker exiting (pid: 731)
-[2022-05-10 04:40:01 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:732)
-[2022-05-10 04:40:02 +0800] [761] [INFO] Booting worker with pid: 761
-[2022-05-10 04:40:02 +0800] [762] [INFO] Booting worker with pid: 762
-[2022-05-10 04:40:03 +0800] [763] [INFO] Booting worker with pid: 763
-[2022-05-10 04:40:03 +0800] [764] [INFO] Booting worker with pid: 764
-[2022-05-10 04:40:33 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:761)
-[2022-05-10 04:40:33 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:762)
-[2022-05-10 04:40:33 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:763)
-[2022-05-10 04:40:33 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:764)
-[2022-05-10 04:40:34 +0800] [793] [INFO] Booting worker with pid: 793
-[2022-05-10 04:40:35 +0800] [794] [INFO] Booting worker with pid: 794
-[2022-05-10 04:40:35 +0800] [795] [INFO] Booting worker with pid: 795
-[2022-05-10 04:40:35 +0800] [796] [INFO] Booting worker with pid: 796
-[2022-05-10 04:41:04 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:793)
-[2022-05-10 04:41:06 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:794)
-[2022-05-10 04:41:06 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:795)
-[2022-05-10 04:41:06 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:796)
-[2022-05-10 04:41:06 +0800] [825] [INFO] Booting worker with pid: 825
-[2022-05-10 04:41:07 +0800] [826] [INFO] Booting worker with pid: 826
-[2022-05-10 04:41:07 +0800] [827] [INFO] Booting worker with pid: 827
-[2022-05-10 04:41:07 +0800] [828] [INFO] Booting worker with pid: 828
-[2022-05-10 04:41:38 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:825)
-[2022-05-10 04:41:41 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:826)
-[2022-05-10 04:41:41 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:827)
-[2022-05-10 04:41:41 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:828)
-[2022-05-10 04:41:44 +0800] [857] [INFO] Booting worker with pid: 857
-[2022-05-10 04:41:44 +0800] [858] [INFO] Booting worker with pid: 858
-[2022-05-10 04:41:44 +0800] [859] [INFO] Booting worker with pid: 859
-[2022-05-10 04:41:44 +0800] [860] [INFO] Booting worker with pid: 860
-[2022-05-10 04:42:14 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:857)
-[2022-05-10 04:42:15 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:858)
-[2022-05-10 04:42:15 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:859)
-[2022-05-10 04:42:15 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:860)
-[2022-05-10 04:42:16 +0800] [889] [INFO] Booting worker with pid: 889
-[2022-05-10 04:42:16 +0800] [890] [INFO] Booting worker with pid: 890
-[2022-05-10 04:42:16 +0800] [891] [INFO] Booting worker with pid: 891
-[2022-05-10 04:42:17 +0800] [892] [INFO] Booting worker with pid: 892
-[2022-05-10 04:42:47 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:889)
-[2022-05-10 04:42:47 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:890)
-[2022-05-10 04:42:47 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:891)
-[2022-05-10 04:42:47 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:892)
-[2022-05-10 04:42:48 +0800] [890] [INFO] Worker exiting (pid: 890)
-[2022-05-10 04:42:49 +0800] [921] [INFO] Booting worker with pid: 921
-[2022-05-10 04:42:49 +0800] [922] [INFO] Booting worker with pid: 922
-[2022-05-10 04:42:49 +0800] [923] [INFO] Booting worker with pid: 923
-[2022-05-10 04:42:49 +0800] [924] [INFO] Booting worker with pid: 924
+[2022-05-26 13:37:58 +0800] [13] [INFO] Worker exiting (pid: 13)
+[2022-05-26 13:38:00 +0800] [45] [INFO] Booting worker with pid: 45
+[2022-05-26 13:38:00 +0800] [46] [INFO] Booting worker with pid: 46
+[2022-05-26 13:38:01 +0800] [47] [INFO] Booting worker with pid: 47
+[2022-05-26 13:38:01 +0800] [48] [INFO] Booting worker with pid: 48
+[2022-05-26 13:38:31 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:45)
+[2022-05-26 13:38:35 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:46)
+[2022-05-26 13:38:35 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:47)
+[2022-05-26 13:38:35 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:48)
+[2022-05-26 13:38:35 +0800] [46] [INFO] Worker exiting (pid: 46)
+[2022-05-26 13:38:35 +0800] [48] [INFO] Worker exiting (pid: 48)
+[2022-05-26 13:38:44 +0800] [77] [INFO] Booting worker with pid: 77
+[2022-05-26 13:38:47 +0800] [79] [INFO] Booting worker with pid: 79
+[2022-05-26 13:38:47 +0800] [78] [INFO] Booting worker with pid: 78
+[2022-05-26 13:38:47 +0800] [80] [INFO] Booting worker with pid: 80
+[2022-05-26 13:39:14 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:77)
+[2022-05-26 13:39:14 +0800] [77] [INFO] Worker exiting (pid: 77)
+[2022-05-26 13:39:16 +0800] [109] [INFO] Booting worker with pid: 109
+[2022-05-26 13:39:17 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:78)
+[2022-05-26 13:39:17 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:79)
+[2022-05-26 13:39:17 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:80)
+[2022-05-26 13:39:19 +0800] [110] [INFO] Booting worker with pid: 110
+[2022-05-26 13:39:19 +0800] [111] [INFO] Booting worker with pid: 111
+[2022-05-26 13:39:20 +0800] [112] [INFO] Booting worker with pid: 112
+[2022-05-26 13:39:46 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:109)
+[2022-05-26 13:39:48 +0800] [141] [INFO] Booting worker with pid: 141
+[2022-05-26 13:39:49 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:110)
+[2022-05-26 13:39:49 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:111)
+[2022-05-26 13:39:50 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:112)
+[2022-05-26 13:39:51 +0800] [142] [INFO] Booting worker with pid: 142
+[2022-05-26 13:39:51 +0800] [143] [INFO] Booting worker with pid: 143
+[2022-05-26 13:39:51 +0800] [144] [INFO] Booting worker with pid: 144
+[2022-05-26 13:40:19 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:141)
+[2022-05-26 13:40:21 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:142)
+[2022-05-26 13:40:21 +0800] [173] [INFO] Booting worker with pid: 173
+[2022-05-26 13:40:22 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:143)
+[2022-05-26 13:40:22 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:144)
+[2022-05-26 13:40:23 +0800] [174] [INFO] Booting worker with pid: 174
+[2022-05-26 13:40:24 +0800] [175] [INFO] Booting worker with pid: 175
+[2022-05-26 13:40:24 +0800] [176] [INFO] Booting worker with pid: 176
+[2022-05-26 13:40:52 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:173)
+[2022-05-26 13:40:53 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:174)
+[2022-05-26 13:40:53 +0800] [174] [INFO] Worker exiting (pid: 174)
+[2022-05-26 13:40:53 +0800] [205] [INFO] Booting worker with pid: 205
+[2022-05-26 13:40:54 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:175)
+[2022-05-26 13:40:54 +0800] [206] [INFO] Booting worker with pid: 206
+[2022-05-26 13:40:55 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:176)
+[2022-05-26 13:40:56 +0800] [207] [INFO] Booting worker with pid: 207
+[2022-05-26 13:40:57 +0800] [208] [INFO] Booting worker with pid: 208
+[2022-05-26 13:41:23 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:205)
+[2022-05-26 13:41:25 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:206)
+[2022-05-26 13:41:26 +0800] [237] [INFO] Booting worker with pid: 237
+[2022-05-26 13:41:26 +0800] [238] [INFO] Booting worker with pid: 238
+[2022-05-26 13:41:27 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:207)
+[2022-05-26 13:41:28 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:208)
+[2022-05-26 13:41:29 +0800] [239] [INFO] Booting worker with pid: 239
+[2022-05-26 13:41:29 +0800] [240] [INFO] Booting worker with pid: 240
+[2022-05-26 13:41:57 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:237)
+[2022-05-26 13:41:59 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:238)
+[2022-05-26 13:41:59 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:239)
+[2022-05-26 13:41:59 +0800] [239] [INFO] Worker exiting (pid: 239)
+[2022-05-26 13:42:00 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:240)
+[2022-05-26 13:42:04 +0800] [269] [INFO] Booting worker with pid: 269
+[2022-05-26 13:42:04 +0800] [270] [INFO] Booting worker with pid: 270
+[2022-05-26 13:42:06 +0800] [271] [INFO] Booting worker with pid: 271
+[2022-05-26 13:42:06 +0800] [272] [INFO] Booting worker with pid: 272
+[2022-05-26 13:42:34 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:269)
+[2022-05-26 13:42:34 +0800] [269] [INFO] Worker exiting (pid: 269)
+[2022-05-26 13:42:35 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:270)
+[2022-05-26 13:42:35 +0800] [273] [INFO] Booting worker with pid: 273
+[2022-05-26 13:42:36 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:271)
+[2022-05-26 13:42:36 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:272)
+[2022-05-26 13:42:36 +0800] [272] [INFO] Worker exiting (pid: 272)
+[2022-05-26 13:42:36 +0800] [271] [INFO] Worker exiting (pid: 271)
+[2022-05-26 13:42:37 +0800] [274] [INFO] Booting worker with pid: 274
+[2022-05-26 13:42:39 +0800] [275] [INFO] Booting worker with pid: 275
+[2022-05-26 13:42:39 +0800] [276] [INFO] Booting worker with pid: 276
+[2022-05-26 13:43:06 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:273)
+[2022-05-26 13:43:06 +0800] [273] [INFO] Worker exiting (pid: 273)
+[2022-05-26 13:43:07 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:274)
+[2022-05-26 13:43:07 +0800] [274] [INFO] Worker exiting (pid: 274)
+[2022-05-26 13:43:08 +0800] [305] [INFO] Booting worker with pid: 305
+[2022-05-26 13:43:08 +0800] [306] [INFO] Booting worker with pid: 306
+[2022-05-26 13:43:10 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:275)
+[2022-05-26 13:43:10 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:276)
+[2022-05-26 13:43:10 +0800] [275] [INFO] Worker exiting (pid: 275)
+[2022-05-26 13:43:10 +0800] [276] [INFO] Worker exiting (pid: 276)
+[2022-05-26 13:43:11 +0800] [307] [INFO] Booting worker with pid: 307
+[2022-05-26 13:43:11 +0800] [308] [INFO] Booting worker with pid: 308
+[2022-05-26 13:43:38 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:305)
+[2022-05-26 13:43:39 +0800] [305] [INFO] Worker exiting (pid: 305)
+[2022-05-26 13:43:39 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:306)
+[2022-05-26 13:43:39 +0800] [306] [INFO] Worker exiting (pid: 306)
+[2022-05-26 13:43:43 +0800] [330] [INFO] Booting worker with pid: 330
+[2022-05-26 13:43:41 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:307)
+[2022-05-26 13:43:45 +0800] [307] [INFO] Worker exiting (pid: 307)
+[2022-05-26 13:43:44 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:308)
+[2022-05-26 13:43:49 +0800] [331] [INFO] Booting worker with pid: 331
+[2022-05-26 13:43:59 +0800] [332] [INFO] Booting worker with pid: 332
+[2022-05-26 13:44:03 +0800] [333] [INFO] Booting worker with pid: 333
+[2022-05-26 13:44:11 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:330)
+[2022-05-26 13:44:11 +0800] [330] [INFO] Worker exiting (pid: 330)
+[2022-05-26 13:44:13 +0800] [334] [INFO] Booting worker with pid: 334
+[2022-05-26 13:44:16 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:331)
+[2022-05-26 13:44:16 +0800] [331] [INFO] Worker exiting (pid: 331)
+[2022-05-26 13:44:19 +0800] [335] [INFO] Booting worker with pid: 335
+[2022-05-26 13:44:21 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:332)
+[2022-05-26 13:44:22 +0800] [332] [INFO] Worker exiting (pid: 332)
+[2022-05-26 13:44:24 +0800] [336] [INFO] Booting worker with pid: 336
+[2022-05-26 13:44:33 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:333)
+[2022-05-26 13:44:33 +0800] [333] [INFO] Worker exiting (pid: 333)
+[2022-05-26 13:44:40 +0800] [344] [INFO] Booting worker with pid: 344
+[2022-05-26 13:44:43 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:334)
+[2022-05-26 13:44:43 +0800] [334] [INFO] Worker exiting (pid: 334)
+[2022-05-26 13:44:45 +0800] [359] [INFO] Booting worker with pid: 359
+[2022-05-26 13:44:49 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:335)
+[2022-05-26 13:44:49 +0800] [335] [INFO] Worker exiting (pid: 335)
+[2022-05-26 13:44:51 +0800] [360] [INFO] Booting worker with pid: 360
+[2022-05-26 13:44:54 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:336)
+[2022-05-26 13:44:54 +0800] [336] [INFO] Worker exiting (pid: 336)
+[2022-05-26 13:44:56 +0800] [368] [INFO] Booting worker with pid: 368
+[2022-05-26 13:45:10 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:344)
+[2022-05-26 13:45:11 +0800] [390] [INFO] Booting worker with pid: 390
+[2022-05-26 13:45:15 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:359)
+[2022-05-26 13:45:18 +0800] [391] [INFO] Booting worker with pid: 391
+[2022-05-26 13:45:22 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:360)
+[2022-05-26 13:45:26 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:368)
+[2022-05-26 13:45:26 +0800] [392] [INFO] Booting worker with pid: 392
+[2022-05-26 13:45:28 +0800] [393] [INFO] Booting worker with pid: 393
+[2022-05-26 13:45:41 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:390)
+[2022-05-26 13:45:43 +0800] [394] [INFO] Booting worker with pid: 394
+[2022-05-26 13:45:49 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:391)
+[2022-05-26 13:45:49 +0800] [391] [INFO] Worker exiting (pid: 391)
+[2022-05-26 13:45:51 +0800] [402] [INFO] Booting worker with pid: 402
+[2022-05-26 13:45:57 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:392)
+[2022-05-26 13:45:57 +0800] [392] [INFO] Worker exiting (pid: 392)
+[2022-05-26 13:45:58 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:393)
+[2022-05-26 13:45:58 +0800] [393] [INFO] Worker exiting (pid: 393)
+[2022-05-26 13:45:58 +0800] [417] [INFO] Booting worker with pid: 417
+[2022-05-26 13:46:00 +0800] [425] [INFO] Booting worker with pid: 425
+[2022-05-26 13:46:13 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:394)
+[2022-05-26 13:46:13 +0800] [394] [INFO] Worker exiting (pid: 394)
+[2022-05-26 13:46:15 +0800] [426] [INFO] Booting worker with pid: 426
+[2022-05-26 13:46:21 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:402)
+[2022-05-26 13:46:23 +0800] [448] [INFO] Booting worker with pid: 448
+[2022-05-26 13:46:29 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:417)
+[2022-05-26 13:46:30 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:425)
+[2022-05-26 13:46:30 +0800] [425] [INFO] Worker exiting (pid: 425)
+[2022-05-26 13:46:31 +0800] [456] [INFO] Booting worker with pid: 456
+[2022-05-26 13:46:32 +0800] [457] [INFO] Booting worker with pid: 457
+[2022-05-26 13:46:46 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:426)
+[2022-05-26 13:46:46 +0800] [426] [INFO] Worker exiting (pid: 426)
+[2022-05-26 13:46:50 +0800] [465] [INFO] Booting worker with pid: 465
+[2022-05-26 13:46:53 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:448)
+[2022-05-26 13:46:54 +0800] [448] [INFO] Worker exiting (pid: 448)
+[2022-05-26 13:46:59 +0800] [473] [INFO] Booting worker with pid: 473
+[2022-05-26 13:47:01 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:456)
+[2022-05-26 13:47:01 +0800] [456] [INFO] Worker exiting (pid: 456)
+[2022-05-26 13:47:02 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:457)
+[2022-05-26 13:47:02 +0800] [457] [INFO] Worker exiting (pid: 457)
+[2022-05-26 13:47:06 +0800] [474] [INFO] Booting worker with pid: 474
+[2022-05-26 13:47:06 +0800] [475] [INFO] Booting worker with pid: 475
+[2022-05-26 13:47:20 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:465)
+[2022-05-26 13:47:24 +0800] [476] [INFO] Booting worker with pid: 476
+[2022-05-26 13:47:28 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:473)
+[2022-05-26 13:47:36 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:474)
+[2022-05-26 13:47:36 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:475)
+[2022-05-26 13:47:51 +0800] [477] [INFO] Booting worker with pid: 477
+[2022-05-26 13:47:51 +0800] [478] [INFO] Booting worker with pid: 478
+[2022-05-26 13:47:52 +0800] [479] [INFO] Booting worker with pid: 479
+[2022-05-26 13:47:54 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:476)
+[2022-05-26 13:47:54 +0800] [476] [INFO] Worker exiting (pid: 476)
+[2022-05-26 13:47:56 +0800] [480] [INFO] Booting worker with pid: 480
+[2022-05-26 13:48:17 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:477)
+[2022-05-26 13:48:17 +0800] [477] [INFO] Worker exiting (pid: 477)
+[2022-05-26 13:48:19 +0800] [495] [INFO] Booting worker with pid: 495
+[2022-05-26 13:48:22 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:478)
+[2022-05-26 13:48:22 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:479)
+[2022-05-26 13:48:22 +0800] [479] [INFO] Worker exiting (pid: 479)
+[2022-05-26 13:48:22 +0800] [478] [INFO] Worker exiting (pid: 478)
+[2022-05-26 13:48:24 +0800] [503] [INFO] Booting worker with pid: 503
+[2022-05-26 13:48:24 +0800] [504] [INFO] Booting worker with pid: 504
+[2022-05-26 13:48:26 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:480)
+[2022-05-26 13:48:26 +0800] [480] [INFO] Worker exiting (pid: 480)
+[2022-05-26 13:48:28 +0800] [505] [INFO] Booting worker with pid: 505
+[2022-05-26 13:48:48 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:495)
+[2022-05-26 13:48:49 +0800] [495] [INFO] Worker exiting (pid: 495)
+[2022-05-26 13:48:51 +0800] [534] [INFO] Booting worker with pid: 534
+[2022-05-26 13:48:54 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:503)
+[2022-05-26 13:48:54 +0800] [503] [INFO] Worker exiting (pid: 503)
+[2022-05-26 13:48:55 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:504)
+[2022-05-26 13:48:55 +0800] [504] [INFO] Worker exiting (pid: 504)
+[2022-05-26 13:48:56 +0800] [535] [INFO] Booting worker with pid: 535
+[2022-05-26 13:48:56 +0800] [536] [INFO] Booting worker with pid: 536
+[2022-05-26 13:48:58 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:505)
+[2022-05-26 13:48:58 +0800] [505] [INFO] Worker exiting (pid: 505)
+[2022-05-26 13:49:00 +0800] [537] [INFO] Booting worker with pid: 537
+[2022-05-26 13:49:21 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:534)
+[2022-05-26 13:49:24 +0800] [566] [INFO] Booting worker with pid: 566
+[2022-05-26 13:49:26 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:535)
+[2022-05-26 13:49:26 +0800] [535] [INFO] Worker exiting (pid: 535)
+[2022-05-26 13:49:27 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:536)
+[2022-05-26 13:49:28 +0800] [567] [INFO] Booting worker with pid: 567
+[2022-05-26 13:49:28 +0800] [568] [INFO] Booting worker with pid: 568
+[2022-05-26 13:49:30 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:537)
+[2022-05-26 13:49:32 +0800] [569] [INFO] Booting worker with pid: 569
+[2022-05-26 13:49:56 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:566)
+[2022-05-26 13:49:57 +0800] [598] [INFO] Booting worker with pid: 598
+[2022-05-26 13:49:58 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:567)
+[2022-05-26 13:49:58 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:568)
+[2022-05-26 13:50:00 +0800] [599] [INFO] Booting worker with pid: 599
+[2022-05-26 13:50:00 +0800] [600] [INFO] Booting worker with pid: 600
+[2022-05-26 13:50:02 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:569)
+[2022-05-26 13:50:04 +0800] [608] [INFO] Booting worker with pid: 608
+[2022-05-26 13:50:28 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:598)
+[2022-05-26 13:50:30 +0800] [630] [INFO] Booting worker with pid: 630
+[2022-05-26 13:50:31 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:599)
+[2022-05-26 13:50:31 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:600)
+[2022-05-26 13:50:32 +0800] [600] [INFO] Worker exiting (pid: 600)
+[2022-05-26 13:50:32 +0800] [631] [INFO] Booting worker with pid: 631
+[2022-05-26 13:50:33 +0800] [632] [INFO] Booting worker with pid: 632
+[2022-05-26 13:50:35 +0800] [1] [CRITICAL] WORKER TIMEOUT (pid:608)
+[2022-05-26 13:50:35 +0800] [608] [INFO] Worker exiting (pid: 608)
+[2022-05-26 13:50:36 +0800] [640] [INFO] Booting worker with pid: 640
