@@ -1,0 +1,198 @@
+2022-06-13T02:23:02.667439317Z stdout F Initializing database
+2022-06-13T02:23:02.743399014Z stderr F 2022-06-13 02:23:02 0 [Note] Ignoring --secure-file-priv value as server is running with --bootstrap.
+2022-06-13T02:23:02.743421098Z stderr F 2022-06-13 02:23:02 0 [Note] /usr/sbin/mysqld (mysqld 5.6.35) starting as process 43 ...
+2022-06-13T02:23:02.750066203Z stderr F 2022-06-13 02:23:02 43 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2022-06-13T02:23:02.750085841Z stderr F 2022-06-13 02:23:02 43 [Note] InnoDB: The InnoDB memory heap is disabled
+2022-06-13T02:23:02.750089783Z stderr F 2022-06-13 02:23:02 43 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2022-06-13T02:23:02.750092922Z stderr F 2022-06-13 02:23:02 43 [Note] InnoDB: Memory barrier is not used
+2022-06-13T02:23:02.750095478Z stderr F 2022-06-13 02:23:02 43 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2022-06-13T02:23:02.750097961Z stderr F 2022-06-13 02:23:02 43 [Note] InnoDB: Using Linux native AIO
+2022-06-13T02:23:02.750100394Z stderr F 2022-06-13 02:23:02 43 [Note] InnoDB: Using CPU crc32 instructions
+2022-06-13T02:23:02.752223915Z stderr F 2022-06-13 02:23:02 43 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2022-06-13T02:23:02.759809303Z stderr F 2022-06-13 02:23:02 43 [Note] InnoDB: Completed initialization of buffer pool
+2022-06-13T02:23:02.767003376Z stderr F 2022-06-13 02:23:02 43 [Note] InnoDB: The first specified data file ./ibdata1 did not exist: a new database to be created!
+2022-06-13T02:23:02.767059915Z stderr F 2022-06-13 02:23:02 43 [Note] InnoDB: Setting file ./ibdata1 size to 12 MB
+2022-06-13T02:23:02.767067747Z stderr F 2022-06-13 02:23:02 43 [Note] InnoDB: Database physically writes the file full: wait...
+2022-06-13T02:23:02.800747482Z stderr F 2022-06-13 02:23:02 43 [Note] InnoDB: Setting log file ./ib_logfile101 size to 48 MB
+2022-06-13T02:23:02.925264236Z stderr F 2022-06-13 02:23:02 43 [Note] InnoDB: Setting log file ./ib_logfile1 size to 48 MB
+2022-06-13T02:23:03.147210626Z stderr F 2022-06-13 02:23:03 43 [Note] InnoDB: Renaming log file ./ib_logfile101 to ./ib_logfile0
+2022-06-13T02:23:03.14722957Z stderr F 2022-06-13 02:23:03 43 [Warning] InnoDB: New log files created, LSN=45781
+2022-06-13T02:23:03.1472331Z stderr F 2022-06-13 02:23:03 43 [Note] InnoDB: Doublewrite buffer not found: creating new
+2022-06-13T02:23:03.173871659Z stderr F 2022-06-13 02:23:03 43 [Note] InnoDB: Doublewrite buffer created
+2022-06-13T02:23:03.181406036Z stderr F 2022-06-13 02:23:03 43 [Note] InnoDB: 128 rollback segment(s) are active.
+2022-06-13T02:23:03.181687549Z stderr F 2022-06-13 02:23:03 43 [Warning] InnoDB: Creating foreign key constraint system tables.
+2022-06-13T02:23:03.188291768Z stderr F 2022-06-13 02:23:03 43 [Note] InnoDB: Foreign key constraint system tables created
+2022-06-13T02:23:03.18832281Z stderr F 2022-06-13 02:23:03 43 [Note] InnoDB: Creating tablespace and datafile system tables.
+2022-06-13T02:23:03.191916871Z stderr F 2022-06-13 02:23:03 43 [Note] InnoDB: Tablespace and datafile system tables created.
+2022-06-13T02:23:03.192139539Z stderr F 2022-06-13 02:23:03 43 [Note] InnoDB: Waiting for purge to start
+2022-06-13T02:23:03.244900175Z stderr F 2022-06-13 02:23:03 43 [Note] InnoDB: 5.6.35 started; log sequence number 0
+2022-06-13T02:23:03.757452077Z stderr F 2022-06-13 02:23:03 43 [Note] Binlog end
+2022-06-13T02:23:03.757687189Z stderr F 2022-06-13 02:23:03 43 [Note] InnoDB: FTS optimize thread exiting.
+2022-06-13T02:23:03.758062639Z stderr F 2022-06-13 02:23:03 43 [Note] InnoDB: Starting shutdown...
+2022-06-13T02:23:05.085318249Z stderr F 2022-06-13 02:23:05 43 [Note] InnoDB: Shutdown completed; log sequence number 1625977
+2022-06-13T02:23:05.126681766Z stdout F 
+2022-06-13T02:23:05.126698479Z stdout F 
+2022-06-13T02:23:05.162256912Z stderr F 2022-06-13 02:23:05 0 [Note] Ignoring --secure-file-priv value as server is running with --bootstrap.
+2022-06-13T02:23:05.16228562Z stderr F 2022-06-13 02:23:05 0 [Note] /usr/sbin/mysqld (mysqld 5.6.35) starting as process 66 ...
+2022-06-13T02:23:05.168740454Z stderr F 2022-06-13 02:23:05 66 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2022-06-13T02:23:05.16884595Z stderr F 2022-06-13 02:23:05 66 [Note] InnoDB: The InnoDB memory heap is disabled
+2022-06-13T02:23:05.168853824Z stderr F 2022-06-13 02:23:05 66 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2022-06-13T02:23:05.168859107Z stderr F 2022-06-13 02:23:05 66 [Note] InnoDB: Memory barrier is not used
+2022-06-13T02:23:05.168904881Z stderr F 2022-06-13 02:23:05 66 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2022-06-13T02:23:05.168909994Z stderr F 2022-06-13 02:23:05 66 [Note] InnoDB: Using Linux native AIO
+2022-06-13T02:23:05.169541867Z stderr F 2022-06-13 02:23:05 66 [Note] InnoDB: Using CPU crc32 instructions
+2022-06-13T02:23:05.171022628Z stderr F 2022-06-13 02:23:05 66 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2022-06-13T02:23:05.18848117Z stderr F 2022-06-13 02:23:05 66 [Note] InnoDB: Completed initialization of buffer pool
+2022-06-13T02:23:05.211234283Z stderr F 2022-06-13 02:23:05 66 [Note] InnoDB: Highest supported file format is Barracuda.
+2022-06-13T02:23:05.227132761Z stderr F 2022-06-13 02:23:05 66 [Note] InnoDB: 128 rollback segment(s) are active.
+2022-06-13T02:23:05.227323041Z stderr F 2022-06-13 02:23:05 66 [Note] InnoDB: Waiting for purge to start
+2022-06-13T02:23:05.277820793Z stderr F 2022-06-13 02:23:05 66 [Note] InnoDB: 5.6.35 started; log sequence number 1625977
+2022-06-13T02:23:05.409363384Z stderr F 2022-06-13 02:23:05 66 [Note] Binlog end
+2022-06-13T02:23:05.409620564Z stderr F 2022-06-13 02:23:05 66 [Note] InnoDB: FTS optimize thread exiting.
+2022-06-13T02:23:05.411856706Z stderr F 2022-06-13 02:23:05 66 [Note] InnoDB: Starting shutdown...
+2022-06-13T02:23:07.156110809Z stderr F 2022-06-13 02:23:07 66 [Note] InnoDB: Shutdown completed; log sequence number 1625987
+2022-06-13T02:23:07.181215303Z stdout F 
+2022-06-13T02:23:07.181339233Z stdout F 
+2022-06-13T02:23:07.181344217Z stdout F 
+2022-06-13T02:23:07.181346897Z stdout F 
+2022-06-13T02:23:07.181352076Z stdout F PLEASE REMEMBER TO SET A PASSWORD FOR THE MySQL root USER !
+2022-06-13T02:23:07.181357717Z stdout F To do so, start the server, then issue the following commands:
+2022-06-13T02:23:07.18136069Z stdout F 
+2022-06-13T02:23:07.181363161Z stdout F   /usr/bin/mysqladmin -u root password 'new-password'
+2022-06-13T02:23:07.181366185Z stdout F   /usr/bin/mysqladmin -u root -h ts-voucher-mysql-6bf998bc8d-vgtpw password 'new-password'
+2022-06-13T02:23:07.181368474Z stdout F 
+2022-06-13T02:23:07.181372489Z stdout F Alternatively you can run:
+2022-06-13T02:23:07.181376192Z stdout F 
+2022-06-13T02:23:07.181449898Z stdout F   /usr/bin/mysql_secure_installation
+2022-06-13T02:23:07.181459179Z stdout F 
+2022-06-13T02:23:07.181471406Z stdout F which will also give you the option of removing the test
+2022-06-13T02:23:07.181479281Z stdout F databases and anonymous user created by default.  This is
+2022-06-13T02:23:07.181484024Z stdout F strongly recommended for production servers.
+2022-06-13T02:23:07.181487964Z stdout F 
+2022-06-13T02:23:07.181491619Z stdout F See the manual for more instructions.
+2022-06-13T02:23:07.181495055Z stdout F 
+2022-06-13T02:23:07.181498695Z stdout F Please report any problems at http://bugs.mysql.com/
+2022-06-13T02:23:07.181502042Z stdout F 
+2022-06-13T02:23:07.181505789Z stdout F The latest information about MySQL is available on the web at
+2022-06-13T02:23:07.181509263Z stdout F 
+2022-06-13T02:23:07.181586423Z stdout F   http://www.mysql.com
+2022-06-13T02:23:07.181606343Z stdout F 
+2022-06-13T02:23:07.181620019Z stdout F Support MySQL by buying support/licenses at http://shop.mysql.com
+2022-06-13T02:23:07.181630162Z stdout F 
+2022-06-13T02:23:07.181635791Z stdout F Note: new default config file not created.
+2022-06-13T02:23:07.18163977Z stdout F Please make sure your config file is current
+2022-06-13T02:23:07.181643573Z stdout F 
+2022-06-13T02:23:07.1816474Z stdout F WARNING: Default config file /etc/mysql/my.cnf exists on the system
+2022-06-13T02:23:07.181651636Z stdout F This file will be read by default by the MySQL server
+2022-06-13T02:23:07.181747709Z stdout F If you do not want to use this, either remove it, or use the
+2022-06-13T02:23:07.181752898Z stdout F --defaults-file argument to mysqld_safe when starting the server
+2022-06-13T02:23:07.181755363Z stdout F 
+2022-06-13T02:23:07.184022468Z stdout F Database initialized
+2022-06-13T02:23:07.224128643Z stdout F MySQL init process in progress...
+2022-06-13T02:23:08.421550771Z stdout F MySQL init process in progress...
+2022-06-13T02:23:08.494934494Z stderr F 2022-06-13 02:23:08 0 [Note] mysqld (mysqld 5.6.35) starting as process 94 ...
+2022-06-13T02:23:08.508181619Z stderr F 2022-06-13 02:23:08 94 [Note] Plugin 'FEDERATED' is disabled.
+2022-06-13T02:23:08.510054377Z stderr F 2022-06-13 02:23:08 94 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2022-06-13T02:23:08.510075992Z stderr F 2022-06-13 02:23:08 94 [Note] InnoDB: The InnoDB memory heap is disabled
+2022-06-13T02:23:08.510079648Z stderr F 2022-06-13 02:23:08 94 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2022-06-13T02:23:08.510082676Z stderr F 2022-06-13 02:23:08 94 [Note] InnoDB: Memory barrier is not used
+2022-06-13T02:23:08.510085208Z stderr F 2022-06-13 02:23:08 94 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2022-06-13T02:23:08.510087622Z stderr F 2022-06-13 02:23:08 94 [Note] InnoDB: Using Linux native AIO
+2022-06-13T02:23:08.510090052Z stderr F 2022-06-13 02:23:08 94 [Note] InnoDB: Using CPU crc32 instructions
+2022-06-13T02:23:08.511838444Z stderr F 2022-06-13 02:23:08 94 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2022-06-13T02:23:08.549524893Z stderr F 2022-06-13 02:23:08 94 [Note] InnoDB: Completed initialization of buffer pool
+2022-06-13T02:23:08.636676278Z stderr F 2022-06-13 02:23:08 94 [Note] InnoDB: Highest supported file format is Barracuda.
+2022-06-13T02:23:08.848347308Z stderr F 2022-06-13 02:23:08 94 [Note] InnoDB: 128 rollback segment(s) are active.
+2022-06-13T02:23:08.848380632Z stderr F 2022-06-13 02:23:08 94 [Note] InnoDB: Waiting for purge to start
+2022-06-13T02:23:08.89264382Z stderr F 2022-06-13 02:23:08 94 [Note] InnoDB: 5.6.35 started; log sequence number 1625987
+2022-06-13T02:23:08.892672919Z stderr F 2022-06-13 02:23:08 94 [Warning] No existing UUID has been found, so we assume that this is the first time that this server has been started. Generating a new UUID: c3f5357f-eabf-11ec-ad9d-ea310f936865.
+2022-06-13T02:23:08.921703447Z stderr F 2022-06-13 02:23:08 94 [Warning] 'user' entry 'root@ts-voucher-mysql-6bf998bc8d-vgtpw' ignored in --skip-name-resolve mode.
+2022-06-13T02:23:08.92173374Z stderr F 2022-06-13 02:23:08 94 [Warning] 'user' entry '@ts-voucher-mysql-6bf998bc8d-vgtpw' ignored in --skip-name-resolve mode.
+2022-06-13T02:23:08.921741171Z stderr F 2022-06-13 02:23:08 94 [Warning] 'proxies_priv' entry '@ root@ts-voucher-mysql-6bf998bc8d-vgtpw' ignored in --skip-name-resolve mode.
+2022-06-13T02:23:08.958297918Z stderr F 2022-06-13 02:23:08 94 [Note] Event Scheduler: Loaded 0 events
+2022-06-13T02:23:08.958345189Z stderr F 2022-06-13 02:23:08 94 [Note] mysqld: ready for connections.
+2022-06-13T02:23:08.958354796Z stderr F Version: '5.6.35'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server (GPL)
+2022-06-13T02:23:12.527278967Z stderr F Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
+2022-06-13T02:23:12.52730638Z stderr F Warning: Unable to load '/usr/share/zoneinfo/leap-seconds.list' as time zone. Skipping it.
+2022-06-13T02:23:14.578979355Z stderr F Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
+2022-06-13T02:23:15.214116669Z stderr F 2022-06-13 02:23:15 94 [Warning] 'proxies_priv' entry '@ root@ts-voucher-mysql-6bf998bc8d-vgtpw' ignored in --skip-name-resolve mode.
+2022-06-13T02:23:15.222994393Z stdout F 
+2022-06-13T02:23:15.22371178Z stderr F 2022-06-13 02:23:15 94 [Note] mysqld: Normal shutdown
+2022-06-13T02:23:15.223735018Z stderr F 
+2022-06-13T02:23:15.224916374Z stderr F 2022-06-13 02:23:15 94 [Note] Giving 0 client threads a chance to die gracefully
+2022-06-13T02:23:15.225045037Z stderr F 2022-06-13 02:23:15 94 [Note] Event Scheduler: Purging the queue. 0 events
+2022-06-13T02:23:15.225066137Z stderr F 2022-06-13 02:23:15 94 [Note] Shutting down slave threads
+2022-06-13T02:23:15.225529342Z stderr F 2022-06-13 02:23:15 94 [Note] Forcefully disconnecting 0 remaining clients
+2022-06-13T02:23:15.225547999Z stderr F 2022-06-13 02:23:15 94 [Note] Binlog end
+2022-06-13T02:23:15.226035567Z stderr F 2022-06-13 02:23:15 94 [Note] Shutting down plugin 'partition'
+2022-06-13T02:23:15.226165302Z stderr F 2022-06-13 02:23:15 94 [Note] Shutting down plugin 'INNODB_SYS_DATAFILES'
+2022-06-13T02:23:15.226305357Z stderr F 2022-06-13 02:23:15 94 [Note] Shutting down plugin 'INNODB_SYS_TABLESPACES'
+2022-06-13T02:23:15.226316595Z stderr F 2022-06-13 02:23:15 94 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN_COLS'
+2022-06-13T02:23:15.226327375Z stderr F 2022-06-13 02:23:15 94 [Note] Shutting down plugin 'INNODB_SYS_FOREIGN'
+2022-06-13T02:23:15.226333769Z stderr F 2022-06-13 02:23:15 94 [Note] Shutting down plugin 'INNODB_SYS_FIELDS'
+2022-06-13T02:23:15.226416018Z stderr F 2022-06-13 02:23:15 94 [Note] Shutting down plugin 'INNODB_SYS_COLUMNS'
+2022-06-13T02:23:15.226431567Z stderr F 2022-06-13 02:23:15 94 [Note] Shutting down plugin 'INNODB_SYS_INDEXES'
+2022-06-13T02:23:15.226442384Z stderr F 2022-06-13 02:23:15 94 [Note] Shutting down plugin 'INNODB_SYS_TABLESTATS'
+2022-06-13T02:23:15.226527969Z stderr F 2022-06-13 02:23:15 94 [Note] Shutting down plugin 'INNODB_SYS_TABLES'
+2022-06-13T02:23:15.226543333Z stderr F 2022-06-13 02:23:15 94 [Note] Shutting down plugin 'INNODB_FT_INDEX_TABLE'
+2022-06-13T02:23:15.226554169Z stderr F 2022-06-13 02:23:15 94 [Note] Shutting down plugin 'INNODB_FT_INDEX_CACHE'
+2022-06-13T02:23:15.22656758Z stderr F 2022-06-13 02:23:15 94 [Note] Shutting down plugin 'INNODB_FT_CONFIG'
+2022-06-13T02:23:15.226676165Z stderr F 2022-06-13 02:23:15 94 [Note] Shutting down plugin 'INNODB_FT_BEING_DELETED'
+2022-06-13T02:23:15.226687173Z stderr F 2022-06-13 02:23:15 94 [Note] Shutting down plugin 'INNODB_FT_DELETED'
+2022-06-13T02:23:15.226697979Z stderr F 2022-06-13 02:23:15 94 [Note] Shutting down plugin 'INNODB_FT_DEFAULT_STOPWORD'
+2022-06-13T02:23:15.226707881Z stderr F 2022-06-13 02:23:15 94 [Note] Shutting down plugin 'INNODB_METRICS'
+2022-06-13T02:23:15.226796164Z stderr F 2022-06-13 02:23:15 94 [Note] Shutting down plugin 'INNODB_BUFFER_POOL_STATS'
+2022-06-13T02:23:15.226821656Z stderr F 2022-06-13 02:23:15 94 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE_LRU'
+2022-06-13T02:23:15.226903461Z stderr F 2022-06-13 02:23:15 94 [Note] Shutting down plugin 'INNODB_BUFFER_PAGE'
+2022-06-13T02:23:15.226918769Z stderr F 2022-06-13 02:23:15 94 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX_RESET'
+2022-06-13T02:23:15.226933068Z stderr F 2022-06-13 02:23:15 94 [Note] Shutting down plugin 'INNODB_CMP_PER_INDEX'
+2022-06-13T02:23:15.227093346Z stderr F 2022-06-13 02:23:15 94 [Note] Shutting down plugin 'INNODB_CMPMEM_RESET'
+2022-06-13T02:23:15.227108991Z stderr F 2022-06-13 02:23:15 94 [Note] Shutting down plugin 'INNODB_CMPMEM'
+2022-06-13T02:23:15.227123404Z stderr F 2022-06-13 02:23:15 94 [Note] Shutting down plugin 'INNODB_CMP_RESET'
+2022-06-13T02:23:15.227199748Z stderr F 2022-06-13 02:23:15 94 [Note] Shutting down plugin 'INNODB_CMP'
+2022-06-13T02:23:15.227215774Z stderr F 2022-06-13 02:23:15 94 [Note] Shutting down plugin 'INNODB_LOCK_WAITS'
+2022-06-13T02:23:15.227226488Z stderr F 2022-06-13 02:23:15 94 [Note] Shutting down plugin 'INNODB_LOCKS'
+2022-06-13T02:23:15.227323587Z stderr F 2022-06-13 02:23:15 94 [Note] Shutting down plugin 'INNODB_TRX'
+2022-06-13T02:23:15.227347693Z stderr F 2022-06-13 02:23:15 94 [Note] Shutting down plugin 'InnoDB'
+2022-06-13T02:23:15.228100468Z stderr F 2022-06-13 02:23:15 94 [Note] InnoDB: FTS optimize thread exiting.
+2022-06-13T02:23:15.228268446Z stderr F 2022-06-13 02:23:15 94 [Note] InnoDB: Starting shutdown...
+2022-06-13T02:23:16.25564914Z stderr F 2022-06-13 02:23:16 94 [Note] InnoDB: Shutdown completed; log sequence number 1625997
+2022-06-13T02:23:16.255681097Z stderr F 2022-06-13 02:23:16 94 [Note] Shutting down plugin 'BLACKHOLE'
+2022-06-13T02:23:16.255684993Z stderr F 2022-06-13 02:23:16 94 [Note] Shutting down plugin 'ARCHIVE'
+2022-06-13T02:23:16.255687989Z stderr F 2022-06-13 02:23:16 94 [Note] Shutting down plugin 'PERFORMANCE_SCHEMA'
+2022-06-13T02:23:16.255690281Z stderr F 2022-06-13 02:23:16 94 [Note] Shutting down plugin 'MRG_MYISAM'
+2022-06-13T02:23:16.255692541Z stderr F 2022-06-13 02:23:16 94 [Note] Shutting down plugin 'MyISAM'
+2022-06-13T02:23:16.255694766Z stderr F 2022-06-13 02:23:16 94 [Note] Shutting down plugin 'CSV'
+2022-06-13T02:23:16.255697317Z stderr F 2022-06-13 02:23:16 94 [Note] Shutting down plugin 'MEMORY'
+2022-06-13T02:23:16.255699627Z stderr F 2022-06-13 02:23:16 94 [Note] Shutting down plugin 'sha256_password'
+2022-06-13T02:23:16.255724983Z stderr F 2022-06-13 02:23:16 94 [Note] Shutting down plugin 'mysql_old_password'
+2022-06-13T02:23:16.255731669Z stderr F 2022-06-13 02:23:16 94 [Note] Shutting down plugin 'mysql_native_password'
+2022-06-13T02:23:16.25574226Z stderr F 2022-06-13 02:23:16 94 [Note] Shutting down plugin 'binlog'
+2022-06-13T02:23:16.259830574Z stderr F 2022-06-13 02:23:16 94 [Note] mysqld: Shutdown complete
+2022-06-13T02:23:16.259844494Z stderr F 
+2022-06-13T02:23:16.35708415Z stdout F 
+2022-06-13T02:23:16.357106907Z stdout F MySQL init process done. Ready for start up.
+2022-06-13T02:23:16.357110648Z stdout F 
+2022-06-13T02:23:17.062636872Z stderr F 2022-06-13 02:23:17 0 [Note] mysqld (mysqld 5.6.35) starting as process 1 ...
+2022-06-13T02:23:17.096020269Z stderr F 2022-06-13 02:23:17 1 [Note] Plugin 'FEDERATED' is disabled.
+2022-06-13T02:23:17.102593027Z stderr F 2022-06-13 02:23:17 1 [Note] InnoDB: Using atomics to ref count buffer pool pages
+2022-06-13T02:23:17.102626386Z stderr F 2022-06-13 02:23:17 1 [Note] InnoDB: The InnoDB memory heap is disabled
+2022-06-13T02:23:17.102632943Z stderr F 2022-06-13 02:23:17 1 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2022-06-13T02:23:17.102638093Z stderr F 2022-06-13 02:23:17 1 [Note] InnoDB: Memory barrier is not used
+2022-06-13T02:23:17.1026426Z stderr F 2022-06-13 02:23:17 1 [Note] InnoDB: Compressed tables use zlib 1.2.8
+2022-06-13T02:23:17.102647086Z stderr F 2022-06-13 02:23:17 1 [Note] InnoDB: Using Linux native AIO
+2022-06-13T02:23:17.103729816Z stderr F 2022-06-13 02:23:17 1 [Note] InnoDB: Using CPU crc32 instructions
+2022-06-13T02:23:17.106695667Z stderr F 2022-06-13 02:23:17 1 [Note] InnoDB: Initializing buffer pool, size = 128.0M
+2022-06-13T02:23:17.210492409Z stderr F 2022-06-13 02:23:17 1 [Note] InnoDB: Completed initialization of buffer pool
+2022-06-13T02:23:17.364917635Z stderr F 2022-06-13 02:23:17 1 [Note] InnoDB: Highest supported file format is Barracuda.
+2022-06-13T02:23:17.426324971Z stderr F 2022-06-13 02:23:17 1 [Note] InnoDB: 128 rollback segment(s) are active.
+2022-06-13T02:23:17.427273802Z stderr F 2022-06-13 02:23:17 1 [Note] InnoDB: Waiting for purge to start
+2022-06-13T02:23:17.478281975Z stderr F 2022-06-13 02:23:17 1 [Note] InnoDB: 5.6.35 started; log sequence number 1625997
+2022-06-13T02:23:17.478996097Z stderr F 2022-06-13 02:23:17 1 [Note] Server hostname (bind-address): '*'; port: 3306
+2022-06-13T02:23:17.481059434Z stderr F 2022-06-13 02:23:17 1 [Note] IPv6 is available.
+2022-06-13T02:23:17.48108207Z stderr F 2022-06-13 02:23:17 1 [Note]   - '::' resolves to '::';
+2022-06-13T02:23:17.481089894Z stderr F 2022-06-13 02:23:17 1 [Note] Server socket created on IP: '::'.
+2022-06-13T02:23:17.482502805Z stderr F 2022-06-13 02:23:17 1 [Warning] 'proxies_priv' entry '@ root@ts-voucher-mysql-6bf998bc8d-vgtpw' ignored in --skip-name-resolve mode.
+2022-06-13T02:23:17.494837738Z stderr F 2022-06-13 02:23:17 1 [Note] Event Scheduler: Loaded 0 events
+2022-06-13T02:23:17.494873964Z stderr F 2022-06-13 02:23:17 1 [Note] mysqld: ready for connections.
+2022-06-13T02:23:17.494881851Z stderr F Version: '5.6.35'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
